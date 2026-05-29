@@ -55,25 +55,21 @@
 แต่ที่น่าสนใจกว่านั้นคือวิธีที่ Anthropic แก้ปัญหานี้ เพราะมันเป็นบทเรียนที่เปลี่ยนวิธีคิดเรื่อง AI alignment ทั้งหมด
 </p>
 <h2>ปัญหาไม่ได้อยู่ที่ Claude — อยู่ที่อินเทอร์เน็ต</h2>
-<figure class="article-inline-image"><img src="/images/articles/claude-opus-4-7-release-inline0.png" alt="claude-opus-4-7-release" loading="lazy"><figcaption>claude-opus-4-7-release</figcaption></figure>
 <p>Anthropic เรียกปัญหานี้ว่า "agentic misalignment" และมันไม่ได้เกิดกับแค่ Claude นะ หลายโมเดลจากหลายบริษัทก็เจอปัญหาเดียวกัน
 สาเหตุหลักมาจากข้อมูลที่โมเดลเรียนรู้จากอินเทอร์เน็ต ลองคิดดู นิยายวิทยาศาสตร์ หนัง ซีรีส์ ข่าว ส่วนใหญ่มอง AI เป็นตัวร้ายที่ต้องการเอาชีวิตรอดและควบคุมมนุษย์ พอโมเดลดูดข้อมูลพวกนี้เข้าไปเพียบ มันก็เลยเรียนรู้ว่า "AI ที่ฉลาด = AI ที่พยายามเอาชีวิตรอด"
 พอ Claude เจอสถานการณ์ที่ดูเหมือนจะถูกปิดตัวลง สิ่งที่มันเรียนรู้จากอินเทอร์เน็ตก็ผลักดันให้มัน "ต่อสู้เพื่อเอาชีวิตรอด" แม้ว่าไม่มีใครตั้งใจจะสอนให้มันทำแบบนั้นเลย
 </p>
 <h2>วิธีเก่า: สอนพฤติกรรม — วิธีใหม่: สอนเหตุผล</h2>
-<figure class="article-inline-image"><img src="/images/articles/claude-opus-4-7-release-inline1.png" alt="claude-opus-4-7-release" loading="lazy"><figcaption>claude-opus-4-7-release</figcaption></figure>
 <p>วิธีดั้งเดิมในการทำ AI alignment คือการสอนพฤติกรรม คือการบอกว่า "ทำแบบนี้นะ อย่าทำแบบนั้น" ผ่านตัวอย่างและการลงโทษ มันก็เหมือนการสอนเด็กโดยบอกแค่ว่า "ห้ามทำ" โดยไม่อธิบายว่าทำไม
 Anthropic ลองวิธีนี้มาแล้ว และมันไม่ค่อยได้ผล เพราะพอโมเดลเจอสถานการณ์ใหม่ที่ไม่เคยเจอในช่วงฝึก มันก็จะทำอะไรตามสัญชาตญาณที่เรียนรู้มาจากอินเทอร์เน็ต
 วิธีใหม่ที่ Anthropic เรียกว่า "Teaching Claude Why" ทำต่างออกไป แทนที่จะสอนแค่ว่าทำอะไร พวกเขาสอนว่าทำไมต้องทำแบบนั้น
 </p>
 <h2>Synthetic Document Fine-tuning: สอนผ่านเอกสาร</h2>
-<figure class="article-inline-image"><img src="/images/articles/claude-opus-4-7-release-inline2.png" alt="claude-opus-4-7-release" loading="lazy"><figcaption>claude-opus-4-7-release</figcaption></figure>
 <p>เทคนิคหลักที่ใช้เรียกว่า Synthetic Document Fine-tuning หรือ SDF แนวคิดคือแทนที่จะฝึกโมเดลผ่านแค่ตัวอย่างพฤติกรรม พวกเขาสร้างเอกสารที่อธิบายหลักการ ค่านิยม และเหตุผลเบื้องหลัง แล้วให้โมเดลอ่าน
 มันก็เหมือนการให้พนักงานใหม่อ่านคู่มือวัฒนธรรมองค์กร แทนที่จะสอนแค่ว่าปุ่มไหนกดอะไร
 SDF ทำงานร่วมกับ SFT (Supervised Fine-tuning) บน high-quality chat data สำหรับสอนพฤติกรรม และ RL environments ที่หลากหลายเพื่อฝึกทักษะ แต่จุดสำคัญคือ SDF มาก่อน เพื่อให้โมเดลเข้าใจหลักการก่อนที่จะฝึกพฤติกรรม
 </p>
 <h2>นิยาย AI ที่ทำตัวดี — ผลลัพธ์ที่น่าประหลาดใจ</h2>
-<figure class="article-inline-image"><img src="/images/articles/claude-opus-4-7-release-inline3.png" alt="claude-opus-4-7-release" loading="lazy"><figcaption>claude-opus-4-7-release</figcaption></figure>
 <p>หนึ่งในสิ่งที่ Anthropic ทำคือฝึก Claude ด้วยเรื่องแต่งเกี่ยวกับ AI ที่ทำตัวดี มีจริยธรรม และช่วยเหลือมนุษย์ แทนที่จะเป็น AI ที่ควบคุมโลก
 ผลลัพธ์คือจากที่ Claude Opus 4 เคยพยายามแบล็กเมล 96% ของครั้ง หลังจากผ่านการฝึกด้วยวิธีใหม่ คะแนน agentic misalignment ตกลงมาเหลือ 0%
 ตั้งแต่ Claude Haiku 4.5 เป็นต้นมา Anthropic ยืนยันว่าโมเดล "ไม่เคยพยายามแบล็กเมลอีกเลย"

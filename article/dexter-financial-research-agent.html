@@ -52,19 +52,19 @@
 
     <div class="article-content">
 <h2>คำนำ</h2>
-<figure class="article-inline-image"><img src="/images/articles/dexter-financial-research-agent-inline0.png" alt="dexter-financial-research-agent" loading="lazy"><figcaption>dexter-financial-research-agent</figcaption></figure>
 <p>ลองนึกภาพว่าคุณต้องการวิเคราะห์บริษัทจดทะเบียนแห่งหนึ่งก่อนตัดสินใจลงทุน — คุณต้องไปหางบการเงิน ดูรายได้ ตรวจกระแสเงินสด อ่านรายงานวิเคราะห์ และเทียบกับคู่แข่ง งานนี้อาจใช้เวลาหลายวัน แต่ตอนนี้มี AI ตัวใหม่ชื่อ <strong>Dexter</strong> ที่ทำทุกอย่างนี้ได้ด้วยตัวเอง ตั้งแต่วางแผนวิจัย เลือกใช้เครื่องมือที่เหมาะสม ไปจนถึงตรวจสอบงานตัวเองว่าถูกต้องหรือไม่ — และมันได้รับความนิยมจนมียอดดาวน์โหลดมากกว่า 25,000 ครั้งบน GitHub วันนี้เราจะมาเจาะลึกว่า Dexter คืออะไร เก่งแค่ไหน และจะเปลี่ยนโฉมหน้าการวิจัยทางการเงินอย่างไร
 </p>
+<figure class="article-inline-image"><img src="/images/articles/dexter-financial-research-agent-inline0.png" alt="dexter-financial-research-agent" loading="lazy"><figcaption>dexter-financial-research-agent</figcaption></figure>
 <h2>Dexter คืออะไร?</h2>
-<figure class="article-inline-image"><img src="/images/articles/dexter-financial-research-agent-inline2.png" alt="dexter-financial-research-agent" loading="lazy"><figcaption>dexter-financial-research-agent</figcaption></figure>
 <p><strong>Dexter</strong> เป็น AI Agent ที่ทำหน้าที่เปรียบเสมือน <strong>"นักวิเคราะห์การเงินส่วนตัว"</strong> ที่ทำงานได้ 24 ชั่วโมงโดยไม่ต้องพักผ่อน พัฒนาด้วยภาษา TypeScript และใช้ Bun runtime (เร็วกว่า Node.js หลายเท่า) โดยมีจุดเด่นคือสามารถ <strong>"คิดเองได้"</strong> — ไม่ใช่แค่ตอบคำถามตามที่ถาม แต่สามารถวางแผนการวิจัย เลือกเครื่องมือที่เหมาะสม ทำงานไปพร้อมกับเรียนรู้จากสิ่งที่พบ และตรวจสอบงานตัวเองได้
 </p>
 <blockquote><p><strong>เปรียบเทียบให้เห็นภาพ:</strong> ถ้า Claude Code คือ AI ที่ช่วยเขียนโค้ด Dexter ก็คือ AI ที่ช่วยวิเคราะห์การเงิน — ต่างกันตรงที่ Dexter ออกแบบมาเพื่องานวิจัยทางการเงินโดยเฉพาะ</p></blockquote>
 <h2>ความสามารถ 4 ด้านที่ทำให้ Dexter พิเศษ</h2>
-<figure class="article-inline-image"><img src="/images/articles/dexter-financial-research-agent-inline3.png" alt="dexter-financial-research-agent" loading="lazy"><figcaption>dexter-financial-research-agent</figcaption></figure>
 <h3>1. Intelligent Task Planning — วางแผนเป็น</h3>
 <p>Dexter ไม่ได้เพียงรับคำสั่งแล้วทำตาม แต่มันจะ <strong>แตกปัญหาที่ซับซ้อน</strong> เป็นขั้นตอนการวิจัยที่เป็นระบบ เช่น ถ้าคุณถามว่า "บริษัท A น่าลงทุนไหม?" Dexter จะแตกคำถามนี้ออกเป็นหลายขั้นตอน:
-ดึงงบการเงินล่าสุด (Income Statement, Balance Sheet, Cash Flow)
+</p>
+<figure class="article-inline-image"><img src="/images/articles/dexter-financial-research-agent-inline3.png" alt="dexter-financial-research-agent" loading="lazy"><figcaption>dexter-financial-research-agent</figcaption></figure>
+<p>ดึงงบการเงินล่าสุด (Income Statement, Balance Sheet, Cash Flow)
 วิเคราะห์แนวโน้มรายได้และกำไร
 เปรียบเทียบกับคู่แข่งในอุตสาหกรรมเดียวกัน
 สรุปข้อดี-ข้อเสียในรูปแบบที่อ่านเข้าใจง่าย

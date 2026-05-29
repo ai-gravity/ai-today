@@ -52,14 +52,15 @@
 
     <div class="article-content">
 <h2>คำนำ</h2>
-<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline0.gif" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <p>เคยสงสัยไหมว่าทำไมบางที AI ที่คุณคุยด้วยทุกวัน กลับตอบคำถามได้แย่ลงเมื่อเวลาผ่านไป? คำตอบอาจไม่ใช่เพราะ AI โง่ลง แต่เพราะ <strong>ข้อมูลในสมองมันยุ่งเหยิงเกินไป</strong> — เหมือนคนที่ไม่เคยเก็บห้อง เลยหาของไม่เจอเวลาต้องการ แต่เดือนเมษายน 2026 บริษัท Letta (ผู้สร้าง MemGPT) ได้เปิดตัวแนวคิดที่ปฏิวัติวงการ AI Agent อย่างสมบูรณ์ — <strong>ให้ AI "หลับ" เพื่อจัดระเบียบความจำของตัวเอง</strong> ขณะเดียวกัน เฟรมเวิร์กยอดนิยมอย่าง LangChain และ LlamaIndex ก็ออกแบบระบบจัดการความจำ AI ที่ต่างแนวทางกันอย่างน่าสนใจ วันนี้เราจะมาเจาะลึกทั้งหมด
 </p>
+<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline0.gif" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <h2>แนวคิดใหม่: Sleep-Time Compute — AI "หลับ" เพื่อคิด</h2>
-<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline1.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <h3>ทำไม AI ต้อง "หลับ"?</h3>
 <p>ลองนึกภาพว่าคุณเป็นพนักงานบริการลูกค้าที่ต้องคุยกับคนเป็นสิบๆ คนต่อวัน ทุกคนมีคำถามต่างกัน ต้องการข้อมูลต่างกัน — คุณตอบได้ดีใช่ไหม? แต่ถ้าคุณต้อง <strong>จดบันทึกทุกคำคุย</strong> พร้อมกับ <strong>จัดหมวดหมู่ข้อมูล</strong> พร้อมกับ <strong>ตอบคำถาม</strong> ไปพร้อมๆ กันล่ะ? นั่นคือสิ่งที่ AI Agent ทุกตัวต้องเจอทุกวัน
-ทีม Letta จึงเสนอแนวคิดที่เรียกว่า <strong>"Sleep-Time Compute"</strong> — แยก AI Agent ออกเป็น 2 ตัว:
+</p>
+<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline1.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
+<p>ทีม Letta จึงเสนอแนวคิดที่เรียกว่า <strong>"Sleep-Time Compute"</strong> — แยก AI Agent ออกเป็น 2 ตัว:
 </p>
 <table><thead><tr><th>ตัว</th><th>หน้าที่</th><th>ทำอะไรได้บ้าง</th></tr></thead><tbody>
 <tr><td><strong>Primary Agent</strong></td><td>คุยกับเราเท่านั้น</td><td>ตอบคำถาม, เรียกใช้เครื่องมือ, ทำงานตามสั่ง — <strong>แต่ไม่มีสิทธิ์แก้ไขความจำตัวเอง</strong></td></tr>
@@ -74,10 +75,11 @@
 <strong>ดีขึ้นเรื่อยๆ</strong> — แม้เราไม่ได้คุยกับ AI ความจำมันก็ดีขึ้น เพราะ Sleep-Time Agent ทำงานอยู่เบื้องหลัง
 </p>
 <h2>MemFS — AI จัดระเบียบสมองเป็น "โฟลเดอร์" ได้เอง</h2>
-<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline2.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <h3>จาก Key-Value เป็น Filesystem</h3>
 <p>ก่อนหน้านี้ ระบบความจำ AI ส่วนใหญ่เก็บข้อมูลแบบ <strong>"แปะไว้"</strong> (key-value) — เหมือนเขียนโน้ตแปะกระดาน ไม่มีหมวดหมู่ ไม่มีโครงสร้าง
-Letta เปลี่ยนมาใช้ <strong>MemFS (Memory Filesystem)</strong> — เก็บความจำเป็น <strong>ไฟล์ Markdown ในโฟลเดอร์</strong> เหมือนระบบไฟล์ในคอมพิวเตอร์:
+</p>
+<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline2.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
+<p>Letta เปลี่ยนมาใช้ <strong>MemFS (Memory Filesystem)</strong> — เก็บความจำเป็น <strong>ไฟล์ Markdown ในโฟลเดอร์</strong> เหมือนระบบไฟล์ในคอมพิวเตอร์:
 </p>
 <pre><code>system/ ← อยู่ในสมองตลอดเวลา (เหมือนข้อมูลที่คุณจำขึ้นใจ)
 persona.md ← ตัวตนของ AI
@@ -103,9 +105,9 @@ reflections/ ← บันทึกการสะท้อนคิด</code></
 <strong>Defragmentation Skill</strong> — เหมือน "ทำความสะอาดห้อง" — รวมไฟล์ซ้ำ แบ่งไฟล์ใหญ่ จัดโครงสร้างใหม่
 </p>
 <h2>LangChain vs LlamaIndex: 2 เฟรมเวิร์กยอดนิยมจัดการความจำ AI ต่างกันอย่างไร?</h2>
-<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline3.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <p>นอกจาก Letta แล้ว ยังมีอีก 2 เฟรมเวิร์กที่นักพัฒนาทั่วโลกใช้สร้าง AI Agent — <strong>LangChain</strong> และ <strong>LlamaIndex</strong> — แต่ละตัวจัดการความจำต่างแนวทางกันอย่างสนใจ
 </p>
+<figure class="article-inline-image"><img src="/images/articles/ai-sleep-memory-organization-inline3.png" alt="ai-sleep-memory-organization" loading="lazy"><figcaption>ai-sleep-memory-organization</figcaption></figure>
 <h3>LangChain: จัดการความจำแบบ "ชั้น Middleware"</h3>
 <p>ลองนึกภาพว่ามี <strong>"พนักงานตรวจคัดกรอง"</strong> ยืนอยู่ระหว่างความจำกับ AI — ก่อนที่ AI จะได้เห็นข้อมูล พนักงานจะคัดกรองให้ก่อน:
 </p>
