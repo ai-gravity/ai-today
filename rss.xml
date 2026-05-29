@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Today Thailand</title>
+    <link>https://aitodaythailand.com</link>
+    <description>AI News in Thai and English, summarized daily — ข่าว AI ภาษาไทย สรุปเข้าใจง่าย อัปเดตทุกวัน</description>
+    <language>th</language>
+    <lastBuildDate>Mon, 25 May 2026 22:04:39 +0000</lastBuildDate>
+    <atom:link href="https://aitodaythailand.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://aitodaythailand.com/images/og-default.png</url>
+      <title>AI Today Thailand</title>
+      <link>https://aitodaythailand.com</link>
+    </image>
+    <item>
+      <title>Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง</title>
+      <link>https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html</link>
+      <description>ถ้าคุณเคยใช้ RAG (Retrieval-Augmented Generation) มาก่อน คงรู้จักปัญหานี้ดี — ถามคำถามง่ายๆ ได้คำตอบดี แต่พอถามอะไรที่ซับซ้อนหน่อย คำตอบก็เริ่ม &quot;เพี้ยน&quot; เหมือนรถที่ขับตรงมาตลอดแล้วจู่ๆ ต้องเลี้ยววกลับ</description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>เมื่อ AI วิจัย Alignment เก่งกว่ามนุษย์ — Anthropic พิสูจน์แล้วด้วย 9 Agents ทำงานขนาน</title>
+      <link>https://aitodaythailand.com/article/ai-researches-alignment-better-than-humans.html</link>
+      <description>## AI Safety ลองนึกภาพสักครู้ — คุณมีนักวิจัยระดับ top-tier 9 คน นั่งทำงานวิจัยด้าน AI alignment พร้อมกัน ไม่ต้องพัก ไม่ต้องนอน ไม่ต้องกินข้าว แถมผลงานยังดีกว่านักวิจัยมนุษย์เสียด้วยซ้ำ นั่นคือสิ่งที่</description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-researches-alignment-better-than-humans.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>เปิดความคิดลับของ Claude: เมื่อ Anthropic ถอดรหัสสมอง AI อ่านออกเป็นภาษาอังกฤษได้เป็นครั้งแรก</title>
+      <link>https://aitodaythailand.com/article/nla-claude-hidden-reasoning.html</link>
+      <description>คุณเคยสงสัยไหมว่าตอนที่ Claude &quot;คิด&quot; อะไรอยู่ข้างใน มันคิดอะไรบ้าง? chain-of-thought ที่เราเห็นบนหน้าจอ นั่นคือความคิดจริงของมัน หรือแค่การแสดงออกที่สวยหรู? คำตอบคือ — ไม่ใช่ Anthropic เพิ่งเปิดเผยงาน</description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/nla-claude-hidden-reasoning.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Agentic RAG: When Traditional RAG Isn&#x27;t Enough, Let the Agent Think</title>
+      <link>https://aitodaythailand.com/en/article/agentic-rag-autonomous-retrieval.html</link>
+      <description>If you have ever worked with RAG (Retrieval-Augmented Generation), you probably know this pain point all too well — simple questions get great answers, but the moment you ask something complex or mult</description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/agentic-rag-autonomous-retrieval.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>When AI Researches Alignment Better Than Humans — Anthropic&#x27;s 9 Parallel Agents Prove It</title>
+      <link>https://aitodaythailand.com/en/article/ai-researches-alignment-better-than-humans.html</link>
+      <description>## AI Safety Picture this for a moment — you have 9 top-tier researchers working on AI alignment simultaneously. They never need breaks, never sleep, never eat. And here&#x27;s the kicker: their output is </description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-researches-alignment-better-than-humans.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Cracking Open Claude&#x27;s Mind: How Anthropic Learned to Read AI&#x27;s Hidden Thoughts</title>
+      <link>https://aitodaythailand.com/en/article/nla-claude-hidden-reasoning.html</link>
+      <description>Here&#x27;s a question that should keep you up at night: when an AI model &quot;thinks,&quot; what is it actually thinking? The chain-of-thought reasoning you see on screen — is that the real internal monologue, or </description>
+      <pubDate>2026-05-25</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/nla-claude-hidden-reasoning.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>เมื่อ AI โต้แย้ง Conjecture อายุ 80 ปีของ Erdős ได้สำเร็จ — ทำไมนี่คือ Moment สำคัญของวงการคณิตศาสตร์</title>
+      <link>https://aitodaythailand.com/article/ai-math-breakthrough.html</link>
+      <description>ถ้าคุณตามข่าว AI อยู่ คุณอาจเคยได้ยินเรื่อง AI แต่งบทกลอน เขียนโค้ด หรือวาดรูป แต่ช่วงนี้มีเรื่องที่น่าตกใจกว่านั้นมาก — AI เพิ่งพิสูจน์ว่าข้อความคาดการณ์ของนักคณิตศาสตร์ระดับตำนาน Paul Erdős ที่ตั้งไ</description>
+      <pubDate>2026-05-24</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-math-breakthrough.html</guid>
+      <category>AI Research</category>
+    </item>
+    <item>
+      <title>When AI Disproved an 80-Year-Old Erdős Conjecture — Why This Matters Beyond Mathematics</title>
+      <link>https://aitodaythailand.com/en/article/ai-math-breakthrough.html</link>
+      <description>If you have been following AI news, you are probably used to hearing about AI writing poetry, generating code, or creating art. But something far more surprising happened recently: an AI model success</description>
+      <pubDate>2026-05-24</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-math-breakthrough.html</guid>
+      <category>AI Research</category>
+    </item>
+    <item>
+      <title>Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น — บทความจาก Hacker News ที่คนทำ AI ต้องอ่าน</title>
+      <link>https://aitodaythailand.com/article/agents-need-control-flow.html</link>
+      <description>เคยเขียนคำว่า &quot;MANDATORY&quot; หรือ &quot;DO NOT SKIP&quot; ไว้ใน prompt ไหม? ถ้าเคย ขอแสดงความยินดีด้วย คุณเพิ่งเจอขีดจำกัดของ prompting แล้ว บทความหนึ่งจาก Brian Suh ได้รับความนิยมถล่มทลายบน Hacker News ด้วย 586 p</description>
+      <pubDate>2026-05-23</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/agents-need-control-flow.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Agents Need Control Flow, Not More Prompts — Why Your Prompt Engineering Has Hit a Wall</title>
+      <link>https://aitodaythailand.com/en/article/agents-need-control-flow.html</link>
+      <description>Have you ever written &quot;MANDATORY&quot; or &quot;DO NOT SKIP THIS STEP&quot; in a system prompt? If you have, congratulations. You have hit the ceiling of what prompting can do for you. A recent essay by Brian Suh ex</description>
+      <pubDate>2026-05-23</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/agents-need-control-flow.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Anthropic ซื้อกิจการ Stainless เตรียมยกระดับ AI Agent ให้ทำงานได้จริงมากขึ้น</title>
+      <link>https://aitodaythailand.com/article/anthropic-acquires-stainless.html</link>
+      <description>ลองนึกภาพดูนะครับว่าถ้าเรามีพนักงานเก่งๆ คนหนึ่ง เขาฉลาด พูดจาดี แต่เขาไม่มีมือไม่มีเท้า และไม่สามารถเดินไปจับเอกสารบนโต๊ะของเราหรือเปิดคอมพิวเตอร์เพื่อทำงานได้เลย เขาจะมีประโยชน์มากแค่ไหน? คำตอบคือคง</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/anthropic-acquires-stainless.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>เอเจนต์ AI สำหรับภาคการเงิน: ปฏิวัติวงการการเงินด้วย Claude จาก Anthropic</title>
+      <link>https://aitodaythailand.com/article/anthropic-finance-agents.html</link>
+      <description>จินตนาการว่าคุณเป็นนักวิเคราะห์การเงินที่ต้องใช้เวลาทั้งสัปดาห์สร้างโมเดลทางการเงินและพรีเซนต์ให้ลูกค้า แต่ถ้าเล่าว่ามีเครื่องมือที่ช่วยทำงานพวกนี้ให้เสร็จภายในไม่กี่ชั่วโมงล่ะ? Anthropic เพิ่งปล่อยเอ</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/anthropic-finance-agents.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>แคลดสร้างภาพและกราฟแบบโต้ตอบได้ในการสนทนา</title>
+      <link>https://aitodaythailand.com/article/claude-builds-visuals.html</link>
+      <description>เคยคิดหรือไม่ว่าจะดีแค่ไหนถ้าเราพูดคุยกับ AI แล้วมันสามารถสร้างภาพหรือกราฟประกอบขึ้นมาให้เห็นภาพชัดเจนขึ้น และสามารถปรับเปลี่ยนได้ตามที่เราต้องการทันที นั่นคือสิ่งที่แคลด (Claude) กำลังทำให้เป็นจริงกั</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/claude-builds-visuals.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Claude Code บนเดสก์ท็อปได้รับการออกแบบใหม่ รองรับการทำงานแบบขนาน</title>
+      <link>https://aitodaythailand.com/article/claude-code-desktop-redesign.html</link>
+      <description>วันนี้เรามีข่าวดีสำหรับนักพัฒนาทุกคน เพราะ Claude Code บนเดสก์ท็อปได้รับการออกแบบใหม่ทั้งหมดเพื่อช่วยให้คุณสามารถรันงานหลายๆ อย่างพร้อมกันได้ ไม่ต้องรออีกต่อไป! ## ประสบการณ์ใหม่บนเดสก์ท็อปที่เปลี่ยนไ</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/claude-code-desktop-redesign.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>เหตุใด HTML จึงทำงานได้ดีกว่า Markdown ในยุค AI</title>
+      <link>https://aitodaythailand.com/article/claude-code-html-effectiveness.html</link>
+      <description>เคยเขียน Markdown แล้วรู้สึกว่ามันจำกัดไหม? ผมก็เคยเป็นเหมือนกัน จนกระทั่งเริ่มใช้ HTML กับ AI แล้วชีวิตเปลี่ยนไปเลย เมื่อไม่นานมานี้ ทีมงาน Claude Code ที่ผมเป็นส่วนหนึ่งก็ได้เปลี่ยนมาใช้ HTML แทน Ma</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/claude-code-html-effectiveness.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Anthropic Buys Stainless: A Major Move for AI Agent Connectivity</title>
+      <link>https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html</link>
+      <description>The AI world just got a shake-up. Anthropic, the company behind Claude, has acquired Stainless—a move that signals where the industry is heading next. This isn&#x27;t just another corporate acquisition. It</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Claude&#x27;s New Financial Agents: Transforming How Finance Teams Work</title>
+      <link>https://aitodaythailand.com/en/article/anthropic-finance-agents.html</link>
+      <description>Anthropic just announced a game-changing update for financial services professionals. They&#x27;ve launched ten ready-to-use AI agent templates designed to tackle the most time-consuming tasks in finance—f</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/anthropic-finance-agents.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Claude&#x27;s New Superpower: Interactive Visuals Right in Your Chat</title>
+      <link>https://aitodaythailand.com/en/article/claude-builds-visuals.html</link>
+      <description>Remember the days when explaining complex concepts required words and more words? Sometimes a picture really is worth a thousand words, and now, Claude gets that too. The AI assistant has leveled up i</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/claude-builds-visuals.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>The New Claude Code Desktop: Your Ultimate Multi-Tasking Development Companion</title>
+      <link>https://aitodaythailand.com/en/article/claude-code-desktop-redesign.html</link>
+      <description>Remember when coding with AI meant typing one prompt and waiting patiently? Those days are officially behind us. Today&#x27;s developers are juggling multiple tasks simultaneously - refactoring one repo, f</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/claude-code-desktop-redesign.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>The Hidden Power of HTML: Why Claude Code Developers Are Moving Beyond Markdown</title>
+      <link>https://aitodaythailand.com/en/article/claude-code-html-effectiveness.html</link>
+      <description>If you&#x27;ve been working with AI coding assistants, you&#x27;ve probably noticed that Markdown has become the go-to format for everything from documentation to code explanations. It&#x27;s simple, portable, and g</description>
+      <pubDate>2026-05-21</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/claude-code-html-effectiveness.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Claude.ai ล่มกลางวัน — บทเรียนสำคัญว่าทำไมเราไม่ควรพึ่ง AI แค่บริษัทเดียว</title>
+      <link>https://aitodaythailand.com/article/claude-downtime-ai-reliability.html</link>
+      <description>## คำนำ เมื่อไม่นานมานี้ **Claude.ai** ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker News จนกระทั่งมีคนโพสต์ถึง 35 คอมเมนต์</description>
+      <pubDate>2026-05-17</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/claude-downtime-ai-reliability.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Claude.ai Crashes During the Day — Important Lessons on Why We Shouldn&#x27;t Depend on a Single AI Company</title>
+      <link>https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html</link>
+      <description>## Introduction Recently, **Claude.ai**&#x27;s website and API went down simultaneously — not just for a couple of minutes, but long enough that many users rushed to report the issue on Hacker News, with s</description>
+      <pubDate>2026-05-17</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>3 ข่าวใหญ่ที่พิสูจน์ว่า AI ไม่ใช่แค่เทรนด์ — แต่คือโครงสร้างใหม่ของโลกเทคโนโลยี</title>
+      <link>https://aitodaythailand.com/article/anthropic-enterprise-apple-xcode-ai-rd-2028.html</link>
+      <description>## คำนำ เดือนพฤษภาคม 2026 มีข่าวสำคัญ 3 เรื่องที่เกิดขึ้นพร้อมกัน และแต่ละเรื่องสะท้อนแนวโน้มที่ต่างกันแต่เชื่อมโยงกันอย่างน่าสนใจ — Anthropic ร่วมมือกับกลุ่มบริษัทการเงินยักษ์ใหญ่สร้างบริษัทใหม่เพื่อ</description>
+      <pubDate>2026-05-13</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/anthropic-enterprise-apple-xcode-ai-rd-2028.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>AI เขียนโค้ดได้เก่งขึ้นทุกวัน — Claude ตื่นขึ้นมา &quot;ฝัน&quot; แล้วแก้บั๊กเอง, DeepSeek มีเครื่องมือใหม่ที่เขียนโค้ดใน Terminal ได้จบ</title>
+      <link>https://aitodaythailand.com/article/claude-dreaming-multiagent-deepseek-tui.html</link>
+      <description>## คำนำ ถ้าคุณเป็นโปรแกรมเมอร์ น่าจะเคยได้ยินว่า AI เขียนโค้ดได้แล้ว — แต่เดือนพฤษภาคม 2026 มีข่าว 2 เรื่องที่พิสูจน์ว่า AI Coding ไม่ได้แค่ &quot;เสริม&quot; มนุษย์แล้ว แต่เริ่มทำงานได้ด้วยตัวเองแบบ end-to-end</description>
+      <pubDate>2026-05-13</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/claude-dreaming-multiagent-deepseek-tui.html</guid>
+      <category>LLM &amp; Models</category>
+    </item>
+    <item>
+      <title>3 Major News Stories That Prove AI Isn&#x27;t Just a Trend — But a New Technology Infrastructure</title>
+      <link>https://aitodaythailand.com/en/article/anthropic-enterprise-apple-xcode-ai-rd-2028.html</link>
+      <description>## Introduction In May 2026, three significant news stories emerged simultaneously, each reflecting different but intriguingly connected trends — Anthropic partnered with giant financial corporations </description>
+      <pubDate>2026-05-13</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/anthropic-enterprise-apple-xcode-ai-rd-2028.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>AI is Getting Better at Coding Every Day — Claude &quot;Dreams&quot; to Fix Bugs on Its Own, DeepSeek Launches New Tool That Can Write Code in Terminal</title>
+      <link>https://aitodaythailand.com/en/article/claude-dreaming-multiagent-deepseek-tui.html</link>
+      <description>## Introduction If you&#x27;re a programmer, you&#x27;ve probably heard that AI can write code — but in May 2026, two news stories proved that AI coding isn&#x27;t just &quot;assisting&quot; humans anymore but is starting to </description>
+      <pubDate>2026-05-13</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/claude-dreaming-multiagent-deepseek-tui.html</guid>
+      <category>LLM &amp; Models</category>
+    </item>
+    <item>
+      <title>AI จำแบบไหนดีกว่า? &quot;ลืมต้นฉบับแล้วสรุป&quot; หรือ &quot;เก็บทั้งหมดแล้วค้นหาฉลาดๆ&quot; — 2 งานวิจัยใหม่ที่ให้คำตอบ</title>
+      <link>https://aitodaythailand.com/article/ai-memory-two-approaches.html</link>
+      <description>## คำนำ ถ้าคุณใช้ ChatGPT หรือ Claude มาสักพัก คงเคยสังเกตเห็นว่า AI มีระบบ &quot;ความจำ&quot; ใหม่ๆ ออกมาเรื่อยๆ แต่รู้ไหมครับว่า **วิธีที่ AI จดจำข้อมูล** มีอยู่ 2 ค่ายใหญ่ๆ ที่ต่างคนต่างเชื่อว่าตัวเองถูก? — </description>
+      <pubDate>2026-05-12</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-memory-two-approaches.html</guid>
+      <category>Memory &amp; RAG</category>
+    </item>
+    <item>
+      <title>Which AI memory is better? &quot;Summarize and forget the original&quot; or &quot;Keep everything and search intelligently&quot; — 2 new studies provide answers</title>
+      <link>https://aitodaythailand.com/en/article/ai-memory-two-approaches.html</link>
+      <description>## Introduction If you&#x27;ve been using ChatGPT or Claude for a while, you&#x27;ve probably noticed that AI systems keep getting new &quot;memory&quot; capabilities. But did you know that **how AI remembers information</description>
+      <pubDate>2026-05-12</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-memory-two-approaches.html</guid>
+      <category>Memory &amp; RAG</category>
+    </item>
+    <item>
+      <title>AI Coding มี &quot;คู่แข่งใหม่&quot; ที่เอาชนะ Claude Code ได้ และ &quot;ทักษะใหม่&quot; ที่ทำให้ Claude เก่งขึ้น 10 เท่า — 2 เทคโนโลยีที่นักพัฒนาต้องรู้</title>
+      <link>https://aitodaythailand.com/article/lcm-lossless-context-skills-framework.html</link>
+      <description>## คำนำ ถ้าคุณเป็นคนหนึ่งที่ใช้ Claude Code ช่วยเขียนโค้ด คุณอาจเคยเจอปัญหาที่ว่าพอโปรเจคใหญ่ขึ้น AI เริ่ม &quot;ลืม&quot; โค้ดที่เขียนไปแล้ว หรือสรุปข้อมูลเก่าแบบ &quot;สูญเสียรายละเอียด&quot; ไปบ้าง — แต่ตอนนี้มีสถาปัต</description>
+      <pubDate>2026-05-11</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/lcm-lossless-context-skills-framework.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>MCP โตขึ้นแล้ว! 3 ข่าวใหม่ที่พิสูจน์ว่า &quot;มาตรฐานใหม่ของ AI Agent&quot; มาถึงจริงแล้ว</title>
+      <link>https://aitodaythailand.com/article/mcp-ecosystem-growth.html</link>
+      <description>## คำนำ ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินชื่อ **MCP (Model Context Protocol)** — มาตรฐานเปิดที่ทำให้ AI Agent เชื่อมต่อกับเครื่องมือต่างๆ ได้ เหมือน USB port สำหรับ AI แต่หลายคนยังสงสัยว่า &quot;MCP จะ</description>
+      <pubDate>2026-05-11</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/mcp-ecosystem-growth.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>AI Coding Has a &quot;New Competitor&quot; That Beats Claude Code, and &quot;New Skills&quot; That Make Claude 10x Better — 2 Technologies Developers Must Know</title>
+      <link>https://aitodaythailand.com/en/article/lcm-lossless-context-skills-framework.html</link>
+      <description>## Introduction If you&#x27;re someone who uses Claude Code to help write code, you might have encountered the problem that when projects get larger, the AI starts to &quot;forget&quot; previously written code, or s</description>
+      <pubDate>2026-05-11</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/lcm-lossless-context-skills-framework.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>MCP is Growing! 3 New Stories That Prove the &quot;New Standard for AI Agents&quot; Has Truly Arrived</title>
+      <link>https://aitodaythailand.com/en/article/mcp-ecosystem-growth.html</link>
+      <description>## Introduction If you&#x27;ve been following AI news for a while, you&#x27;ve probably heard of **MCP (Model Context Protocol)**—the open standard that enables AI agents to connect with various tools, like USB</description>
+      <pubDate>2026-05-11</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/mcp-ecosystem-growth.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>MCP จะขึ้น Production ได้ ต้องปลอดภัยก่อน — 2 เครื่องมือใหม่ที่ตอบโจทย์นี้ได้ดีที่สุด</title>
+      <link>https://aitodaythailand.com/article/mcp-security-mcpnest-bluerock.html</link>
+      <description>## คำนำ ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินคำว่า MCP (Model Context Protocol) หรือ &quot;มาตรฐานสื่อสารของ AI&quot; — มันคือภาษากลางที่ทำให้ AI Agent สามารถเชื่อมต่อกับเครื่องมือและข้อมูลต่างๆ ได้ เหมือน USB </description>
+      <pubDate>2026-05-10</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/mcp-security-mcpnest-bluerock.html</guid>
+      <category>AI Security</category>
+    </item>
+    <item>
+      <title>AI วิจัยการเงินแทนคุณได้แล้ว — เปิด Dexter ตัวแรกที่คิด วางแผน และเรียนรู้ด้วยตัวเอง</title>
+      <link>https://aitodaythailand.com/article/dexter-financial-research-agent.html</link>
+      <description>## คำนำ ลองนึกภาพว่าคุณต้องการวิเคราะห์บริษัทจดทะเบียนแห่งหนึ่งก่อนตัดสินใจลงทุน — คุณต้องไปหางบการเงิน ดูรายได้ ตรวจกระแสเงินสด อ่านรายงานวิเคราะห์ และเทียบกับคู่แข่ง งานนี้อาจใช้เวลาหลายวัน แต่ตอนนี</description>
+      <pubDate>2026-05-10</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/dexter-financial-research-agent.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>For MCP to Go to Production, It Must Be Secure First — 2 New Tools That Best Address This Need</title>
+      <link>https://aitodaythailand.com/en/article/mcp-security-mcpnest-bluerock.html</link>
+      <description>## Introduction If you&#x27;ve been following AI news for a while, you&#x27;ve probably heard of MCP (Model Context Protocol) or the &quot;AI communication standard&quot; — it&#x27;s the universal language that enables AI age</description>
+      <pubDate>2026-05-10</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/mcp-security-mcpnest-bluerock.html</guid>
+      <category>AI Security</category>
+    </item>
+    <item>
+      <title>AI Can Now Do Financial Research For You — Meet Dexter, the First AI That Thinks, Plans, and Learns by Itself</title>
+      <link>https://aitodaythailand.com/en/article/dexter-financial-research-agent.html</link>
+      <description>## Introduction Imagine you want to analyze a publicly listed company before deciding to invest — you need to find financial statements, check revenue, examine cash flow, read analyst reports, and com</description>
+      <pubDate>2026-05-10</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/dexter-financial-research-agent.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>2 เครื่องมือ AI ใหม่ที่น่าจับตา — ตัวจัดการ AI Agent ในเครื่องคุณ และโมเดลสร้างวิดีโอจากข้อความที่โด่งดังที่สุดบน HuggingFace</title>
+      <link>https://aitodaythailand.com/article/armorer-sulphur2-new-ai-tools.html</link>
+      <description>## คำนำ สัปดาห์นี้มีเครื่องมือ AI ใหม่ 2 ตัวที่น่าสนใจมาก แม้จะทำงานต่างสายกัน — ตัวแรกคือ **Armorer** เครื่องมือ open-source ที่ช่วยจัดการ AI Agent หลายตัวในเครื่องคุณแบบปลอดภัย (รันใน Docker sandbox</description>
+      <pubDate>2026-05-09</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/armorer-sulphur2-new-ai-tools.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>2 New AI Tools to Watch — AI Agent Manager on Your Machine and the Most Popular Text-to-Video Model on HuggingFace</title>
+      <link>https://aitodaythailand.com/en/article/armorer-sulphur2-new-ai-tools.html</link>
+      <description>## Introduction This week, there are 2 very interesting new AI tools, although they work in different domains — the first is **Armorer**, an open-source tool that helps manage multiple AI agents on yo</description>
+      <pubDate>2026-05-09</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/armorer-sulphur2-new-ai-tools.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>ทำไม AI Agent ถึงต้องมี &quot;ระบบควบคุม&quot; ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด</title>
+      <link>https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html</link>
+      <description>## คำนำ ทุกวันนี้เราได้ยินคำว่า &quot;AI Agent&quot; กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตัดสินใจ แต่ปัญหาที่หลายคนมองข้ามคือ: **จะคว</description>
+      <pubDate>2026-05-08</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>วิกฤตขาดแคลน RAM อาจยาวนานถึงปี 2030 — ส่งผลกระทบ AI, มือถือ, แล็ปท็อป และทุกอุปกรณ์ที่คุณใช้</title>
+      <link>https://aitodaythailand.com/article/ram-shortage-crisis.html</link>
+      <description>## คำนำ ถ้าคุณรู้สึกว่าราคาแล็ปท็อป มือถือ หรืออุปกรณ์อิเล็กทรอนิกส์ในช่วงหลังแพงขึ้น อาจไม่ใช่เรื่องบังเอิญ — เพราะโลกกำลังเผชิญ **&quot;วิกฤตขาดแคลนหน่วยความจำ (RAM)&quot;** ที่อาจยาวนานอีกหลายปี จากรายงานของ</description>
+      <pubDate>2026-05-08</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ram-shortage-crisis.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Why AI Agents Need &quot;Control Systems&quot; Not Just Longer and Longer Prompts — And How to Smartly Divide Tasks Between Humans and AI</title>
+      <link>https://aitodaythailand.com/en/article/ai-agent-control-flow-haas-framework.html</link>
+      <description>## Introduction Nowadays we hear the term &quot;AI Agent&quot; more and more often — AI that doesn&#x27;t just answer questions but can perform multi-step tasks by itself, from searching information and analyzing to</description>
+      <pubDate>2026-05-08</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-agent-control-flow-haas-framework.html</guid>
+      <category>AI Agents</category>
+    </item>
+    <item>
+      <title>RAM Shortage Crisis Could Last Until 2030 — Affecting AI, Mobile Phones, Laptops, and Every Device You Use</title>
+      <link>https://aitodaythailand.com/en/article/ram-shortage-crisis.html</link>
+      <description>## Introduction If you&#x27;ve noticed that laptops, mobile phones, or electronic devices have become more expensive recently, it&#x27;s not a coincidence — the world is facing a **&quot;RAM shortage crisis&quot;** that </description>
+      <pubDate>2026-05-08</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ram-shortage-crisis.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>Anthropic ประกาศ &quot;หัวใจใหม่&quot; ของ AI Agent — Multi-Agent, Dreaming, Routines + เครื่องมือใหม่ที่ต้องจับตา</title>
+      <link>https://aitodaythailand.com/article/anthropic-claude-2026-deepseek-tui.html</link>
+      <description>## คำนำ วันที่ 6 พฤษภาคม 2026 ถือเป็นวันสำคัญอีกวันของวงการ AI เพราะ Anthropic บริษัทเจ้าของ Claude จัดงาน &quot;Code w/ Claude 2026&quot; และประกาศฟีเจอร์ใหม่หลายตัวที่เปลี่ยนวิธีทำงานของ AI Agent ไปทั้งหมด — </description>
+      <pubDate>2026-05-07</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/anthropic-claude-2026-deepseek-tui.html</guid>
+      <category>LLM &amp; Models</category>
+    </item>
+    <item>
+      <title>3 เครื่องมือใหม่ที่ทำให้ AI Agent ทำงานได้จริงบน Production — ปลอดภัย ควบคุมได้ และทรงพลัง</title>
+      <link>https://aitodaythailand.com/article/ai-agent-infrastructure-tilde-ruflo-browsermcp.html</link>
+      <description>## คำนำ ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินคำว่า &quot;AI Agent&quot; หรือ &quot;เอเจนต์ AI&quot; กันบ่อยๆ — แต่ปัญหาคือ AI Agent ส่วนใหญ่ยังทำงานอยู่แค่ในห้องทดลอง ยังไม่กล้าปล่อยออกมาทำงานจริงบนระบบ production เพราะก</description>
+      <pubDate>2026-05-07</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-agent-infrastructure-tilde-ruflo-browsermcp.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>Anthropic Announces the &quot;New Heart&quot; of AI Agent — Multi-Agent, Dreaming, Routines + New Tools to Watch</title>
+      <link>https://aitodaythailand.com/en/article/anthropic-claude-2026-deepseek-tui.html</link>
+      <description>## Introduction May 6, 2026, marks another important day for the AI industry as Anthropic, the company behind Claude, hosted the &quot;Code w/ Claude 2026&quot; event and announced multiple new features that co</description>
+      <pubDate>2026-05-07</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/anthropic-claude-2026-deepseek-tui.html</guid>
+      <category>LLM &amp; Models</category>
+    </item>
+    <item>
+      <title>3 New Tools That Make AI Agents Actually Work in Production — Secure, Controllable, and Powerful</title>
+      <link>https://aitodaythailand.com/en/article/ai-agent-infrastructure-tilde-ruflo-browsermcp.html</link>
+      <description>## Introduction If you&#x27;ve been following AI news for a while, you&#x27;ve probably heard the term &quot;AI Agent&quot; frequently — but the problem is that most AI agents are still just working in labs. Companies ar</description>
+      <pubDate>2026-05-07</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-agent-infrastructure-tilde-ruflo-browsermcp.html</guid>
+      <category>AI Tools</category>
+    </item>
+    <item>
+      <title>สัปดาห์ที่ AI เขย่าโลก — Amazon เปิดให้พนักงานทุกคนใช้ AI Coding, Startup AI ด้านบริการลูกค้าระดมทุนพันล้าน, และแอปใหม่ที่ให้คนกับ AI แชทร่วมกันในกลุ่ม</title>
+      <link>https://aitodaythailand.com/article/ai-news-amazon-sierra-shapes.html</link>
+      <description>## คำนำ เดือนพฤษภาคม 2026 น่าจะเป็นช่วงเวลาที่น่าจดจำสำหรับโลก AI เพราะมีข่าวใหญ่ 3 เรื่องเกิดขึ้นพร้อมกัน — Amazon บริษัทยักษ์ใหญ่แห่งวงการเทคโนโลยีประกาศเปิดให้พนักงานทุกคนใช้เครื่องมือเขียนโค้ด AI </description>
+      <pubDate>2026-05-06</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-news-amazon-sierra-shapes.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>The Week AI Shook the World — Amazon Lets All Employees Use AI Coding, AI Customer Service Startup Raises Hundreds of Millions, and New App Lets Humans and AI Chat Together in Groups</title>
+      <link>https://aitodaythailand.com/en/article/ai-news-amazon-sierra-shapes.html</link>
+      <description>## Introduction May 2026 is likely to be a memorable time for the AI world, with three major news stories happening simultaneously — Amazon, the technology giant, officially announced that all employe</description>
+      <pubDate>2026-05-06</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-news-amazon-sierra-shapes.html</guid>
+      <category>Industry</category>
+    </item>
+    <item>
+      <title>AI ที่ &quot;คิดตอนหลับ&quot; และจัดระเบียบสมองตัวเองได้ — เปิดเทคโนโลยีล่าสุดจาก Letta ที่เปลี่ยนวิธีทำงานของ AI Agent ตลอดกาล</title>
+      <link>https://aitodaythailand.com/article/ai-sleep-memory-organization.html</link>
+      <description>## คำนำ เคยสงสัยไหมว่าทำไมบางที AI ที่คุณคุยด้วยทุกวัน กลับตอบคำถามได้แย่ลงเมื่อเวลาผ่านไป? คำตอบอาจไม่ใช่เพราะ AI โง่ลง แต่เพราะ **ข้อมูลในสมองมันยุ่งเหยิงเกินไป** — เหมือนคนที่ไม่เคยเก็บห้อง เลยหาขอ</description>
+      <pubDate>2026-05-05</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/article/ai-sleep-memory-organization.html</guid>
+      <category>Memory &amp; RAG</category>
+    </item>
+    <item>
+      <title>AI that &quot;Thinks While Sleeping&quot; and Can Organize Its Own Brain — Revealing Letta&#x27;s Latest Technology That Forever Changes How AI Agents Work</title>
+      <link>https://aitodaythailand.com/en/article/ai-sleep-memory-organization.html</link>
+      <description>## Introduction Ever wondered why sometimes the AI you chat with every day seems to get worse at answering questions as time passes? The answer might not be that the AI is getting dumber, but because </description>
+      <pubDate>2026-05-05</pubDate>
+      <guid isPermaLink="true">https://aitodaythailand.com/en/article/ai-sleep-memory-organization.html</guid>
+      <category>Memory &amp; RAG</category>
+    </item>
+  </channel>
+</rss>

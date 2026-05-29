@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วิธีการทำงานของ Claude Code ในโค้ดเบสขนาดใหญ่: แนวทางปฏิบัติที่ดีที่สุดและจุดเริ่มต้น — AI Today Thailand</title>
+  <meta name="description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <link rel="canonical" href="https://aitodaythailand.com/article/claude-downtime-ai-reliability.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="วิธีการทำงานของ Claude Code ในโค้ดเบสขนาดใหญ่: แนวทางปฏิบัติที่ดีที่สุดและจุดเริ่มต้น">
+  <meta property="og:description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/claude-downtime-ai-reliability.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-17">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="วิธีการทำงานของ Claude Code ในโค้ดเบสขนาดใหญ่: แนวทางปฏิบัติที่ดีที่สุดและจุดเริ่มต้น">
+  <meta name="twitter:description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "วิธีการทำงานของ Claude Code ในโค้ดเบสขนาดใหญ่: แนวทางปฏิบัติที่ดีที่สุดและจุดเริ่มต้น", "description": "เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker", "url": "https://aitodaythailand.com/article/claude-downtime-ai-reliability.html", "image": "https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg", "datePublished": "2026-05-17", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/claude-downtime-ai-reliability.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>วิธีการทำงานของ Claude Code ในโค้ดเบสขนาดใหญ่: แนวทางปฏิบัติที่ดีที่สุดและจุดเริ่มต้น</h1>
+    <div class="article-meta">
+      <span>2026-05-17</span>
+      <span>·</span>
+      <span>~1 นาที</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/claude-downtime-ai-reliability.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<p>Claude Code กำลังถูกนำไปใช้งานในระบบ production กับโค้ดเบสขนาดใหญ่มากมาย ตั้งแต่ monorepos ที่มีโค้ดหลายล้านบรรทัด ระบบ legacy ที่เก่าแก่หลายสิบปี สถาปัตยกรรมแบบ distributed ที่กระจายอยู่ใน repositories จำนวนมาก ไปจนถึงองค์กรที่มีนักพัฒนาหลายพันคน สภาพแวดล้อมเหล่านี้มีความท้าทายที่โค้ดเบสเล็กและง่ายกว่าไม่มี ไม่ว่าจะเป็นคำสั่ง build ที่แตกต่างกันในแต่ละ subdirectory หรือ legacy code ที่กระจัดกระจายอยู่ในโฟลเดอร์ต่างๆ โดยไม่มี root ร่วมกัน
+บทความนี้จะกล่าวถึงรูปแบบที่เราสังเกตเห็นว่านำไปสู่การนำ Claude Code ไปใช้ในวงกว้างได้สำเร็จ เราใช้คำว่า "โค้ดเบสขนาดใหญ่" เพื่อหมายถึงการใช้งานหลากหลายรูปแบบ: monorepos ที่มีโค้ดหลายล้านบรรทัด, legacy systems ที่สร้างขึ้นมาหลายทศวรรษ, microservices จำนวนมากใน repositories แยกกัน หรือการผสมผสานของทั้งหมดนี้ ซึ่งรวมถึงโค้ดเบสที่ทำงานบนภาษาที่ทีมงานไม่ได้คาดคิดว่าจะใช้กับเครื่องมือ coding AI เช่น C, C++, C#, Java, PHP (Claude Code ทำงานได้ดีกว่าที่ทีมงานส่วนใหญ่คาดคิดในกรณีเหล่านี้ โดยเฉพาะในโมเดลรุ่นล่าสุด)
+</p>
+<h2>วิธีการนำทางโค้ดเบสขนาดใหญ่ของ Claude Code</h2>
+<p>Claude Code นำทางโค้ดเบสเช่นเดียวกับวิศวกรซอฟต์แวร์: มันสำรวจระบบไฟล์, อ่านไฟล์, ใช้ grep เพื่อค้นหาสิ่งที่ต้องการอย่างแม่นยำ และติดตามการอ้างอิงต่างๆ ในโค้ดเบส มันทำงานในเครื่องของนักพัฒนาโดยตรงและไม่ต้องการการสร้าง index ของโค้ดเบส การบำรุงรักษา หรือการอัปโหลดไปยังเซิร์ฟเวอร์
+เครื่องมือ AI coding ที่ใช้ RAG ทำงานโดยการฝัง (embed) ทั้งโค้ดเบสและดึงข้อมูลที่เกี่ยวข้องเมื่อมีการค้นหา ในระดับขนาดใหญ่ ระบบเหล่านี้อาจล้มเหลวได้ เนื่องจาก embedding pipeline ไม่สามารถตามทีมงานที่ทำงานอย่างแข็งขันได้ ณ เวลาที่นักพัฒนาค้นหาใน index ข้อมูลอาจสะท้อนถึงสถานะของโค้ดเบสในอดีต ไม่ว่าจะเป็นสัปดาห์ วัน หรือแม้กระทั่งชั่วโมงก่อน การดึงข้อมูลจึงอาจส่งคืนฟังก์ชันที่ทีมงานเปลี่ยนชื่อไปสองสัปดาห์ก่อน หรืออ้างอิงถึงโมดูลที่ถูกลบไปใน sprint ล่าสุด โดยไม่มีการบอกว่าข้อมูลเหล่านี้ล้าสมัยแล้ว
+การค้นหาแบบ agentic ช่วยหลีกเลี่ยงปัญหาเหล่านี้ ไม่มี embedding pipeline หรือ index กลางที่ต้องบำรุงรักษาเมื่อวิศวกรหลายพันคน commit โค้ดใหม่ อินสแตนซ์ของแต่ละนักพัฒนาทำงานจากโค้ดเบสแบบเรียลไทม์ แต่วิธีนี้มีข้อแลกเปลี่ยน: มันทำงานได้ดีที่สุดเมื่อ Claude มี context เริ่มต้นเพียงพอที่จะรู้ว่าจะมองหาอะไรที่ไหน ซึ่งหมายความว่าคุณภาพของการนำทางของ Claude ขึ้นอยู่กับการตั้งค่าโค้ดเบสที่ดี การเพิ่ม context ด้วยไฟล์ CLAUDE.md และ skills หากคุณให้มันค้นหาอินสแตนซ์ทั้งหมดของ pattern ที่ไม่ชัดเจนในโค้ดเบสที่มีหลายพันล้านบรรทัด คุณจะเจอขีดจำกัดของ context-window ก่อนที่งานจะเริ่มต้น ทีมงานที่ลงทุนในการตั้งค่าโค้ดเบสจะได้ผลลัพธ์ที่ดีกว่า
+</p>
+<h2>ความสำคัญของ Harness</h2>
+<p>หนึ่งในความเข้าใจผิดที่พบบ่อยที่สุดเกี่ยวกับ Claude Code คือการคิดว่าความสามารถของมันถูกกำหนดโดยโมเดลที่ใช้เพียงอย่างเดียว ทีมงานมักจะมุ่งเน้นไปที่ benchmarks ของโมเดลและวิธีที่มันทำงานในงานทดสอบ ในความเป็นจริง ระบบนิเวศที่สร้างรอบๆ โมเดลนั่นคือ "harness" ที่กำหนดประสิทธิภาพของ Claude Code มากกว่าโมเดลเพียงอย่างเดียว
+Harness ถูกสร้างขึ้นจากจุดขยายห้าประการ—ไฟล์ CLAUDE.md, hooks, skills, plugins, และ MCP servers—แต่ละอันมีฟังก์ชันที่แตกต่างกัน ลำดับการสร้างของทีมงานสำคัญ เนื่องจากแต่ละเลเยอร์จะสร้างบนสิ่งที่มาก่อนหน้านี้ ความสามารถเพิ่มเติมสองประการคือ LSP integrations และ subagents จะช่วยให้การตั้งค่าสมบูรณ์พร้อม
+</p>
+<table><thead><tr><th>องค์ประกอบ</th><th>หน้าที่หลัก</th><th>ความสำคัญในโค้ดเบสขนาดใหญ่</th></tr></thead><tbody>
+<tr><td>CLAUDE.md</td><td>ไฟล์บริบทที่ Claude อ่านโดยอัตโนมัติ</td><td>ให้ข้อมูลทั่วไปเกี่ยวกับโค้ดเบส</td></tr>
+<tr><td>Hooks</td><td>สคริปต์ที่ทำงานก่อน/หลังเซสชัน</td><td>ทำให้การตั้งค่าปรับปรุงตนเองได้</td></tr>
+<tr><td>Skills</td><td>ความเชี่ยวชาญเฉพาะทางที่โหลดตามต้องการ</td><td>ประหยัดพื้นที่ context</td></tr>
+<tr><td>Plugins</td><td>แพ็คเกจติดตั้งที่กระจายสิ่งที่ใช้ได้</td><td>แชร์การตั้งค่าที่ดีให้ทั่วองค์กร</td></tr>
+<tr><td>MCP servers</td><td>เชื่อมต่อกับเครื่องมือภายใน</td><td>ขยายความสามารถไปยังระบบภายใน</td></tr>
+<tr><td>LSP</td><td>การนำทางระดับสัญลักษณ์</td><td>เพิ่มความแม่นยำในโค้ดหลายภาษา</td></tr>
+</tbody></table>
+<h2>องค์ประกอบหลักของ Harness</h2>
+<p>ไฟล์ CLAUDE.md มาก่อนเสมอ นี่คือไฟล์บริบทที่ Claude อ่านโดยอัตโนมัติที่ต้นเซสชันทุกครั้ง: ไฟล์ root สำหรับภาพรวมใหญ่ ไฟล์ subdirectory สำหรับแบบแผนท้องถิ่น พวกนี้ให้ความรู้เกี่ยวกับโค้ดเบสที่ Claude ต้องการเพื่อทำงานได้ดี เนื่องจากพวกนี้โหลดในทุกเซสชันโดยไม่คำนึงถึงงาน การเก็บให้เน้นที่สิ่งที่ใช้ได้กว้างๆ จะช่วยป้องกันไม่ให้พวกนี้ทำให้ประสิทธิภาพลดลง
+Hooks ทำให้การตั้งค่าปรับปรุงตนเองได้ ทีมงานส่วนใหญ่คิดว่า hooks เป็นสคริปต์ที่ป้องกันไม่ให้
+แหล่งอ้างอิง: https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start" target="_blank" rel="noopener noreferrer">https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-...</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

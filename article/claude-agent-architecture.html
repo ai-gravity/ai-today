@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า — AI Today Thailand</title>
+  <meta name="description" content="หลายคนที่เคยใช้ Claude คงสงสัยว่า &quot;ทำไมมันดูฉลาดกว่า AI ตัวอื่น?&quot; ความลับไม่ได้อยู่แค่ที่โมเดล แต่อยู่ที่ สถาปัตยกรรมการจัดการหน่วยความจำ และ วิธีฝึกใ">
+  <link rel="canonical" href="https://aitodaythailand.com/article/claude-agent-architecture.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า">
+  <meta property="og:description" content="หลายคนที่เคยใช้ Claude คงสงสัยว่า &quot;ทำไมมันดูฉลาดกว่า AI ตัวอื่น?&quot; ความลับไม่ได้อยู่แค่ที่โมเดล แต่อยู่ที่ สถาปัตยกรรมการจัดการหน่วยความจำ และ วิธีฝึกใ">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/claude-agent-architecture.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/claude-agent-architecture.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-04-29">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า">
+  <meta name="twitter:description" content="หลายคนที่เคยใช้ Claude คงสงสัยว่า &quot;ทำไมมันดูฉลาดกว่า AI ตัวอื่น?&quot; ความลับไม่ได้อยู่แค่ที่โมเดล แต่อยู่ที่ สถาปัตยกรรมการจัดการหน่วยความจำ และ วิธีฝึกใ">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/claude-agent-architecture.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า", "description": "หลายคนที่เคยใช้ Claude คงสงสัยว่า &quot;ทำไมมันดูฉลาดกว่า AI ตัวอื่น?&quot; ความลับไม่ได้อยู่แค่ที่โมเดล แต่อยู่ที่ สถาปัตยกรรมการจัดการหน่วยความจำ และ วิธีฝึกใ", "url": "https://aitodaythailand.com/article/claude-agent-architecture.html", "image": "https://aitodaythailand.com/images/articles/claude-agent-architecture.jpg", "datePublished": "2026-04-29", "dateModified": "2026-04-29", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/claude-agent-architecture.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#d97757;border-color:#d9775740">LLM &amp; Models</span>
+    <h1>AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า</h1>
+    <div class="article-meta">
+      <span>2026-04-29</span>
+      <span>·</span>
+      <span>~2 นาที</span>
+      <span>·</span>
+      <span>LLM &amp; Models</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/claude-agent-architecture.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<h2>คำนำ</h2>
+<p>เคยสงสัยไหมว่าทำไมบางครั้ง AI ตอบคำถามได้แม่นยำมาก แต่บางครั้งกลับตอบผิดเพี้ยน? ความลับไม่ได้อยู่ที่ว่า AI "รู้" อะไร แต่อยู่ที่ AI "หา" ข้อมูลเจอแค่ไหน วันนี้เราจะมาเปิดเผย 5 เทคนิคที่นักวิจัยชั้นนำใช้ทำให้ระบบค้นหาของ AI แม่นยำขึ้นอย่างก้าวกระโดด — จากวิธีแบ่งข้อมูล การใส่บริบท การจัดอันดับผลลัพธ์ ไปจนถึงการโหลดแค่ที่จำเป็น ทั้งหมดนี้มีผลวิจัยพิสูจน์แล้วว่าทำให้ AI ตอบคำถามได้แม่นขึ้นจริง
+</p>
+<h2>เนื้อหา</h2>
+<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/hQVT_B9q3wg" frameborder="0" allowfullscreen></iframe>
+</p>
+<h3>ปัญหา: AI หาข้อมูลไม่เจอ</h3>
+<p>ลองนึกภาพว่าคุณมีห้องสมุด 1 ล้านเล่ม แต่ไม่มีสารบัญ ไม่มีหมวดหมู่ ไม่มีดัชนี — จะหาหนังสือที่ต้องการได้อย่างไร?
+AI ก็เจอปัญหาเดียวกันครับ เมื่อมีข้อมูลมากเกินไป AI ไม่สามารถอ่านทั้งหมดแล้วตอบคำถามได้ จึงต้องพึ่งระบบค้นหา หรือที่เรียกว่า <strong>RAG (Retrieval-Augmented Generation)</strong> — ค้นหาข้อมูลที่เกี่ยวข้องก่อน แล้วค่อยให้ AI ใช้ข้อมูลนั้นตอบคำถาม
+แต่ปัญหาคือ RAG แบบดั้งเดิมมักหาข้อมูลผิด หรือหาไม่เจอ นักวิจัยจึงพัฒนาเทคนิคใหม่ๆ เพื่อแก้ปัญหานี้
+</p>
+<h3>1⃣ แบ่งข้อมูลให้ถูกวิธี (Chunking Strategies)</h3>
+<p><strong>ปัญหา:</strong> ข้อมูลยาวๆ ต้องแบ่งเป็นชิ้นเล็กๆ ก่อนจะเก็บ แต่ถ้าแบ่งผิดที่ — ข้อมูลสำคัญขาดหาย
+</p>
+<h4>วิธีแบ่งที่คนใช้กัน:</h4>
+<table><thead><tr><th>วิธี</th><th>ทำงานยังไง</th><th>ข้อดี</th><th>ข้อเสีย</th></tr></thead><tbody>
+<tr><td><strong>ตัดตามจำนวน</strong> (Fixed-size)</td><td>ตัดทุก 500 คำ ทับซ้อน 50 คำ</td><td>ง่าย ทำซ้ำได้</td><td>อาจตัดกลางความหมาย</td></tr>
+<tr><td><strong>ตามโครงสร้าง</strong> (Structure-based)</td><td>แบ่งตามหัวข้อ ย่อหน้า</td><td>รักษาความหมาย</td><td>ต้องมีโครงสร้างชัดเจน</td></tr>
+<tr><td><strong>ตามความหมาย</strong> (Semantic)</td><td>กลุ่มประโยคที่ใกล้เคียงกัน</td><td>แบ่งตาม "ใจความ" จริงๆ</td><td>ใช้ทรัพยากรมากกว่า</td></tr>
+</tbody></table>
+<p><strong>คำแนะนำจาก Pinecone:</strong> "เริ่มจากแบบง่ายก่อน แล้วค่อยปรับเมื่อผลไม่ดีพอ"
+</p>
+<h3>2⃣ ใส่บริบทให้ข้อมูลก่อนเก็บ (Contextual Retrieval)</h3>
+<p>นี่คือ <strong>นวัตกรรมสำคัญที่สุด</strong> จาก Anthropic (บริษัทที่สร้าง Claude)
+<strong>ปัญหาที่แก้:</strong> เมื่อแบ่งข้อมูลเป็นชิ้นเล็กๆ แต่ละชิ้นจะ "สูญเสียบริบท" — เช่น ประโยค "รายได้เติบโต 3%" โดยไม่มีบริบท เราไม่รู้ว่าเป็นรายได้ของบริษัทไหน ปีไหน
+</p>
+<h4>วิธีแก้ของ Anthropic:</h4>
+<ol>
+<li>ส่งเอกสารทั้งหมด + ชิ้นข้อมูลแต่ละชิ้นให้ AI</li>
+</ol>
+<ol>
+<li>AI เขียนบริบทสั้นๆ (50-100 คำ) อธิบายว่าชิ้นนี้อยู่ในบริบทอะไร</li>
+</ol>
+<ol>
+<li>เอาบริบทนั้นไปแนบกับชิ้นข้อมูลก่อนเก็บ</li>
+</ol>
+<h4>ตัวอย่าง:</h4>
+<p><strong>ก่อนใส่บริบท:</strong> "รายได้เติบโต 3% จากไตรมาสก่อน"
+<strong>หลังใส่บริบท:</strong> "[จากรายงานการเงิน Q2/2026 ของบริษัท ABC] รายได้เติบโต 3% จากไตรมาสก่อน"
+</p>
+<h4>ผลลัพธ์ที่วัดได้:<strong> ลดความผิดพลาดในการค้นหา </strong>49%</h4>
+<blockquote><p><strong>ทำไมถึงสำคัญ:</strong> นี่เหมือนการติดป้ายชื่อให้ทุกชิ้นข้อมูล — ถ้าไม่มีป้าย AI ก็เหมือนคนหาของในห้องมืด</p></blockquote>
+<h3>3⃣ จัดอันดับผลลัพธ์ใหม่ (Reranking)</h3>
+<p><strong>ปัญหา:</strong> การค้นหาแบบดั้งเดิม (Vector Search) เร็ว แต่ไม่แม่น — เปรียบเทียบคำถามกับข้อมูลแยกกัน ไม่เห็นความเชื่อมโยง
+</p>
+<h4>วิธีแก้ — Reranking แบบ 2 ขั้นตอน:</h4>
+<pre><code>↓
+[ขั้นที่ 2] พิจารณาทบทวน → คัดเหลือ 5 ผลลัพธ์ที่แม่นที่สุด</code></pre>
+<h4>เปรียบเทียบให้เข้าใจง่าย:</h4>
+<p>ขั้นที่ 1 เหมือน <strong>คัดเลือกเรซูเม่</strong> — ดูเร็วๆ ว่าใกล้เคียงที่ต้องการไหม
+ขั้นที่ 2 เหมือน <strong>สัมภาษณ์</strong> — พิจารณาอย่างละเอียดว่าใช่ที่ต้องการจริงๆ ไหม
+</p>
+<h4>ผลลัพธ์จาก Cohere (ผู้พัฒนา Rerank):</h4>
+<table><thead><tr><th>วิธีค้นหา</th><th>ความแม่นยำเฉลี่ย</th></tr></thead><tbody>
+<tr><td>ค้นหาตามคำ (Lexical)</td><td>44.3%</td></tr>
+<tr><td>ค้นหาตามความหมาย (Embedding)</td><td>64.7%</td></tr>
+<tr><td><strong>ค้นหาตามคำ + Rerank</strong></td><td><strong>71.6%</strong></td></tr>
+</tbody></table>
+<blockquote><p>Reranking ทับ Embedding Search ได้ แถมไม่ต้องเปลี่ยนระบบเดิม — เพิ่มแค่ 1 ขั้นตอน!</p></blockquote>
+<p><strong>เมื่อใช้ร่วมกับ Contextual Retrieval:</strong> ลดความผิดพลาดรวม <strong>67%</strong> (จาก 5.7% เหลือ 1.9%)
+</p>
+<h3>4⃣ ปรับคำถามให้ฉลาดขึ้น (Query Transformation)</h3>
+<p>บางครั้งคำถามของเราไม่ชัดเจนพอที่จะค้นหา นักวิจัยจึงคิดวิธี "ปรับคำถาม" ก่อนค้นหา:
+</p>
+<h4>HyDE — สร้างคำตอบสมมติก่อนค้นหา:</h4>
+<ol>
+<li>รับคำถามจากผู้ใช้ เช่น "วิธีลดความอ้วน?"</li>
+</ol>
+<ol>
+<li>ให้ AI สร้างคำตอบสมมติ (อาจผิดก็ได้!)</li>
+</ol>
+<ol>
+<li>ใช้ "คำตอบสมมติ" ไปค้นหาแทนคำถาม</li>
+</ol>
+<ol>
+<li>ทำไมถึงได้ผล? เพราะคำตอบมี "รูปแบบข้อมูลที่ถูกต้อง" แม้รายละเอียดจะผิด → ค้นหาเจอง่ายกว่า</li>
+</ol>
+<p><strong>เปรียบเทียบให้เข้าใจ:</strong> แทนที่จะถาม "ร้านอาหารอร่อยอยู่ไหน?" → บอกว่า "ฉันอยากกินร้านที่มีส้มตำ ข้าวเหนียว ไก่ย่าง บรรยากาศดี ราคาประหยัด" — ค้นหาเจอง่ายกว่ามาก!
+</p>
+<h3>5⃣ โหลดแค่ที่จำเป็น — หลักการเปิดเผยข้อมูลแบบก้าวหน้า (Progressive Disclosure)</h3>
+<p><strong>หลักการจาก UX Design:</strong> อย่าแสดงทุกอย่างในครั้งเดียว — แสดงสิ่งสำคัญก่อน ค่อยเปิดเผยรายละเอียดเมื่อต้องการ
+AI ก็ใช้หลักการนี้ครับ:
+</p>
+<h4>5 ระดับการโหลดข้อมูล:</h4>
+<table><thead><tr><th>ระดับ</th><th>ชื่อ</th><th>ตัวอย่าง</th><th>ใช้เมื่อไร</th></tr></thead><tbody>
+<tr><td>0</td><td><strong>โหลดตลอด</strong></td><td>กฎพื้นฐาน, ชื่อผู้ใช้</td><td>ทุกครั้ง</td></tr>
+<tr><td>1</td><td><strong>โหลดตามเงื่อนไข</strong></td><td>กฎเฉพาะ API, กฎเฉพาะ database</td><td>เมื่อทำงานเกี่ยวกับเรื่องนั้น</td></tr>
+<tr><td>2</td><td><strong>โหลดเมื่อต้องการ</strong></td><td>Skills, เครื่องมือเฉพาะทาง</td><td>เมื่อ AI ตัดสินใจว่าต้องใช้</td></tr>
+<tr><td>3</td><td><strong>โหลดแบบขี้เกียจ</strong></td><td>คำแนะนำในแต่ละโฟลเดอร์</td><td>เมื่อเข้าไปทำงานในนั้น</td></tr>
+<tr><td>4</td><td><strong>ค้นหาภายนอก</strong></td><td>Web search, Vector DB</td><td>เมื่อข้อมูลในระบบไม่พอ</td></tr>
+</tbody></table>
+<h4>ตัวอย่างจาก Claude Code:</h4>
+<p><code>CLAUDE.md</code> (ไฟล์หลัก) → โหลดทุกครั้ง แต่จำกัดไม่เกิน 200 บรรทัด
+ไฟล์ย่อยในแต่ละโฟลเดอร์ → โหลดเฉพาะเมื่อทำงานในโฟลเดอร์นั้น
+Skills → AI ตัดสินใจเองว่าจะโหลดอะไรจากรายละเอียด
+<strong>กฎทองจาก Nielsen Norman Group:</strong> "ไม่ควรมีมากกว่า 2 ระดับ — ถ้าเกินนั้น ทั้งคนและ AI จะสับสน"
+</p>
+<h3>สรุป Pipeline ค้นหาที่ดีที่สุด</h3>
+<p>จากผลวิจัยทั้งหมด ระบบค้นหาที่ดีที่สุดควรเป็นแบบนี้:
+</p>
+<pre><code>HyDE/Rewrite Vector + BM25 Rerank Progressive</code></pre>
+<h4>เรียงตามผลกระทบ:</h4>
+<ol>
+<li><strong>ใส่บริบทให้ข้อมูล</strong> — ลดผิดพลาด 49%</li>
+</ol>
+<ol>
+<li><strong>จัดอันดับผลลัพธ์ใหม่</strong> — เพิ่มความแม่นยำจาก 64.7% → 71.6%</li>
+</ol>
+<ol>
+<li><strong>ค้นหาแบบผสม</strong> — ทั้งตามความหมาย + ตรงตัว</li>
+</ol>
+<ol>
+<li><strong>ปรับคำถาม</strong> — ทำให้คำถามมีประสิทธิภาพมากขึ้น</li>
+</ol>
+<ol>
+<li><strong>โหลดแค่ที่จำเป็น</strong> — ประหยัดพื้นที่และเพิ่มความเร็ว</li>
+</ol>
+<h2>สรุป</h2>
+<p>ระบบค้นหาข้อมูลของ AI ไม่ใช่แค่ "พิมพ์คำค้นหาแล้วรอผล" แต่เป็นกระบวนการที่ออกแบบอย่างรอบคอบหลายขั้นตอน — เริ่มจากการแบ่งข้อมูลให้ถูกวิธี ใส่บริบทให้แต่ละชิ้น (ลดผิดพลาด 49%) ค้นหาแบบผสมทั้งตามความหมายและตรงตัว จัดอันดับผลใหม่ด้วยความละเอียด (เพิ่มแม่นยำเป็น 71.6%) และโหลดเฉพาะข้อมูลที่จำเป็นด้วยหลัก Progressive Disclosure ผลลัพธ์คือ AI สามารถค้นหาข้อมูลได้แม่นยำยิ่งขึ้น ลดความผิดพลาดรวมได้ถึง 67% — แสดงให้เห็นว่า <strong>"ค้นหาอย่างฉลาด" สำคัญกว่า "เก็บข้อมูลให้มาก"</strong> ทุกครั้ง
+</p>
+<h2>แหล่งอ้างอิง</h2>
+<p>Chunking Strategies — https://www.pinecone.io/learn/chunking-strategies/
+Contextual Retrieval (Anthropic) — https://www.anthropic.com/engineering/contextual-retrieval
+Cohere Rerank — https://www.cohere.com/blog/rerank
+HyDE — https://arxiv.org/abs/2212.10496
+Self-RAG — https://arxiv.org/abs/2310.11511
+CRAG — https://arxiv.org/abs/2401.15884
+Building Effective Agents (Anthropic) — https://www.anthropic.com/engineering/building-effective-agents
+Progressive Disclosure (NN/g) — https://www.nngroup.com/articles/progressive-disclosure/
+Claude Code Memory — https://code.claude.com/docs/en/store-instructions-and-memories
+</p>
+<div class="article-tags"><strong>แท็ก:</strong> #AI #RAG #RetrievalAugmentedGeneration #SemanticSearch #AIResearch #MachineLearning #VectorSearch #ค้นหาอัจฉริยะ #AIค้นหาข้อมูล #เทคโนโลยี #ProgressiveDisclosure #Reranking</div>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://tessl.io/blog/a-proposed-framework-for-evaluating-skills-research-eng-blog/" target="_blank" rel="noopener noreferrer">https://tessl.io/blog/a-proposed-framework-for-evaluating-skills-research-eng-bl...</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

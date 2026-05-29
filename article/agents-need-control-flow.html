@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น — AI Today Thailand</title>
+  <meta name="description" content="Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น">
+  <link rel="canonical" href="https://aitodaythailand.com/article/agents-need-control-flow.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น">
+  <meta property="og:description" content="Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/agents-need-control-flow.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/agents-need-control-flow.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-01">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น">
+  <meta name="twitter:description" content="Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/agents-need-control-flow.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น", "description": "Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น", "url": "https://aitodaythailand.com/article/agents-need-control-flow.html", "image": "https://aitodaythailand.com/images/articles/agents-need-control-flow.jpg", "datePublished": "2026-05-01", "dateModified": "2026-05-01", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/agents-need-control-flow.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>Agents ต้องการ Control Flow ไม่ใช่ Prompt ที่ยาวขึ้น</h1>
+    <div class="article-meta">
+      <span>2026-05-01</span>
+      <span>·</span>
+      <span>~1 นาที</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/agents-need-control-flow.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<p>คุณเคยเขียนคำว่า MANDATORY หรือ DO NOT SKIP ลงใน prompt ไหม? ถ้าเคย แสดงว่าคุณกำลังใช้วิธีผิดที่จะทำให้ AI agent ทำงานได้น่าเชื่อถือ บทความจาก Hacker News ที่ได้รับความสนใจอย่างมาก (586 points, 292 comments) โต้แย้งประเด็นสำคัญ: <strong>ถ้าคุณต้องเขียนเพื่อ "บังคับ" LLM ด้วยภาษาธรรมดา แสดงว่าคุณใช้เครื่องมือผิดวิธี</strong>
+</p>
+<h2>ปัญหาของ Prompt Engineering แบบเดิม</h2>
+<p>เมื่อ AI agent ทำงานผิดพลาด ความรู้สึกแรกของหลายคนคือ "เพิ่ม prompt" อธิบายให้ละเอียดขึ้น เพิ่มกฎเกณฑ์ เพิ่มตัวอย่าง จน prompt ยาวเป็นหน้าๆ แต่นี่คือวิธีที่ไม่ยั่งยืน เพราะ:
+<strong>LLM ไม่ได้ "อ่าน" prompt แบบมนุษย์</strong> — มันประมวลผล token เป็นช่วงๆ ไม่มีความเข้าใจแบบ "บังคับทำตาม" เหมือนพนักงาน
+<strong>Prompt ยาว = พื้นที่ให้ LLM หลุดจากเจตนาเดิมมากขึ้น</strong> — ยิ่งยาว ยิ่งมีจุดที่อาจตีความผิดเพี้ยน
+<strong>Silent failure</strong> — LLM อาจข้ามขั้นตอนสำคัญโดยไม่บอก และคุณจะไม่มีทางรู้จนกว่าจะสายเกินไป
+ตัวอย่างที่พบบ่อย: Agent ที่ควรตรวจสอบข้อมูลก่อนส่งอีเมล แต่ข้ามขั้นตอนนั้นไปเพราะ prompt ไม่ได้ "บังคับ" ในระดับโครงสร้าง
+</p>
+<h2>Control Flow คืออะไร และทำไมถึงสำคัญ</h2>
+<p>Control flow คือการกำหนด <strong>ลำดับขั้นตอนที่แน่นอน</strong> (deterministic) ด้วย code แทนที่จะฝากไว้กับ prompt ลองนึกถึงความแตกต่าง:
+</p>
+<h4>แบบ Prompt-based:</h4>
+<p>"คุณต้องตรวจสอบข้อมูลก่อน แล้วถ้าถูกต้องค่อยส่งอีเมล ห้ามข้ามขั้นตอนนี้เด็ดขาด"
+</p>
+<h4>แบบ Control Flow:</h4>
+<pre><code>validation_result = validate(data) # deterministic check
+if not validation_result.passed:
+return error_response()
+send_email(data) # จะมาถึงตรงนี้ได้ก็ต่อเมื่อผ่าน validation</code></pre>
+<p>ความแตกต่างคือ: แบบแรก LLM อาจเลือกข้ามได้ แบบที่สอง <strong>ทางเลือกคือทำหรือ error — ไม่มีทางข้าม</strong>
+</p>
+<h2>สถาปัตยกรรมที่ถูกต้อง: Deterministic Scaffold</h2>
+<p>แนวคิดหลักคือการสร้าง "scaffold" หรือโครงสร้างที่แน่นอนคลุม LLM ไว้ โดย LLM ทำหน้าที่เป็น <strong>component หนึ่ง</strong> ในระบบ ไม่ใช่ตัวระบบทั้งหมด
+</p>
+<h3>องค์ประกอบสำคัญ:</h3>
+<h4>1. State Machine (เครื่องจักรสถานะ)</h4>
+<p>กำหนดสถานะที่เป็นไปได้ทั้งหมดของ workflow เช่น: <code>INIT → EXTRACT → VALIDATE → TRANSFORM → SUBMIT → DONE</code>
+แต่ละ state transition ต้องผ่านเงื่อนไขที่ชัดเจน ไม่มีการกระโดดข้าม state
+</p>
+<h4>2. Validation Checkpoints</h4>
+<p>จุดตรวจสอบที่กำหนดด้วย code ไม่ใช่ prompt เช่น: ตรวจ schema, ตรวจ range ของค่า, ตรวจ format
+ถ้าไม่ผ่าน checkpoint → วนกลับไปแก้ ไม่ใช่ข้ามไป
+</p>
+<h4>3. Risk Gates</h4>
+<p>จุดที่ต้องมีการอนุมัติจากมนุษย์ก่อนดำเนินการต่อ เช่น: ก่อนส่งอีเมลจำนวนมาก, ก่อนแก้ไข database
+ป้องกันไม่ให้ agent ทำอะไรที่กลับคืนไม่ได้โดยไม่มีมนุษย์อนุมัติ
+</p>
+<h2>เปรียบเทียบ: Prompt Chain vs Control Flow</h2>
+<h4>Prompt Chain (เปราะบาง):</h4>
+<p>พึ่งพา LLM ในการตัดสินใจทุกขั้นตอน
+Error แบบเงียบ (silent failure) เกิดได้ง่าย
+ยิ่งซับซ้อน ยิ่งไม่น่าเชื่อถือ
+Debug ยาก เพราะไม่รู้ว่าผิดตรงไหน
+</p>
+<h4>Control Flow (แข็งแกร่ง):</h4>
+<p>โครงสร้างกำหนดด้วย code ที่ตรวจสอบได้
+Error ถูกจับและจัดการอย่างชัดเจน
+ซับซ้อนแค่ไหนก็ยังคงความน่าเชื่อถือ
+Debug ง่าย เพราะรู้ลำดับและจุดที่เกิดปัญหา
+</p>
+<h2>ในทางปฏิบัติ: ออกแบบ Agent อย่างไร</h2>
+<p>Microsoft เปิดตัว Conductor (พฤษภาคม 2026) เครื่องมือ open-source สำหรับ deterministic orchestration ของ multi-agent workflow โดยกำหนด workflow ด้วย YAML และ routing ระหว่าง agent เป็นแบบ deterministic ทั้งหมด
+แนวทางที่แนะนำ:
+ใช้ LLM สำหรับงานที่ต้องใช้ความฉลาด: วิเคราะห์, สรุป, ตัดสินใจเชิงซ้อน
+ใช้ code สำหรับงานที่ต้องการความแน่นอน: ตรวจสอบ, สลับขั้นตอน, จัดการ error
+อย่าฝาก "ความปลอดภัย" ไว้กับ prompt — ฝากไว้กับ code
+</p>
+<h2>สรุป</h2>
+<p>ถ้าคุณกำลังเขียน prompt ที่ยาวขึ้นเรื่อยๆ เพื่อควบคุมพฤติกรรมของ AI agent นั่นเป็นสัญญาณว่าคุณต้องการ <strong>control flow</strong> ไม่ใช่ prompt ที่ยาวขึ้น
+LLM เป็นเครื่องมือที่ทรงพลัง แต่มันเป็นแค่ <strong>component</strong> หนึ่ง ไม่ใช่ระบบทั้งหมด การห่อหุ้ม LLM ด้วย deterministic scaffold — state machine, validation checkpoint, risk gate — คือวิธีที่ถูกต้องในการสร้าง agent ที่ทำงานได้น่าเชื่อถือใน production
+ถอดความจากประชาสัมพันธ์: "ปฏิบัติต่อ LLM เหมือน function call ที่อาจคืนค่าผิด ไม่ใช่เหมือนพนักงานที่อ่านคู่มือแล้วทำตาม"
+แหล่งอ้างอิง: <a href="https://news.ycombinator.com/item?id=48051562" target="_blank" rel="noopener">https://news.ycombinator.com/item?id=48051562</a>
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://news.ycombinator.com/item?id=48051562" target="_blank" rel="noopener noreferrer">https://news.ycombinator.com/item?id=48051562</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

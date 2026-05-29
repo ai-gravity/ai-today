@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง — AI Today Thailand</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/agentic-rag-autonomous-retrieval.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-25">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/agentic-rag-autonomous-retrieval.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง", "description": "", "url": "https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html", "image": "https://aitodaythailand.com/images/articles/agentic-rag-autonomous-retrieval.jpg", "datePublished": "2026-05-25", "dateModified": "2026-05-25", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/agentic-rag-autonomous-retrieval.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#7c6ef0;border-color:#7c6ef040">AI Agents</span>
+    <h1>Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง</h1>
+    <div class="article-meta">
+      <span>2026-05-25</span>
+      <span>·</span>
+      <span>~1 นาที</span>
+      <span>·</span>
+      <span>AI Agents</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/agentic-rag-autonomous-retrieval.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<h2>บทนำ</h2>
+<p>Agentic RAG คือการนำ Autonomous AI Agent มาผสานเข้ากับ RAG pipeline แบบดั้งเดิม โดย Agent จะไม่ได้ทำแค่ retrieval อย่างเดียว แต่จะ "คิด" ได้เอง — วิเคราะห์ query, วางแผน approach, เลือก tools/sources ที่เหมาะสม, ประเมินผลลัพธ์ที่ได้ และ retry/เปลี่ยนกลยุทธ์เมื่อจำเป็น
+</p>
+<h2>ทำไม RAG แบบเดิมถึงไม่พอ?</h2>
+<h3>RAG แบบดั้งเดิม (Traditional RAG)</h3>
+<p>RAG หรือ Retrieval-Augmented Generation แบบดั้งเดิมทำงานง่ายๆ:
+</p>
+<ol>
+<li>รับคำถามจากผู้ใช้</li>
+</ol>
+<ol>
+<li>ไปค้นหาข้อมูลจาก vector database</li>
+</ol>
+<ol>
+<li>เอาข้อมูลที่เจอมาให้ LLM สรุป</li>
+</ol>
+<ol>
+<li>ตอบคำถาม</li>
+</ol>
+<h4>ปัญหาของ RAG แบบเดิม:</h4>
+<p>ถามแล้วค้นไม่เจอ → ตอบผิดหรือบอกว่าไม่รู้
+คำถามซับซ้อนที่ต้องค้นจากหลายแหล่ง → ทำไม่ได้
+ไม่สามารถปรับเปลี่ยนกลยุทธ์การค้นหาเองได้
+ตาม McKinsey 58% ขององค์กรที่ใช้ RAG พบว่า "multi-step reasoning" เป็นข้อจำกัดอันดับ 1
+</p>
+<h3>Agentic RAG แตกต่างยังไง?</h3>
+<p>Agentic RAG แทนที่จะทำตาม pipeline ตายตัว จะให้ <strong>AI Agent เป็นคน "คิด" ว่าจะทำยังไง</strong>:
+<strong>วิเคราะห์คำถาม</strong> ก่อนว่าซับซ้อนแค่ไหน ต้องการอะไรบ้าง
+<strong>วางแผน</strong> ว่าจะค้นจากไหน ใช้ tool อะไร กี่ขั้นตอน
+<strong>เลือก tools/sources เอง</strong> ได้ เช่น ค้นเว็บ, ดึงจาก database, เรียก API
+<strong>ประเมินผลลัพธ์</strong> ว่าคำตอบที่ได้ดีพอไหม
+<strong>ลองใหม่</strong> ถ้าคำตอบไม่ดี เปลี่ยนวิธีค้นแล้ววนซ้ำ
+</p>
+<blockquote><p><strong>เปรียบเทียบ:</strong> RAG แบบเดิม = ห้องสมุดที่มีเจ้าหน้าที่หนังสือให้ (ค้นแล้วส่ง) / Agentic RAG = นักวิจัยที่วางแผน ค้นหาหลายแหล่ง ประเมินข้อมูล แล้วสรุปให้</p></blockquote>
+<h2>สถาปัตยกรรมของ Agentic RAG</h2>
+<h3>ส่วนประกอบหลัก</h3>
+<h4>1. Planner/Router</h4>
+<p>วิเคราะห์ query แล้วตัดสินใจว่าจะใช้ approach ไหน
+คำถามง่าย → ส่งไป RAG แบบเดิม (เร็วและประหยัด)
+คำถามซับซ้อน → ส่งไป multi-step agent pipeline
+</p>
+<h4>2. Tool-calling Agents</h4>
+<p>Agent ที่สามารถเรียกใช้ tools ต่างๆ ได้ เช่น:
+Web search
+SQL query
+Vector database lookup
+API calls
+Document parsers
+</p>
+<h4>3. Verification Loop</h4>
+<p>ตรวจสอบว่าข้อมูลที่ได้มาเชื่อถือได้ไหม
+ถ้ายังไม่ดี → ปรับ query แล้วค้นใหม่
+ทำซ้ำจนกว่าจะได้คำตอบที่น่าพอใจ
+</p>
+<h2>เทียบ RAG แบบเดิม vs Agentic RAG</h2>
+<table><thead><tr><th>ด้าน</th><th>RAG แบบเดิม</th><th>Agentic RAG</th></tr></thead><tbody>
+<tr><td><strong>การค้นหา</strong></td><td>ค้นครั้งเดียว</td><td>ค้นหลายครั้ง หลายแหล่ง</td></tr>
+<tr><td><strong>การวางแผน</strong></td><td>ไม่มี</td><td>วางแผน approach เอง</td></tr>
+<tr><td><strong>การใช้ tools</strong></td><td>ใช้แค่ vector search</td><td>เลือกใช้ tools ได้หลายแบบ</td></tr>
+<tr><td><strong>การปรับปรุง</strong></td><td>ไม่สามารถ retry ได้</td><td>ตรวจสอบแล้วลองใหม่ได้</td></tr>
+<tr><td><strong>ความซับซ้อน</strong></td><td>ง่าย ตั้งค่าน้อย</td><td>ซับซ้อนกว่า แต่เก่งกว่า</td></tr>
+<tr><td><strong>ต้นทุน</strong></td><td>ถูกกว่า</td><td>แพงกว่า (ใช้ token มากกว่า)</td></tr>
+</tbody></table>
+<h2>ใช้กรณีไหนถึงคุ้ม?</h2>
+<h3>ควรใช้ Agentic RAG:</h3>
+<p><strong>งานวิจัยที่ต้องค้นจากหลายแหล่ง</strong> — เช่น วิเคราะห์ตลาด ต้องดูข่าว งบการเงิน ข้อมูลคู่แข่ง
+<strong>ระบบตอบคำถามที่ต้องแม่นยำ</strong> — เช่น medical, legal, financial advice
+<strong>งานที่มี multi-step reasoning</strong> — ต้องตอบคำถามที่แตกย่อยได้หลายชั้น
+<strong>Enterprise knowledge management</strong> — องค์กรที่มีข้อมูลกระจายอยู่หลายระบบ
+</p>
+<h3>ไม่จำเป็นต้องใช้:</h3>
+<p>คำถามง่ายๆ ที่ RAG แบบเดิมตอบได้
+งานที่ต้องการความเร็วมาก (Agentic RAG ช้ากว่าเพราะต้องคิดหลาย step)
+งานที่ไม่ซับซ้อนและค้นจากแหล่งเดียวพอ
+</p>
+<h2>LLM ไหนเหมาะกับ Agentic RAG?</h2>
+<p>จากข้อมูลปัจจุบัน (2026):
+<strong>GPT-5.2 และ Claude Opus 4.6+</strong> — เก่งเรื่อง tool use และ multi-step reasoning เหมาะเป็น planner/agent หลัก
+<strong>GPT-5-mini หรือ Gemini 2.5 Flash</strong> — ตัวเลือกประหยัดสำหรับ routing/planning step
+<strong>โมเดลเล็ก</strong> — ใช้ได้สำหรับ tasks ที่ไม่ซับซ้อน
+</p>
+<h2>สรุป</h2>
+<p><strong>Agentic RAG</strong> คือก้าวต่อไปของ RAG — จากที่เคยเป็น "ระบบค้นหา + สรุป" แบบตายตัว กลายเป็น <strong>"ระบบที่คิด วางแผน และตัดสินใจเองได้"</strong> โดยฝัง AI Agent เข้าไปใน pipeline ทำให้ระบบสามารถจัดการคำถามที่ซับซ้อน ค้นจากหลายแหล่ง ตรวจสอบผลลัพธ์ และปรับเปลี่ยนกลยุทธ์ได้เอง
+แต่สิ่งสำคัญ: <strong>Agentic RAG ไม่ได้มาแทน Traditional RAG</strong> — สำหรับงานที่เรียบง่าย RAG แบบเดิมยังเร็วและประหยัดกว่า แต่สำหรับงานที่ต้องการความแม่นยำ ซับซ้อน และต้องให้ AI "คิด" มากขึ้น Agentic RAG คือคำตอบ
+แหล่งอ้างอิง: https://crazyrouter.com/en/blog/agentic-rag-build-smarter-ai-agents-retrieval-augmented-generation-2026
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://crazyrouter.com/en/blog/agentic-rag-build-smarter-ai-agents-retrieval-augmented-generation-2026" target="_blank" rel="noopener noreferrer">https://crazyrouter.com/en/blog/agentic-rag-build-smarter-ai-agents-retrieval-au...</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

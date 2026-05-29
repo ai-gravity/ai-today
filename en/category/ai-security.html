@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Security — AI Today Thailand</title>
+  <link rel="canonical" href="https://aitodaythailand.com/en/category/ai-security.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="AI Security — AI Today Thailand">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aitodaythailand.com/en/category/ai-security.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/og-default.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/en/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/en/" class="nav-link active">EN</a>
+        <a href="/" class="lang-switch" title="ภาษาไทย">TH</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="category-hero">
+    <a href="/en/" class="back-link">← Back to Home</a>
+    <h1><span style="color:#ef4444">●</span> AI Security</h1>
+    <p>All articles in AI Security</p>
+  </div>
+
+  <section class="section">
+    <div class="article-grid">
+    <a href="/en/article/mcp-security-mcpnest-bluerock.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/mcp-security-mcpnest-bluerock-cover.jpg" alt="Article 019 Mcp Security Mcpnest Bluerock" loading="lazy">
+        <span class="placeholder-icon" style="color:#ef4444">SC</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#ef4444">AI Security</div>
+        <div class="card-title">Article 019 Mcp Security Mcpnest Bluerock</div>
+        <div class="card-meta">
+          <span>2026-05-10</span>
+          <span class="sep"></span>
+          <span>~1 min</span>
+        </div>
+      </div>
+    </a>
+    <a href="/en/article/ai-security-news.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/ai-security-news-cover.jpg" alt="Article 004 Ai Security News" loading="lazy">
+        <span class="placeholder-icon" style="color:#ef4444">SC</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#ef4444">AI Security</div>
+        <div class="card-title">Article 004 Ai Security News</div>
+        <div class="card-meta">
+          <span>2026-04-30</span>
+          <span class="sep"></span>
+          <span>~1 min</span>
+        </div>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">AI news, summarized daily</div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.section');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(function(s) { observer.observe(s); });
+    } else {
+      sections.forEach(function(s) { s.classList.add('visible'); });
+    }
+  });
+  </script>
+
+</body>
+</html>

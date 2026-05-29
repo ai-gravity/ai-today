@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scaling AI Coding: How Claude Code Tackles Large Codebases Effectively — AI Today Thailand</title>
+  <meta name="description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <link rel="canonical" href="https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Scaling AI Coding: How Claude Code Tackles Large Codebases Effectively">
+  <meta property="og:description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-17">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Scaling AI Coding: How Claude Code Tackles Large Codebases Effectively">
+  <meta name="twitter:description" content="เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Scaling AI Coding: How Claude Code Tackles Large Codebases Effectively", "description": "เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker", "url": "https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html", "image": "https://aitodaythailand.com/images/articles/claude-downtime-ai-reliability.jpg", "datePublished": "2026-05-17", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/en/article/claude-downtime-ai-reliability.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/en/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/en/" class="nav-link active">EN</a>
+        <a href="/" class="lang-switch" title="ภาษาไทย">TH</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>Scaling AI Coding: How Claude Code Tackles Large Codebases Effectively</h1>
+    <div class="article-meta">
+      <span>2026-05-17</span>
+      <span>·</span>
+      <span>~5 min</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/claude-downtime-ai-reliability.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<h2>Understanding Claude Code in Enterprise Environments</h2>
+<p>Claude Code is proving its worth across some of the most challenging development environments imaginable: multi-million-line monorepos, decades-old legacy systems, and distributed architectures spanning dozens of repositories. These complex codebases present unique challenges that smaller projects simply don't face, from inconsistent build commands to legacy code scattered across folders with no shared root.
+Through our observations of successful Claude Code deployments at scale, we've identified consistent patterns in configuration, tooling, and organizational structure that lead to effective adoption. This article explores these patterns and provides a roadmap for teams looking to implement Claude Code in their own large codebases.
+When we refer to "large codebases," we're talking about a wide spectrum of deployments: monorepos with millions of lines of code, legacy systems built over decades, dozens of microservices across separate repositories, or any combination of these. This also includes codebases in languages that teams don't typically associate with AI coding tools, such as C, C++, C#, Java, and PHP. In these cases, Claude Code often performs better than teams expect, particularly with recent model improvements.
+</p>
+<h2>How Claude Code Navigates Complex Codebases</h2>
+<p>Unlike traditional AI coding tools that rely on embedding entire codebases and retrieving relevant chunks, Claude Code takes a different approach. It navigates code the way a human engineer would: traversing the file system, reading files, using grep to find exactly what it needs, and following references across the codebase. This approach operates locally on the developer's machine without requiring a codebase index to be built, maintained, or uploaded to a server.
+Traditional RAG-powered tools often struggle at scale because their embedding pipelines can't keep pace with active engineering teams. By the time a developer queries the index, it may reflect the codebase as it existed days or even weeks earlier, potentially returning outdated functions or references to deleted modules.
+Claude Code's agentic search approach avoids these failures. There's no embedding pipeline or centralized index to maintain as thousands of engineers commit new code. Each developer's instance works directly with the live codebase. However, this approach requires proper setup to provide Claude with enough starting context to know where to look.
+</p>
+<h2>The Harness: More Important Than the Model Alone</h2>
+<p>One common misconception about Claude Code is that its capabilities are defined solely by the model used. In practice, the ecosystem built around the model—the harness—often determines performance more than the model itself. This harness consists of five extension points, each serving a different function and building on what came before:
+</p>
+<table><thead><tr><th>Extension Point</th><th>Primary Function</th><th>When to Implement</th></tr></thead><tbody>
+<tr><td>CLAUDE.md files</td><td>Provides foundational context</td><td>First - Essential starting point</td></tr>
+<tr><td>Hooks</td><td>Enables self-improvement and enforcement</td><td>Second - After basic context is established</td></tr>
+<tr><td>Skills</td><td>Delivers specialized expertise on-demand</td><td>Third - When core workflows are established</td></tr>
+<tr><td>Plugins</td><td>Distributes proven configurations</td><td>Fourth - When skills and hooks are mature</td></tr>
+<tr><td>MCP servers</td><td>Connects to external systems</td><td>Last - When internal integrations are needed</td></tr>
+</tbody></table>
+<p>Let's explore each component in detail:
+</p>
+<h2>CLAUDE.md Files: Your Foundation</h2>
+<p>CLAUDE.md files are context files that Claude reads automatically at the start of every session. They typically include a root file for the big picture and subdirectory files for local conventions. These files provide Claude with the essential codebase knowledge it needs to operate effectively. Since they load in every session regardless of the task, keeping them focused on broadly applicable information prevents them from becoming a performance burden.
+</p>
+<h2>Hooks: Making Your Setup Self-Improving</h2>
+<p>While many teams view hooks as scripts that prevent errors, their more valuable function is continuous improvement. A stop hook can reflect on what happened during a session and propose CLAUDE.md updates while the context is fresh. A start hook can dynamically load team-specific context, ensuring every developer gets the right setup for their module without manual configuration. For automated checks like linting and formatting, hooks enforce rules deterministically, producing more consistent results than relying on Claude to remember instructions.
+</p>
+<h2>Skills: On-Demand Expertise</h2>
+<p>In large codebases with dozens of task types, not all expertise needs to be present in every session. Skills solve this through progressive disclosure, offloading specialized workflows and domain knowledge that would otherwise compete for context space. They only load when the task specifically requires them.
+For example, a security review skill loads when Claude is assessing code for vulnerabilities, while a document processing skill activates when a code change is made and documentation needs updating. Skills can also be scoped to specific paths, so they only activate in relevant parts of the codebase. A team that owns a payments service can bind their deployment skill to that directory, ensuring it doesn't auto-load when someone is working elsewhere in the monorepo.
+</p>
+<h2>Advanced Capabilities: LSP Integrations and Subagents</h2>
+<p>Two additional capabilities round out the Claude Code setup:
+Language Server Protocol (LSP) integrations give Claude the same navigation capabilities a developer has in their IDE. Most large-codebase IDEs already have an LSP running, powering features like "go to definition" and "find all references." By surfacing this to Claude, it gains symbol-level precision, enabling it to follow function calls to their definitions, trace references across files, and distinguish between identically named functions in different languages. For multi-language codebases, this is one of the highest-value investments.
+Subagents allow for the separation of exploration from editing. A subagent is an isolated Claude instance with its own context window that takes a task, does the work, and reports back. This approach enables more complex operations that might exceed a single context window while maintaining focus on specific subtasks.
+</p>
+<h2>Implementation Strategy for Large Organizations</h2>
+<p>The most successful deployments follow a phased approach, beginning with CLAUDE.md files and gradually building more sophisticated capabilities. This methodical progression ensures that each new layer of functionality builds on a solid foundation.
+For organizations just beginning their Claude Code journey, start with comprehensive CLAUDE.md files that capture the essential structure and conventions of your codebase. Then implement hooks to enforce critical rules and capture learnings. Only after these foundations are solid should you develop skills for specialized workflows.
+By following these patterns, organizations can effectively deploy Claude Code at scale, realizing its full potential across even the most complex and challenging codebases.
+Source: https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
+</p>
+    </div>
+
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">AI news, summarized daily</div>
+    </div>
+  </footer>
+
+</body>
+</html>

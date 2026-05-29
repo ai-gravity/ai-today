@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New in Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels — AI Today Thailand</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="New in Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/anthropic-acquires-stainless-cover.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-21">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="New in Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/anthropic-acquires-stainless-cover.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "New in Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels", "description": "", "url": "https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html", "image": "https://aitodaythailand.com/images/articles/anthropic-acquires-stainless-cover.jpg", "datePublished": "2026-05-21", "dateModified": "2026-05-21", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/en/article/anthropic-acquires-stainless.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/en/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/en/" class="nav-link active">EN</a>
+        <a href="/" class="lang-switch" title="ภาษาไทย">TH</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>New in Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels</h1>
+    <div class="article-meta">
+      <span>2026-05-21</span>
+      <span>·</span>
+      <span>~2 min</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/anthropic-acquires-stainless-cover.jpg" alt="" loading="eager">
+    </div>
+<div class="article-content">
+<p>Today marks an exciting step forward for Claude Managed Agents with the introduction of two powerful new features: self-hosted sandboxes and MCP tunnels. These enhancements give organizations unprecedented control over their AI agent environments while maintaining the benefits of Claude's powerful orchestration capabilities.
+</p>
+<h2>Keeping Your Data Where It Belongs</h2>
+<p>With self-hosted sandboxes, you can now execute agent tools within environments you fully control. This means sensitive files, proprietary packages, and critical services never need to leave your established infrastructure boundaries. The agent loop—handling orchestration, context management, and error recovery—remains on Anthropic's infrastructure, while tool execution happens in your own configured environment.
+This architecture delivers significant advantages:
+<strong>Enhanced security</strong>: Your existing network policies, audit logging, and security tooling continue to work as before
+<strong>Data protection</strong>: Files and repositories remain within your perimeter
+<strong>Resource control</strong>: You configure compute resources exactly as needed, whether for lightweight tasks or compute-intensive operations
+</p>
+<h2>Choosing Your Sandbox Environment</h2>
+<p>Claude Managed Agents now supports bringing your own sandbox client or choosing from our supported providers. Each offers unique benefits:
+</p>
+<table><thead><tr><th>Provider</th><th>Key Features</th><th>Best For</th></tr></thead><tbody>
+<tr><td><strong>Cloudflare</strong></td><td>MicroVMs, lightweight isolates, zero-trust secrets injection</td><td>Organizations needing scalable execution with tight security controls</td></tr>
+<tr><td><strong>Daytona</strong></td><td>Full composable computers, long-running stateful environments</td><td>Agents requiring persistent state and extended sessions</td></tr>
+<tr><td><strong>Modal</strong></td><td>AI-optimized platform, sub-second startup, GPU support</td><td>Production AI systems with demanding computational requirements</td></tr>
+<tr><td><strong>Vercel</strong></td><td>VM security, VPC peering, millisecond startup</td><td>Teams wanting enterprise-grade isolation with rapid deployment</td></tr>
+</tbody></table>
+<p>The flexibility in provider selection ensures you can match the technology to your specific security, performance, and operational requirements.
+</p>
+<h2>Connecting to Your Private Resources</h2>
+<p>MCP tunnels solve another critical challenge: enabling agents to securely access resources within your private network. With this feature, your agents can reach internal databases, private APIs, knowledge bases, and ticketing systems without exposing these services to the public internet.
+The implementation elegantly handles security concerns through:
+A lightweight gateway requiring only a single outbound connection
+No need for inbound firewall rules or public endpoints
+End-to-end encryption for all traffic
+Organization admins can manage MCP tunnels directly from workspace settings within the Claude Console, making administration straightforward and centralized.
+</p>
+<h2>Real-World Applications</h2>
+<p>These capabilities are already enabling innovative solutions across industries:
+Ryan Chang from Clay's AI Engineering team explains how they're leveraging these features: "When building Sculptor, Clay's GTM engineering agent, we wanted to give it a more flexible and powerful way to take actions. Claude Managed Agents let us replicate the power of a local agent with the reliability, versioning, and background execution of a cloud agent."
+For financial services, Rogo is building an analyst agent with Claude Managed Agents and Vercel Sandbox. Strib Walker, Head of Product, notes this approach allows them to "leverage best-in-class infrastructure while we focus on what compounds for a financial AI platform: depth and breadth of tools and data."
+</p>
+<h2>Getting Started</h2>
+<p>Self-hosted sandboxes are now available in public beta, while MCP tunnels are currently in research preview. To explore these capabilities:
+</p>
+<ol>
+<li>For MCP tunnels access, submit a request through the Claude Console</li>
+</ol>
+<ol>
+<li>Visit our documentation for detailed implementation guides</li>
+</ol>
+<ol>
+<li>Follow our step-by-step cookbooks to connect your preferred sandbox provider</li>
+</ol>
+<ol>
+<li>Deploy your first agent using the Claude Console interface</li>
+</ol>
+<p>These enhancements to Claude Managed Agents represent our commitment to giving you both power and control. By combining Claude's advanced orchestration capabilities with your infrastructure preferences, we're helping organizations build more capable, secure, and compliant AI solutions.
+Source: https://claude.com/blog/claude-managed-agents-updates
+</p>
+    </div>
+
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">AI news, summarized daily</div>
+    </div>
+  </footer>
+
+</body>
+</html>

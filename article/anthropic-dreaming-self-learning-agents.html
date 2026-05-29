@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude ฝันได้: Anthropic เปิดตัว &#x27;Dreaming&#x27; — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง — AI Today Thailand</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://aitodaythailand.com/article/anthropic-dreaming-self-learning-agents.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Claude ฝันได้: Anthropic เปิดตัว &#x27;Dreaming&#x27; — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/anthropic-dreaming-self-learning-agents.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/anthropic-dreaming-self-learning-agents.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-01">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude ฝันได้: Anthropic เปิดตัว &#x27;Dreaming&#x27; — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/anthropic-dreaming-self-learning-agents.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude ฝันได้: Anthropic เปิดตัว 'Dreaming' — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง", "description": "", "url": "https://aitodaythailand.com/article/anthropic-dreaming-self-learning-agents.html", "image": "https://aitodaythailand.com/images/articles/anthropic-dreaming-self-learning-agents.jpg", "datePublished": "2026-05-01", "dateModified": "2026-05-01", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/anthropic-dreaming-self-learning-agents.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>Claude ฝันได้: Anthropic เปิดตัว &#x27;Dreaming&#x27; — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง</h1>
+    <div class="article-meta">
+      <span>2026-05-01</span>
+      <span>·</span>
+      <span>~2 นาที</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/anthropic-dreaming-self-learning-agents.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<p>เคยสงสัยไหมว่าทำไม AI Agent ถึงทำผิดซ้ำๆ กันทุกวัน? วันนี้เรามีคำตอบ — และมันน่าทึ่งมาก
+วันที่ 6 มิถุนายน 2026 ที่งาน Code with Claude 2026 Anthropic เปิดตัวฟีเจอร์ที่เรียกว่า <strong>Dreaming</strong> สำหรับ Claude Managed Agents พูดง่ายๆ คือ <strong>ให้ AI Agent ของคุณ "ฝัน" ระหว่างที่ไม่ได้ทำงาน</strong> เพื่อทบทวนสิ่งที่ทำไป ตัดสิ่งที่ไม่จำเป็นออก และสรุปบทเรียนไว้ใช้ในครั้งต่อไป
+</p>
+<h2>ปัญหาเก่าที่ทุกคนเจอ: Agent ลืมทุกวัน</h2>
+<p>ถ้าคุณเคยใช้ AI Agent ในงานจริง คุณน่าจะเจอปัญหานี้: <strong>Agent ทำผิดซ้ำๆ ทุก session</strong> เหมือนไม่เคยเรียนรู้เลย
+</p>
+<figure class="article-inline-image"><img src="/images/articles/anthropic-dreaming-self-learning-agents-inline-1.jpg" alt="AI Agent Memory Problem" loading="lazy"><figcaption>AI Agent Memory Problem</figcaption></figure>
+<p>ที่มาของปัญหาคือ AI Agent ปกติไม่มี "ความจำข้าม session" ทุกครั้งที่เริ่ม session ใหม่ มันเริ่มจากศูนย์ ทุกอย่างที่เคยเรียนรู้ ทั้งทริคที่ค้นพบ ข้อผิดพลาดที่เคยทำ ก็หายไปหมด
+กรณีตัวอย่างที่ชัดเจนที่สุดคือ <strong>Harvey</strong> บริษัท AI ด้านกฎหมาย Agent ของ Harvey ค้นพบ workaround สำหรับไฟล์บางประเภท แต่ทุก session ใหม่มันก็ต้องค้นพบใหม่อีกครั้ง — <strong>ทำซ้ำเดิม 3 สัปดาห์เต็ม</strong>
+</p>
+<h2>Dreaming ทำงานยังไง</h2>
+<p>ลองจินตนาการว่าคุณทำงานทั้งวัน แล้วตอนกลางคืนสมองของคุณ "ฝัน" ทบทวนสิ่งที่ทำไป จัดเก็บความจำที่สำคัญ ตัดทิ้งที่ไม่จำเป็น และสรุปบทเรียน — <strong>Dreaming ของ Anthropic ทำทุกอย่างนี้ให้ AI Agent</strong>
+</p>
+<h3>3 สิ่งที่ Dreaming ทำระหว่าง Agent "นอนหลับ"</h3>
+<p><strong>1. ตรวจจับความผิดพลาดที่ซ้ำๆ</strong> — ถ้า Agent ทำผิดแบบเดิมหลายครั้ง Dreaming จะดึง pattern ของความผิดนั้นออกมาและจดไว้ เช่น Harvey Agent มักติดปัญหาเรื่อง file-format quirks และ tool-call failure modes
+<strong>2. บันทึกวิธีที่ทำงานได้จริง</strong> — เมื่อ Agent ลองหลายวิธีแล้วเจอวิธีที่ดีที่สุด Dreaming จะจับเป็น "playbook" ไว้ใช้ต่อ ครั้งต่อไปไม่ต้องลองผิดลองถูกอีก
+<strong>3. แบ่งปันความรู้ระหว่าง Agent</strong> — ถ้าคุณมีหลาย Agent ทำงานร่วมกัน สิ่งที่ Agent A เรียนรู้จะถูกส่งต่อให้ Agent B, C, D ด้วย
+</p>
+<figure class="article-inline-image"><img src="/images/articles/anthropic-dreaming-self-learning-agents-inline-2.jpg" alt="How AI Dreaming Works" loading="lazy"><figcaption>How AI Dreaming Works</figcaption></figure>
+<p>Alex Albert จาก Anthropic อธิบายได้ดีมาก:
+</p>
+<blockquote><p>"สิ่งที่เกิดขึ้นกับ Dreaming คล้ายกับที่คุณทำเอง — แทนที่คุณจะต้องเขียน skill จากประสบการณ์ที่คุณใช้ Claude ด้วยตัวเอง ตัวโมเดลจะทำให้"</p></blockquote>
+<h2>ผลลัพธ์ที่วัดได้จริง</h2>
+<p>ตัวเลขพูดแทนได้ดีกว่าคำบรรยาย:
+</p>
+<table><thead><tr><th>เมตริก</th><th>ผลลัพธ์</th></tr></thead><tbody>
+<tr><td>Harvey (Legal AI)</td><td><strong>Task completion เพิ่ม 6 เท่า</strong></td></tr>
+<tr><td>Wisedocs</td><td>ลดเวลา review <strong>50%</strong></td></tr>
+<tr><td>Rakuten</td><td>รายงานปรับปรุง ~<strong>90%</strong></td></tr>
+<tr><td>Internal benchmarks</td><td>Task success เพิ่มสูงสุด <strong>10 คะแนน</strong></td></tr>
+<tr><td>First-pass errors</td><td>ลดลง <strong>97%</strong></td></tr>
+<tr><td>ต้นทุน</td><td>ลดลง <strong>27%</strong></td></tr>
+<tr><td>Latency</td><td>ลดลง <strong>34%</strong></td></tr>
+</tbody></table>
+<h2>Dreaming ต่างจาก Memory ธรรมดายังไง</h2>
+<p>นี่คือคำถามสำคัญ หลายคนอาจสงสัยว่ามันต่างจาก "Memory" ปกติยังไง
+<strong>Memory ธรรมดา</strong> = นักพัฒนาเขียนเอง เหมือนคุณจดโน้ตให้ AI อ่าน
+<strong>Dreaming</strong> = Agent เขียนเองจากประสบการณ์จริง เหมือน AI มี "dream journal" ของตัวเอง
+</p>
+<table><thead><tr><th>เปรียบเทียบ</th><th>Memory ปกติ</th><th>Fine-tuning</th><th>Dreaming</th></tr></thead><tbody>
+<tr><td>ใครเขียน</td><td>คน</td><td>ข้อมูลฝึก</td><td>Agent เอง</td></tr>
+<tr><td>ขอบเขต</td><td>1 Agent</td><td>ทั้งโมเดล</td><td>แบ่งระหว่างทีม</td></tr>
+<tr><td>ค่าใช้จ่าย</td><td>แรงงาน</td><td>สูงมาก</td><td>รวมในบริการ</td></tr>
+<tr><td>ตรวจสอบได้</td><td>ใช่</td><td>ยาก</td><td><strong>ใช่ (ไฟล์ข้อความ)</strong></td></tr>
+<tr><td>เวลาอัปเดต</td><td>ทันที</td><td>สัปดาห์-เดือน</td><td>อัตโนมัติระหว่าง session</td></tr>
+</tbody></table>
+<p>จุดสำคัญ: <strong>ผลลัพธ์จาก Dreaming คือไฟล์ข้อความธรรมดา</strong> คุณอ่านได้ แก้ไขได้ ลบได้ ไม่มีอะไรซ่อนอยู่ แถมยังเลือกได้ว่าจะให้อัปเดตอัตโนมัติ หรือต้องการคน review ก่อนถึงจะเอาไปใช้
+</p>
+<h2>ฟีเจอร์อื่นที่เปิดตัวพร้อมกัน</h2>
+<p>Anthropic ไม่ได้เปิดแค่ Dreaming ครั้งนี้ยังมีอีก 2 ฟีเจอร์:
+<strong>Outcomes (Public Beta)</strong> — ให้นักพัฒนากำหนด "เกณฑ์ความสำเร็จ" แล้วมี grader agent คนละตัวมาตรวจผล ทดสอบแล้วพบว่าเพิ่ม task success rate ได้ +10 คะแนน โดยเฉพาะไฟล์ .docx ดีขึ้น +8.4% และ .pptx ดีขึ้น +10.1%
+<strong>Multiagent Orchestration (Public Beta)</strong> — มี "lead agent" แตกงานซับซ้อนให้ "sub-agent" รันพร้อมกัน Netflix ใช้ฟีเจอร์นี้วิเคราะห์ log จากหลายร้อย build พร้อมกัน
+</p>
+<h2>จะเริ่มใช้ได้อย่างไร</h2>
+<ol>
+<li>ใช้ <strong>Claude Managed Agents</strong> (เปิดให้ Teams และ Enterprise)</li>
+</ol>
+<ol>
+<li><strong>เปิด Memory ก่อน</strong> — Dreaming ทำงานบน Memory system</li>
+</ol>
+<ol>
+<li><strong>ตั้งค่า Outcomes</strong> — เพื่อให้ Dreaming รู้ว่าอะไรคือ "ผิด" อะไรคือ "ถูก"</li>
+</ol>
+<ol>
+<li>เลือกโหมด: <strong>auto-update</strong> หรือ <strong>human review</strong></li>
+</ol>
+<h2>สรุป</h2>
+<p>Dreaming คือก้าวสำคัญจาก "AI ที่ลืมทุกวัน" เป็น "AI ที่เรียนรู้จากประสบการณ์" มันไม่ใช่แค่ memory system แต่เป็นระบบที่ทำให้ Agent <strong>consolidate ความรู้จริงๆ</strong> เหมือนการนอนหลับที่ช่วยให้มนุษย์จัดเรียงความทรงจำ
+สำหรับใครที่กำลังใช้ AI Agent ใน production และเจอปัญหา "ทำผิดซ้ำๆ" — Dreaming อาจเป็นคำตอบที่คุณรอคอย
+<em>อ้างอิง: <a href="https://claude.com/de/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Anthropic Code with Claude 2026</a> | <a href="https://www.working-ref.com/en/reference/anthropic-dreaming-agent-self-learning-2026" target="_blank" rel="noopener">Working Reference</a></em>
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://www.working-ref.com/en/reference/anthropic-dreaming-agent-self-learning-2026" target="_blank" rel="noopener noreferrer">https://www.working-ref.com/en/reference/anthropic-dreaming-agent-self-learning-...</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+{
+  "site_name": "AI Today Thailand",
+  "site_tagline": "ข่าว AI วันละไม่กี่นาที เข้าใจง่าย อ่านสนุก",
+  "articles": [
+    {
+      "id": 47,
+      "title": "Project Glasswing: Claude Mythos ค้นพบช่องโหว่ร้ายแรงกว่า 10,000 จุดในซอฟต์แวร์สำคัญระดับโลก",
+      "title_en": "Project Glasswing: How Claude Mythos Found Over 10,000 Critical Vulnerabilities in the World's Most Important Software",
+      "slug": "project-glasswing-claude-mythos",
+      "topic": "AI Safety",
+      "status": "published",
+      "image_url": "/images/articles/project-glasswing-claude-mythos-cover.jpg",
+      "source_url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "created_at": "2026-05-29T22:07:02.260749",
+      "published_at": "2026-05-29T22:07:02.260749",
+      "content_file": "article-046-project-glasswing-claude-mythos.md",
+      "content_file_en": "article-047-project-glasswing-claude-mythos.md",
+      "excerpt": "Anthropic เปิดอัปเดต Project Glasswing — Claude Mythos Preview ค้นพบช่องโหว่ระดับ high/critical กว่า 10,000 จุดในซอฟต์แวร์สำคัญระดับโลก พร้อมพาร์ทเนอร์ 50+ องค์กร",
+      "excerpt_en": "Anthropic's Project Glasswing uses Claude Mythos Preview to find over 10,000 critical vulnerabilities in the world's most important software, with 50+ partner organizations."
+    },
+    {
+      "num": 2,
+      "title": "🔍 AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า",
+      "slug": "rag-optimization",
+      "date": "2026-04-28",
+      "category": "RAG & Search",
+      "meta_desc": "เคยสงสัยไหมว่าทำไมบางครั้ง AI ตอบคำถามได้แม่นยำมาก แต่บางครั้งกลับตอบผิดเพี้ยน? ความลับไม่ได้อยู่ที่ว่า AI \"รู้\" อะไร แต่อยู่ที่ AI \"หา\" ข้อมูลเจอแค่ไ",
+      "word_count": 635
+    },
+    {
+      "num": 3,
+      "title": "🤖 Claude เก่งแค่ไหน? เปิด 3 ความลับที่ทำให้ AI Agent ของ Anthropic ฉลาดกว่าใคร",
+      "slug": "claude-agent-architecture",
+      "date": "2026-04-29",
+      "category": "Claude & Anthropic",
+      "meta_desc": "หลายคนที่เคยใช้ Claude คงสงสัยว่า \"ทำไมมันดูฉลาดกว่า AI ตัวอื่น?\" ความลับไม่ได้อยู่แค่ที่โมเดล แต่อยู่ที่ สถาปัตยกรรมการจัดการหน่วยความจำ และ วิธีฝึกใ",
+      "word_count": 574
+    },
+    {
+      "num": 4,
+      "title": "article-004-ai-security-news.md",
+      "slug": "ai-security-news",
+      "date": "2026-04-30",
+      "category": "AI Security",
+      "meta_desc": "สัปดาห์นี้โลก AI เกิดเรื่องใหญ่ๆ 2 เรื่องที่ส่งผลกระทบต่อนักพัฒนาทั่วโลก — เรื่องแรกคือมัลแวร์ที่แอบซ่อนอยู่ในไลบรารียอดนิยม ขโมยข้อมูลสำคัญจากคอมพิวเ",
+      "word_count": 336
+    },
+    {
+      "num": 5,
+      "title": "🤖 เลือก AI Agent Framework ไหนดี? เปรียบเทียบ 4 ยักษ์ใหญ่ + เครื่องมือใหม่จาก HuggingFace — คู่มือปี 2026",
+      "slug": "ai-agent-frameworks-2026",
+      "date": "2026-05-01",
+      "category": "Agent Frameworks",
+      "meta_desc": "ปี 2026 โลก AI Agent เติบโตไปไกลกว่าแค่ \"คุยกับ ChatGPT\" — ตอนนี้เราสามารถสร้าง ทีม AI ที่ทำงานร่วมกันได้เหมือนมนุษย์นั่งประชุมอยู่ในห้องเดียวกัน แต่ต",
+      "word_count": 609
+    },
+    {
+      "num": 6,
+      "title": "🎯 Prompt Engineering ยังไม่ใช่ \"Engineering\" จริง? วิเคราะห์ข้อเท็จจริงที่หลายคนมองข้าม",
+      "slug": "prompt-engineering-reality",
+      "date": "2026-05-01",
+      "category": "Prompt Engineering",
+      "meta_desc": "ทุกวันนี้เราได้ยินคำว่า \"Prompt Engineer\" กันจนชิน แม้กระทั่งมีตำแหน่งงานที่จ้างด้วยเงินเดือนแสน แต่มีนักวิเคราะห์ท่านหนึ่งที่มีประสบการณ์ด้าน infrast",
+      "word_count": 379
+    },
+    {
+      "num": 7,
+      "title": "🧠 AI ควร \"ลืม\" หรือ \"จำทุกอย่าง\"? คำตอบจากงานวิจัยล่าสุดที่เปลี่ยนวิธีคิดเรื่องความจำ AI",
+      "slug": "ai-memory-forget-or-remember",
+      "date": "2026-05-01",
+      "category": "AI Memory Systems",
+      "meta_desc": "คนเราลืมของเก่าได้เป็นเรื่องปกติ แต่ถ้า AI ลืมล่ะ? จะดีหรือไม่ดี? คำถามนี้กำลังเป็นที่ถกเถียงกันมากในวงการวิจัย AI ปี 2026 — ฝ่ายหนึ่งเชื่อว่า AI ควร ",
+      "word_count": 636
+    },
+    {
+      "num": 8,
+      "title": "🕸️ AI จำอะไรได้ข้ามเวลา? 3 ระบบความจำ AI รุ่นใหม่ ที่ทำให้ AI ฉลาดขึ้นแบบที่คุณไม่เคยเห็น",
+      "slug": "3-new-ai-memory-systems",
+      "date": "2026-05-02",
+      "category": "AI Memory Systems",
+      "meta_desc": "ถ้าคุณถาม ChatGPT ว่า \"เมื่อเดือนที่แล้วฉันบอกว่าชอบกินอะไร?\" มันอาจตอบไม่ได้ แม้จะมีระบบ Memory แล้วก็ตาม — เพราะระบบความจำ AI ส่วนใหญ่เก็บแค่ \"ข้อเท",
+      "word_count": 691
+    },
+    {
+      "num": 9,
+      "title": "🧩 AI ไม่ได้อ่านทุกอย่างพร้อมกัน! เปิดเทคนิค \"Progressive Disclosure\" ที่ทำให้ AI ฉลาดขึ้นโดยไม่เปลืองพลัง",
+      "slug": "ai-smart-loading",
+      "date": "2026-05-02",
+      "category": "AI Research",
+      "meta_desc": "เคยสงสัยไหมว่า AI ขนาดใหญ่อย่าง Claude หรือ ChatGPT จัดการข้อมูลมหาศาลยังไง โดยไม่ \"เบลอ\"? คำตอบไม่ใช่การซื้อความจำเพิ่ม แต่เป็นเทคนิคที่เรียกว่า Prog",
+      "word_count": 737
+    },
+    {
+      "num": 10,
+      "title": "🚀 DeepSeek V4 และ \"วิธีคิดใหม่\" ที่จะเปลี่ยนโลก AI Agent ตลอดกาล — ทำไมคุณอาจไม่ต้องใช้ Framework อีกต่อไป",
+      "slug": "deepseek-v4-ai-agent-future",
+      "date": "2026-05-03",
+      "category": "Agent Frameworks",
+      "meta_desc": "เดือนเมษายน 2026 เป็นเดือนที่โลก AI เปลี่ยนไป 2 ครั้ง — ครั้งแรก DeepSeek เปิดตัว V4 โมเดล AI โอเพนซอร์สตัวใหญ่ที่สุดในประวัติศาสตร์ (1.6 ล้านล้านพารา",
+      "word_count": 613
+    },
+    {
+      "num": 11,
+      "title": "🧠 ทำไม ChatGPT จำข้อมูลคุณได้แค่ครึ่งเดียว? และนักวิจัยเพิ่งค้นพบวิธีทำให้ AI จำดีขึ้น 10 เท่า",
+      "slug": "chatgpt-memory-vs-smart-retrieval",
+      "date": "2026-05-03",
+      "category": "AI Memory Systems",
+      "meta_desc": "เคยรู้สึกไหมว่า ChatGPT จำอะไรเราไม่ค่อยได้? บอกไปว่า \"ชอบกินส้ม\" แล้ววันต่อมามันแนะนำเมนูส้มให้ แต่อาทิตย์ต่อมามันลืมไปแล้ว? คุณไม่ได้คิดไปเองครับ — ",
+      "word_count": 621
+    },
+    {
+      "num": 12,
+      "title": "🌙 AI ที่ \"คิดตอนหลับ\" และจัดระเบียบสมองตัวเองได้ — เปิดเทคโนโลยีล่าสุดจาก Letta ที่เปลี่ยนวิธีทำงานของ AI Agent ตลอดกาล",
+      "slug": "ai-sleep-memory-organization",
+      "date": "2026-05-05",
+      "category": "AI Memory Systems",
+      "meta_desc": "เคยสงสัยไหมว่าทำไมบางที AI ที่คุณคุยด้วยทุกวัน กลับตอบคำถามได้แย่ลงเมื่อเวลาผ่านไป? คำตอบอาจไม่ใช่เพราะ AI โง่ลง แต่เพราะ ข้อมูลในสมองมันยุ่งเหยิงเกิน",
+      "word_count": 731
+    },
+    {
+      "num": 13,
+      "title": "🚀 สัปดาห์ที่ AI เขย่าโลก — Amazon เปิดให้พนักงานทุกคนใช้ AI Coding, Startup AI ด้านบริการลูกค้าระดมทุนพันล้าน, และแอปใหม่ที่ให้คนกับ AI แชทร่วมกันในกลุ่ม",
+      "slug": "ai-news-amazon-sierra-shapes",
+      "date": "2026-05-06",
+      "category": "AI Industry",
+      "meta_desc": "เดือนพฤษภาคม 2026 น่าจะเป็นช่วงเวลาที่น่าจดจำสำหรับโลก AI เพราะมีข่าวใหญ่ 3 เรื่องเกิดขึ้นพร้อมกัน — Amazon บริษัทยักษ์ใหญ่แห่งวงการเทคโนโลยีประกาศเปิ",
+      "word_count": 517
+    },
+    {
+      "num": 14,
+      "title": "🔥 Anthropic ประกาศ \"หัวใจใหม่\" ของ AI Agent — Multi-Agent, Dreaming, Routines + เครื่องมือใหม่ที่ต้องจับตา",
+      "slug": "anthropic-claude-2026-deepseek-tui",
+      "date": "2026-05-07",
+      "category": "Claude & Anthropic",
+      "meta_desc": "วันที่ 6 พฤษภาคม 2026 ถือเป็นวันสำคัญอีกวันของวงการ AI เพราะ Anthropic บริษัทเจ้าของ Claude จัดงาน \"Code w/ Claude 2026\" และประกาศฟีเจอร์ใหม่หลายตัวที",
+      "word_count": 536
+    },
+    {
+      "num": 15,
+      "title": "🛡️ 3 เครื่องมือใหม่ที่ทำให้ AI Agent ทำงานได้จริงบน Production — ปลอดภัย ควบคุมได้ และทรงพลัง",
+      "slug": "ai-agent-infrastructure-tilde-ruflo-browsermcp",
+      "date": "2026-05-07",
+      "category": "MCP Protocol",
+      "meta_desc": "ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินคำว่า \"AI Agent\" หรือ \"เอเจนต์ AI\" กันบ่อยๆ — แต่ปัญหาคือ AI Agent ส่วนใหญ่ยังทำงานอยู่แค่ในห้องทดลอง ยังไม่กล้าป",
+      "word_count": 709
+    },
+    {
+      "num": 16,
+      "title": "🧠 ทำไม AI Agent ถึงต้องมี \"ระบบควบคุม\" ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด",
+      "slug": "ai-agent-control-flow-haas-framework",
+      "date": "2026-05-08",
+      "category": "Agent Frameworks",
+      "meta_desc": "ทุกวันนี้เราได้ยินคำว่า \"AI Agent\" กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตั",
+      "word_count": 516
+    },
+    {
+      "num": 17,
+      "title": "💾 วิกฤตขาดแคลน RAM อาจยาวนานถึงปี 2030 — ส่งผลกระทบ AI, มือถือ, แล็ปท็อป และทุกอุปกรณ์ที่คุณใช้",
+      "slug": "ram-shortage-crisis",
+      "date": "2026-05-08",
+      "category": "AI Industry",
+      "meta_desc": "ถ้าคุณรู้สึกว่าราคาแล็ปท็อป มือถือ หรืออุปกรณ์อิเล็กทรอนิกส์ในช่วงหลังแพงขึ้น อาจไม่ใช่เรื่องบังเอิญ — เพราะโลกกำลังเผชิญ \"วิกฤตขาดแคลนหน่วยความจำ (RA",
+      "word_count": 364
+    },
+    {
+      "num": 18,
+      "title": "🛠️ 2 เครื่องมือ AI ใหม่ที่น่าจับตา — ตัวจัดการ AI Agent ในเครื่องคุณ และโมเดลสร้างวิดีโอจากข้อความที่โด่งดังที่สุดบน HuggingFace",
+      "slug": "armorer-sulphur2-new-ai-tools",
+      "date": "2026-05-09",
+      "category": "New Tools",
+      "meta_desc": "สัปดาห์นี้มีเครื่องมือ AI ใหม่ 2 ตัวที่น่าสนใจมาก แม้จะทำงานต่างสายกัน — ตัวแรกคือ Armorer เครื่องมือ opensource ที่ช่วยจัดการ AI Agent หลายตัวในเครื่",
+      "word_count": 380
+    },
+    {
+      "num": 19,
+      "title": "🔏 MCP จะขึ้น Production ได้ ต้องปลอดภัยก่อน — 2 เครื่องมือใหม่ที่ตอบโจทย์นี้ได้ดีที่สุด",
+      "slug": "mcp-security-mcpnest-bluerock",
+      "date": "2026-05-10",
+      "category": "AI Security",
+      "meta_desc": "ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินคำว่า MCP (Model Context Protocol) หรือ \"มาตรฐานสื่อสารของ AI\" — มันคือภาษากลางที่ทำให้ AI Agent สามารถเชื่อมต่อก",
+      "word_count": 613
+    },
+    {
+      "num": 20,
+      "title": "💹 AI วิจัยการเงินแทนคุณได้แล้ว — เปิด Dexter ตัวแรกที่คิด วางแผน และเรียนรู้ด้วยตัวเอง",
+      "slug": "dexter-financial-research-agent",
+      "date": "2026-05-10",
+      "category": "Agent Frameworks",
+      "meta_desc": "ลองนึกภาพว่าคุณต้องการวิเคราะห์บริษัทจดทะเบียนแห่งหนึ่งก่อนตัดสินใจลงทุน — คุณต้องไปหางบการเงิน ดูรายได้ ตรวจกระแสเงินสด อ่านรายงานวิเคราะห์ และเทียบก",
+      "word_count": 434
+    },
+    {
+      "num": 22,
+      "title": "🔌 MCP โตขึ้นแล้ว! 3 ข่าวใหม่ที่พิสูจน์ว่า \"มาตรฐานใหม่ของ AI Agent\" มาถึงจริงแล้ว",
+      "slug": "mcp-ecosystem-growth",
+      "date": "2026-05-11",
+      "category": "MCP Protocol",
+      "meta_desc": "ถ้าคุณตามข่าว AI มาสักพัก คงเคยได้ยินชื่อ MCP (Model Context Protocol) — มาตรฐานเปิดที่ทำให้ AI Agent เชื่อมต่อกับเครื่องมือต่างๆ ได้ เหมือน USB port ",
+      "word_count": 654
+    },
+    {
+      "num": 23,
+      "title": "🧠 AI จำแบบไหนดีกว่า? \"ลืมต้นฉบับแล้วสรุป\" หรือ \"เก็บทั้งหมดแล้วค้นหาฉลาดๆ\" — 2 งานวิจัยใหม่ที่ให้คำตอบ",
+      "slug": "ai-memory-two-approaches",
+      "date": "2026-05-12",
+      "category": "AI Memory Systems",
+      "meta_desc": "ถ้าคุณใช้ ChatGPT หรือ Claude มาสักพัก คงเคยสังเกตเห็นว่า AI มีระบบ \"ความจำ\" ใหม่ๆ ออกมาเรื่อยๆ แต่รู้ไหมครับว่า วิธีที่ AI จดจำข้อมูล มีอยู่ 2 ค่ายให",
+      "word_count": 571
+    },
+    {
+      "num": 24,
+      "title": "🔥 3 ข่าวใหญ่ที่พิสูจน์ว่า AI ไม่ใช่แค่เทรนด์ — แต่คือโครงสร้างใหม่ของโลกเทคโนโลยี",
+      "slug": "anthropic-enterprise-apple-xcode-ai-rd-2028",
+      "date": "2026-05-13",
+      "category": "AI Industry",
+      "meta_desc": "เดือนพฤษภาคม 2026 มีข่าวสำคัญ 3 เรื่องที่เกิดขึ้นพร้อมกัน และแต่ละเรื่องสะท้อนแนวโน้มที่ต่างกันแต่เชื่อมโยงกันอย่างน่าสนใจ — Anthropic ร่วมมือกับกลุ่ม",
+      "word_count": 550
+    },
+    {
+      "num": 25,
+      "title": "🚀 AI เขียนโค้ดได้เก่งขึ้นทุกวัน — Claude ตื่นขึ้นมา \"ฝัน\" แล้วแก้บั๊กเอง, DeepSeek มีเครื่องมือใหม่ที่เขียนโค้ดใน Terminal ได้จบ",
+      "slug": "claude-dreaming-multiagent-deepseek-tui",
+      "date": "2026-05-13",
+      "category": "Claude & Anthropic",
+      "meta_desc": "ถ้าคุณเป็นโปรแกรมเมอร์ น่าจะเคยได้ยินว่า AI เขียนโค้ดได้แล้ว — แต่เดือนพฤษภาคม 2026 มีข่าว 2 เรื่องที่พิสูจน์ว่า AI Coding ไม่ได้แค่ \"เสริม\" มนุษย์แล้",
+      "word_count": 611
+    },
+    {
+      "num": 26,
+      "title": "⚡ Claude.ai ล่มกลางวัน — บทเรียนสำคัญว่าทำไมเราไม่ควรพึ่ง AI แค่บริษัทเดียว",
+      "slug": "claude-downtime-ai-reliability",
+      "date": "2026-05-17",
+      "category": "AI Industry",
+      "meta_desc": "เมื่อไม่นานมานี้ Claude.ai ทั้งเว็บไซต์และ API ใช้งานไม่ได้พร้อมกัน — ไม่ใช่แค่นาทีสองนาที แต่นานพอที่ผู้ใช้งานจำนวนมากต้องวิ่งไปรายงานปัญหาบน Hacker ",
+      "word_count": 526
+    },
+    {
+      "slug": "anthropic-acquires-stainless",
+      "title": "Anthropic ซื้อกิจการ Stainless เตรียมยกระดับ AI Agent ให้ทำงานได้จริงมากขึ้น",
+      "title_en": "Anthropic Buys Stainless: A Major Move for AI Agent Connectivity",
+      "category": "Industry",
+      "date": "2026-05-21",
+      "source_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "image_url": "/images/articles/anthropic-acquires-stainless.jpg",
+      "read_time": 5,
+      "num": 27
+    },
+    {
+      "slug": "anthropic-finance-agents",
+      "title": "เอเจนต์ AI สำหรับภาคการเงิน: ปฏิวัติวงการการเงินด้วย Claude จาก Anthropic",
+      "title_en": "Claude's New Financial Agents: Transforming How Finance Teams Work",
+      "category": "AI Agents",
+      "date": "2026-05-21",
+      "source_url": "https://www.anthropic.com/news/finance-agents",
+      "image_url": "/images/articles/anthropic-finance-agents.jpg",
+      "read_time": 5,
+      "num": 28
+    },
+    {
+      "slug": "claude-builds-visuals",
+      "title": "แคลดสร้างภาพและกราฟแบบโต้ตอบได้ในการสนทนา",
+      "title_en": "Claude's New Superpower: Interactive Visuals Right in Your Chat",
+      "category": "AI Tools",
+      "date": "2026-05-21",
+      "source_url": "https://claude.com/blog/claude-builds-visuals",
+      "image_url": "/images/articles/claude-builds-visuals.jpg",
+      "read_time": 5,
+      "num": 29
+    },
+    {
+      "slug": "claude-code-desktop-redesign",
+      "title": "Claude Code บนเดสก์ท็อปได้รับการออกแบบใหม่ รองรับการทำงานแบบขนาน",
+      "title_en": "The New Claude Code Desktop: Your Ultimate Multi-Tasking Development Companion",
+      "category": "AI Tools",
+      "date": "2026-05-21",
+      "source_url": "https://claude.com/blog/claude-code-desktop-redesign",
+      "image_url": "/images/articles/claude-code-desktop-redesign.jpg",
+      "read_time": 5,
+      "num": 30
+    },
+    {
+      "slug": "agentic-rag-autonomous-retrieval",
+      "title": "Agentic RAG: เมื่อ RAG ไม่พอ ต้องให้ Agent คิดเอง",
+      "title_en": "Agentic RAG: When Traditional RAG Isn't Enough, Let the Agent Think",
+      "category": "AI Agents",
+      "date": "2026-05-25",
+      "source_url": "https://crazyrouter.com/en/blog/agentic-rag-build-smarter-ai-agents-retrieval-augmented-generation-2026",
+      "image_url": "/images/articles/agentic-rag-autonomous-retrieval.jpg",
+      "read_time": 5,
+      "num": 37
+    },
+    {
+      "slug": "ai-researches-alignment-better-than-humans",
+      "title": "เมื่อ AI วิจัย Alignment เก่งกว่ามนุษย์ — Anthropic พิสูจน์แล้วด้วย 9 Agents ทำงานขนาน",
+      "title_en": "When AI Researches Alignment Better Than Humans — Anthropic's 9 Parallel Agents Prove It",
+      "category": "AI Safety",
+      "date": "2026-05-25",
+      "source_url": "",
+      "image_url": "/images/articles/ai-researches-alignment-better-than-humans.jpg",
+      "read_time": 5,
+      "num": 38
+    },
+    {
+      "slug": "robinhood-ai-agentic-trading",
+      "title": "Robinhood เปิดให้ AI Agent เทรดหุ้นแทนคุณ — Crypto และ Futures กำลังจะตามมา",
+      "category": "Industry",
+      "date": "2026-05-28",
+      "num": 43,
+      "meta_desc": "Robinhood แพลตฟอร์มเทรดยอดนิยมเปิดตัว Agentic Trading ให้ AI agent ซื้อขายหุ้นแทนคุณ รองรับ MCP พร้อม crypto futures ตามมา",
+      "source_url": "https://www.theblock.co/post/402729/robinhood-ai-powered-crypto-trading-launching-agentic-stock-trading-beta",
+      "image_url": "/images/articles/robinhood-ai-agentic-trading-cover.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Claude ฝันได้: Anthropic เปิดตัว 'Dreaming' — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง",
+      "slug": "anthropic-dreaming-self-learning-agents",
+      "topic": "Continuous Learning",
+      "image": "/images/articles/anthropic-dreaming-self-learning-agents-cover.jpg",
+      "source_url": "https://www.working-ref.com/en/reference/anthropic-dreaming-agent-self-learning-2026",
+      "file_th": "articles/article-044-anthropic-dreaming-self-learning-agents.md",
+      "file_en": "articles-en/article-044-anthropic-dreaming-self-learning-agents.md",
+      "published_at": "2026-05-28"
+    },
+    {
+      "id": 45,
+      "title": "AI Agent พัฒนาตัวเอง... แล้วก็พังเอง: ความเสี่ยง 'Misevolution' ที่งานวิจัย ICLR 2026 เพิ่งเปิดโปง",
+      "slug": "ai-agent-misevolution-risks",
+      "topic": "Advanced Techniques",
+      "image": "/images/articles/ai-agent-misevolution-risks-cover.jpg",
+      "source_url": "https://en.papernotes.org/ICLR2026/llm_agent/your_agent_may_misevolve_emergent_risks_in_self-evolving_llm_agents/",
+      "file_th": "articles/article-045-ai-agent-misevolution-risks.md",
+      "file_en": "articles-en/article-045-ai-agent-misevolution-risks.md",
+      "published_at": "2026-05-28"
+    },
+    {
+      "id": 46,
+      "title": "Claude ฝันได้: Anthropic เปิดตัว Dreaming — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง",
+      "slug": "anthropic-dreaming-self-learning-agents",
+      "content": "# Claude ฝันได้: Anthropic เปิดตัว 'Dreaming' — AI Agent ที่เรียนรู้จากความผิดพลาดของตัวเอง\n\nเคยสงสัยไหมว่าทำไม AI Agent ถึงทำผิดซ้ำๆ กันทุกวัน? วันนี้เรามีคำตอบ — และมันน่าทึ่งมาก\n\nวันที่ 6 พฤษภาคม 2026 Anthropic เปิดตัวฟีเจอร์ที่เรียกว่า **Dreaming** สำหรับ Claude Managed Agents พูดง่ายๆ คือ **ให้ AI Agent ของคุณ \"ฝัน\" ระหว่างที่ไม่ได้ทำงาน** เพื่อทบทวนสิ่งที่ทำไป ตัดสิ่งที่ไม่จำเป็นออก และสรุปบทเรียนไว้ใช้ในครั้งต่อไป\n\n![AI Agent Learning](/images/articles/anthropic-dreaming-self-learning-agents-inline-1.jpg)\n\n## ปัญหาเก่าที่ทุกคนเจอ: Agent ลืมทุกวัน\n\nถ้าคุณเคยใช้ AI Agent ในงานจริง คุณน่าจะเจอปัญหานี้: **Agent ทำผิดซ้ำๆ ทุก session** เหมือนไม่เคยเรียนรู้เลย\n\nที่มาของปัญหาคือ AI Agent ปกติไม่มี \"ความจำข้าม session\" ทุกครั้งที่เริ่ม session ใหม่ มันเริ่มจากศูนย์ ทุกอย่างที่เคยเรียนรู้ ทั้งทริคที่ค้นพบ ข้อผิดพลาดที่เคยทำ ก็หายไปหมด\n\nกรณีตัวอย่างที่ชัดเจนที่สุดคือ **Harvey** บริษัท AI ด้านกฎหมาย Agent ของ Harvey ค้นพบ workaround สำหรับไฟล์บางประเภท แต่ทุก session ใหม่มันก็ต้องค้นพบใหม่อีกครั้ง — **ทำซ้ำเดิม 3 สัปดาห์เต็ม**\n\n## Dreaming ทำงานยังไง\n\nลองจินตนาการว่าคุณทำงานทั้งวัน แล้วตอนกลางคืนสมองของคุณ \"ฝัน\" ทบทวนสิ่งที่ทำไป จัดเก็บความจำที่สำคัญ ตัดทิ้งที่ไม่จำเป็น และสรุปบทเรียน — **Dreaming ของ Anthropic ทำทุกอย่างนี้ให้ AI Agent**\n\nเปรียบเสมือนระบบ **memory consolidation** ของมนุษย์ในช่วง REM sleep คือช่วงที่สมองจัดระเบียบความจำ แยกออกเป็น long-term memory และดึง patterns ที่ซ่อนอยู่ออกมา\n\n### 3 สิ่งที่ Dreaming ทำระหว่าง Agent \"นอนหลับ\"\n\n**1. ตรวจจับความผิดพลาดที่ซ้ำๆ** — ถ้า Agent ทำผิดแบบเดิมหลายครั้ง Dreaming จะดึง pattern ของความผิดนั้นออกมาและจดไว้ เช่น Harvey Agent มักติดปัญหาเรื่อง file-format quirks และ tool-call failure modes\n\n**2. บันทึกวิธีที่ทำงานได้จริง** — เมื่อ Agent ลองหลายวิธีแล้วเจอวิธีที่ดีที่สุด Dreaming จะจับเป็น \"playbook\" ไว้ใช้ต่อ ครั้งต่อไปไม่ต้องลองผิดลองถูกอีก\n\n**3. แบ่งปันความรู้ระหว่าง Agent** — ถ้าคุณมีหลาย Agent ทำงานร่วมกัน สิ่งที่ Agent A เรียนรู้จะถูกส่งต่อให้ Agent B, C, D ด้วย\n\n![Memory Consolidation](/images/articles/anthropic-dreaming-self-learning-agents-inline-2.jpg)\n\n## ผลลัพธ์ที่วัดได้จริง\n\nตัวเลขพูดแทนได้ดีกว่าคำบรรยาย:\n\n| เมตริก | ผลลัพธ์ |\n|---------|---------|\n| Harvey (Legal AI) | **Task completion เพิ่ม 6 เท่า** |\n| Wisedocs | ลดเวลา review **50%** |\n| Rakuten | รายงานปรับปรุง ~**90%** |\n| Internal benchmarks | Task success เพิ่มสูงสุด **10 คะแนน** |\n| First-pass errors | ลดลง **97%** |\n| ต้นทุน | ลดลง **27%** |\n| Latency | ลดลง **34%** |\n\nHarvey เป็น case study ที่ Anthropic อ้างอิงอย่างเป็นทางการ หลังเปิดใช้ Dreaming ผลลัพธ์คือ **~6x improvement** ใน task completion ซึ่งเป็นตัวเลขที่น่าประทับใจมาก\n\n## Dreaming ต่างจาก Memory ธรรมดายังไง\n\nหลายคนถามว่า \"แล้วต่างจาก RAG ยังไง?\"\n\n**RAG (Retrieval-Augmented Generation)** = ค้น context จาก vector store มาใช้งาน แต่ไม่ได้ \"เรียนรู้\" หรือ \"สรุปบทเรียน\" ใหม่\n\n**Dreaming** = ทำการ **consolidate** ความรู้จริงๆ ดึง patterns จากหลายๆ session รวมเป็นบทเรียนที่ใช้ได้ใน session ถัดไป มันคือ step สำคัญสู่ **agents ที่เรียนรู้จากประสบการณ์ของตัวเอง**\n\nต่างกับการที่คุณต้องมานั่งเขียน skill เองจากประสบการณ์ที่คุณใช้ Claude ด้วยตัวเอง กับ Dreaming ที่ให้โมเดลทำให้อัตโนมัติ\n\n## ทำให้ใช้ได้อย่างไร\n\nDreaming พร้อมใช้สำหรับ Claude Managed Agents โดยอัตโนมัติ คุณไม่ต้องเปิด/ปิดฟีเจอร์นี้ มันจะทำงานเบื้องหลังระหว่าง idle time ของ agent\n\nAnthropic เปิดตัว Dreaming พร้อมกับ **outcomes (quality-grading layer)** และ **multi-agent orchestration** เพื่อสร้างระบบ memory ที่ robust สำหรับ self-improving agents\n\n## อนาคตของ Self-Learning Agents\n\nDreaming ไม่ใช่จุดจบ แต่เป็นจุดเริ่มต้นของยุคใหม่ที่ AI Agent สามารถ:\n\n- ✅ เรียนรู้จากความผิดพลาด\n- ✅ ปรับปรุงตัวเองอัตโนมัติ\n- ✅ ส่งต่อความรู้ระหว่าง sessions\n- ✅ สร้าง playbook จากประสบการณ์\n\nนี่คือหนึ่งในทิศทางที่สำคัญที่สุดสู่ AGI ที่มีความสามารถเรียนรู้ต่อเนื่อง (continual learning) อย่างแท้จริง\n\n---\n\n## TL;DR\n\n- **Dreaming** = ระบบที่ทำให้ Claude Agent \"ฝัน\" ทบทวนประสบการณ์ระหว่าง sessions\n- ได้ผลลัพธ์ **6x improvement** ที่ Harvey\n- ลด errors **97%** ลดต้นทุน **27%**\n- เป็นก้าวสำคัญสู่ self-learning agents\n- ต่างจาก RAG ตรงที่ \"consolidate\" ความรู้จริงๆ ไม่ใช่แค่ดึง context",
+      "content_en": "# Claude Dreams Now: Anthropic's \"Dreaming\" — AI Agents That Learn from Their Own Mistakes\n\nEver wonder why your AI agents make the same mistakes every single day? Today, we have the answer — and it's stunning\n\nOn May 6, 2026, Anthropic launched a feature called **Dreaming** for Claude Managed Agents. Simply put: **Let your AI agent \"dream\" while it's not working** — reviewing what it did, trimming what's unnecessary, and summarizing lessons for next time\n\n![AI Agent Learning](/images/articles/anthropic-dreaming-self-learning-agents-inline-1.jpg)\n\n## The Old Problem Everyone Faces: Agents Forget Daily\n\nIf you've used AI agents in production, you've hit this: **Agents make the same mistakes every session** — like they never learn\n\nThe root cause? Standard AI agents lack \"cross-session memory.\" Each new session starts from zero. Every trick discovered, every error made — all gone.\n\nThe clearest example is **Harvey**, a legal AI company. Harvey's agent discovered workarounds for certain file types, but every new session required rediscovering them — **3 full weeks of repetition**\n\n## How Dreaming Works\n\nImagine working all day, then while you sleep, your brain \"dreams\" — reviewing what happened, storing important memories, discarding noise, and extracting lessons — **Anthropic's Dreaming does exactly this for AI agents**\n\nIt's like human **memory consolidation** during REM sleep — the brain organizes memories into long-term storage and finds hidden patterns.\n\n### 3 Things Dreaming Does While Agents \"Sleep\"\n\n**1. Detects Repeated Mistakes** — If an agent fails repeatedly, Dreaming extracts the failure pattern and records it. For example, Harvey's agent struggled with file-format quirks and tool-call failure modes\n\n**2. Records What Actually Works** — When an agent tries multiple approaches and finds the best one, Dreaming captures it as a \"playbook\" for reuse. No more trial-and-error\n\n**3. Shares Knowledge Between Agents** — If you have multiple agents working together, what Agent A learns propagates to Agents B, C, and D\n\n![Memory Consolidation](/images/articles/anthropic-dreaming-self-learning-agents-inline-2.jpg)\n\n## Real-World Measured Results\n\nNumbers speak louder than words:\n\n| Metric | Result |\n|--------|--------|\n| Harvey (Legal AI) | **6x task completion increase** |\n| Wisedocs | **50% review time reduction** |\n| Rakuten | Reports ~**90% improvement** |\n| Internal benchmarks | Up to **10-point task success increase** |\n| First-pass errors | **97% reduction** |\n| Cost | **27% reduction** |\n| Latency | **34% reduction** |\n\nHarvey is Anthropic's official case study. After enabling Dreaming, results showed **~6x improvement** in task completion — an impressive number.\n\n## How Dreaming Differs from Regular Memory\n\nMany ask: \"How is this different from RAG?\"\n\n**RAG (Retrieval-Augmented Generation)** = Retrieves context from a vector store for use — but doesn't \"learn\" or \"summarize\" new insights\n\n**Dreaming** = Actually **consolidates** knowledge — extracts patterns from multiple sessions, turning them into reusable lessons for future sessions. It's a key step toward **agents that learn from their own experience**\n\nUnlike manually writing skills based on your experience with Claude, Dreaming automates this process.\n\n## How to Use It\n\nDreaming is automatically available for Claude Managed Agents. You don't need to toggle it on/off. It runs in the background during agent idle time.\n\nAnthropic launched Dreaming alongside **outcomes (quality-grading layer)** and **multi-agent orchestration** to create a robust memory system for self-improving agents.\n\n## The Future of Self-Learning Agents\n\nDreaming isn't the end — it's the beginning of a new era where AI agents can:\n\n- ✅ Learn from mistakes\n- ✅ Self-improve automatically\n- ✅ Share knowledge across sessions\n- ✅ Build playbooks from experience\n\nThis is one of the most important directions toward truly continual learning AGI.\n\n---\n\n## TL;DR\n\n- **Dreaming** = System that makes Claude agents \"dream\" — reviewing experience between sessions\n- Achieved **6x improvement** at Harvey\n- Reduced errors by **97%**, costs by **27%**\n- Key step toward self-learning agents\n- Different from RAG — actually **consolidates** knowledge, not just retrieves context",
+      "topic": "Continuous Learning",
+      "image_url": "/images/articles/anthropic-dreaming-self-learning-agents-cover.jpg",
+      "source_url": "https://yourstory.com/ai-story/anthropic-claude-dreaming-self-improving-agents",
+      "published_at": "2026-05-29T14:15:00",
+      "created_at": "2026-05-29T14:15:00",
+      "status": "published"
+    }
+  ],
+  "categories": {
+    "AI Memory Systems": {
+      "color": "#8B5CF6",
+      "icon": "🧠",
+      "slug": "ai-memory"
+    },
+    "AI Industry": {
+      "color": "#EF4444",
+      "icon": "🔥",
+      "slug": "ai-industry"
+    },
+    "Agent Frameworks": {
+      "color": "#3B82F6",
+      "icon": "🤖",
+      "slug": "agent-frameworks"
+    },
+    "Claude & Anthropic": {
+      "color": "#D97706",
+      "icon": "⚡",
+      "slug": "claude-anthropic"
+    },
+    "MCP Protocol": {
+      "color": "#10B981",
+      "icon": "🔌",
+      "slug": "mcp-protocol"
+    },
+    "AI Security": {
+      "color": "#DC2626",
+      "icon": "🛡️",
+      "slug": "ai-security"
+    },
+    "New Tools": {
+      "color": "#6366F1",
+      "icon": "🛠️",
+      "slug": "new-tools"
+    },
+    "Prompt Engineering": {
+      "color": "#EC4899",
+      "icon": "🎯",
+      "slug": "prompt-engineering"
+    },
+    "AI Research": {
+      "color": "#14B8A6",
+      "icon": "🔬",
+      "slug": "ai-research"
+    },
+    "RAG & Search": {
+      "color": "#F59E0B",
+      "icon": "🔍",
+      "slug": "rag-search"
+    },
+    "AI News": {
+      "color": "#6366F1",
+      "icon": "📰",
+      "slug": "ai-news"
+    }
+  },
+  "total_articles": 35
+}

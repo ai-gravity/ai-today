@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง — AI Today Thailand</title>
+  <meta name="description" content="AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง">
+  <link rel="canonical" href="https://aitodaythailand.com/article/agent-production-architecture.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง">
+  <meta property="og:description" content="AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/agent-production-architecture.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/agent-production-architecture.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-01">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง">
+  <meta name="twitter:description" content="AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/agent-production-architecture.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง", "description": "AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง", "url": "https://aitodaythailand.com/article/agent-production-architecture.html", "image": "https://aitodaythailand.com/images/articles/agent-production-architecture.jpg", "datePublished": "2026-05-01", "dateModified": "2026-05-01", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/agent-production-architecture.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>AI Agent ยุคใหม่: จาก Prompt Chain สู่ Production Architecture ที่ทำงานได้จริง</h1>
+    <div class="article-meta">
+      <span>2026-05-01</span>
+      <span>·</span>
+      <span>~2 นาที</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/agent-production-architecture.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<p>เคยสงสัยไหมว่าทำไม AI Agent ที่ดูเจ๋งมากตอน demo แต่พอเอาไปใช้จริงกลับพังบ่อย? คำตอบที่ทั้วไปมักจะบอกว่า "เพิ่ม prompt อีกนิด" แต่สัปดาห์นี้มีเสียงจากผู้เชี่ยวชาญหลายฝ่ายที่บอกว่า วิธีนั้นไม่ได้ผลแล้ว เราต้องเปลี่ยนวิธีคิดทั้งระบบ
+</p>
+<h2>Prompt ยาวขึ้นเรื่อยๆ ไม่ใช่คำตอบ</h2>
+<p>บทความยอดนิยมบน Hacker News สัปดาห์นี้จาก Brian Suh เสนอแนวคิดที่ทำให้ชุมชน developer ต้องคิดหนัก — AI Agent ที่ต้องทำงานซับซ้อนไม่ควรใช้ prompt chains แต่ต้องใช้ <strong>deterministic control flow</strong> ที่เขียนเป็น code จริงๆ
+สังเกตตัวเองดูสิ ถ้าคุณเคยเขียนคำว่า "MANDATORY" หรือ "DO NOT SKIP" ใน prompt นั่นแปลว่าคุณกำลังใช้ prompt ทำหน้าที่ของ code อยู่ และมันจะยิ่งพังยิ่งเพิ่มเติม
+Brian อธิบายว่า prompt chains เปรียบเหมือน programming language ที่ statements ทุกอย่างเป็น "คำแนะนำ" และ functions "คาดเดา" ผลลัพธ์ มันไม่มีทาง scale ได้ เพราะ software ที่เติบโตได้จริงต้องมี recursive composability — คือสามารถแตกงานเป็น libraries, modules, functions ที่ซ้อนกันได้ แต่ prompt chains ทำแบบนั้นไม่ได้
+สิ่งที่ต้องทำแทนคือย้าย logic จาก "prose" เข้าสู่ runtime จริง ใช้ deterministic scaffolds ที่มี explicit state transitions และ validation checkpoints ชัดเจน และที่สำคัญที่สุด — ปฏิบัติต่อ LLM เป็น component หนึ่ง ไม่ใช่ทั้งระบบ
+</p>
+<h2>OpenAI Agents SDK 0.14: จาก Prompt Bundle สู่ Runtime จริง</h2>
+<p>ในเวลาไล่เลี่ยกัน OpenAI ก็ปล่อย Agents SDK เวอร์ชัน 0.14 ซึ่งเป็นจุดเปลี่ยนสำคัญ — จาก "prompt bundle" ธรรมดา กลายเป็น runtime แบบเต็มรูปแบบ โดยมี 3 เสาหลักที่น่าสนใจมาก
+<strong>Model-Native Harness</strong> เป็นแนวคิดที่ให้ model ควบคุม files, shells, patches โดยตรง แต่แยก control plane (ที่เก็บ credentials) ออกจาก compute plane (ที่รันโค้ด) อย่างชัดเจน เพื่อป้องกัน prompt injection ที่จะขโมยสิทธิ์เข้าถึง
+<strong>Sandbox Agents</strong> ให้โค้ดที่ model สร้างรันใน isolated compute layer แยกออกมาโดยสิ้นเชิง รองรับ 7 providers รวมถึง Cloudflare, E2B, Vercel และแม้แต่ local sandbox ที่ไม่ต้องใช้ Docker
+<strong>Subagent Pattern</strong> ให้ parent agent เรียก child agents หลายตัวรันพร้อมกันแบบ parallel แต่ละตัวอยู่ใน sandbox ของตัวเอง พร้อมระบบ checkpoint/snapshot ที่ทำให้งานที่รันนานๆ สามารถ resume ได้แม้ container restart
+สิ่งที่น่าสังเกตคือ OpenAI เองก็เห็นตรงกับแนวคิดจากบทความ Hacker News — ต้องใช้ code-based control flow ไม่ใช่ prompt ที่ยาวขึ้นเรื่อยๆ
+</p>
+<h2>Ruflo: Multi-Agent Orchestration สำหรับ Production</h2>
+<p>อีกหนึ่งเครื่องมือที่น่าจับตาคือ Ruflo (เดิมชื่อ Claude Flow) — multi-agent orchestration platform ที่เพิ่งทะลุ 48,500 stars บน GitHub
+สิ่งที่ Ruflo ทำคือให้ AI Agent หลายๆ ตัวทำงานร่วมกันได้อย่างมีระเบียบ มี 100+ specialized agents สำหรับงานต่างๆ เช่น coding, testing, security, docs, และ architecture โดยมีระบบ Swarm coordination ที่รองรับทั้ง hierarchical, mesh และ adaptive topologies
+ที่น่าสนใจคือ Ruflo มีระบบ self-learning ผ่าน SONA neural patterns และ ReasoningBank — agent ไม่ได้แค่ทำงานตามสั่ง แต่เรียนรู้จากประสบการณ์ด้วย รวมถึง Vector Memory ที่ search เร็วกว่าปกติถึง 150x-12,500x ทำให้ agent จำข้อมูลข้าม session ได้จริง
+แนวคิดหลักของ Ruflo สรุปได้ว่า "One npx ruflo init gives Claude Code a nervous system" — agent จัดระเบียบตัวเอง เรียนรู้ จำ และประสานงานกันโดยอัตโนมัติ
+</p>
+<h2>ทำไมทั้งหมดนี้สำคัญตอนนี้</h2>
+<p>ถ้ามองรวมกันจะเห็น pattern ชัดเจน — อุตสาหกรรม AI Agent กำลังเปลี่ยนจาก "เขียน prompt ให้ดี" เป็น "สร้าง architecture ที่ถูกต้อง" ทั้ง 3 เรื่องบอกเรื่องเดียวกัน:
+<strong>บทความ Hacker News</strong> บอกว่าอย่าพึ่ง prompt อย่างเดียว ให้ใช้ code-based control flow
+<strong>OpenAI SDK</strong> แสดงให้เห็นว่าแนวทางนั้นเป็นจริงได้ด้วย sandbox + harness + subagents
+<strong>Ruflo</strong> พิสูจน์ว่า multi-agent system ทำงานได้จริงใน production เมื่อมี orchestration ที่เหมาะสม
+ถ้าคุณกำลังสร้าง AI Agent อยู่ คำแนะนำคืออย่าเพิ่ม prompt อีกบรรทัด แต่ให้มองว่า architecture ของคุณมี state management, validation checkpoints และ error handling แบบที่ software ดีๆ ควรมีหรือยัง
+</p>
+<h2>สรุป</h2>
+<p>AI Agent กำลังเข้าสู่ยุคใหม่ที่ prompt engineering อย่างเดียวไม่พอแล้ว สิ่งที่ต้องทำคือสร้าง production-grade architecture ที่มี deterministic control flow, sandboxing สำหรับความปลอดภัย และ orchestration ที่จัดการ agent หลายตัวได้อย่างมีประสิทธิภาพ เครื่องมือและแนวคิดใหม่ๆ ทั้งหมดนี้ชี้ให้เห็นว่าอนาคตของ AI Agent อยู่ที่ software engineering ที่ดี ไม่ใช่ prompt ที่ยาวขึ้น
+</p>
+<h4>Sources:</h4>
+<p><a href="https://news.ycombinator.com/item?id=48051562" target="_blank" rel="noopener">Agents Need Control Flow, Not More Prompts — Hacker News</a>
+<a href="https://dev.to/x4nent/openai-agents-sdk-014-sandbox-agents-model-native-harness-subagents-codex-style-filesystem-2ohg" target="_blank" rel="noopener">OpenAI Agents SDK 0.14: Sandbox Agents, Model-Native Harness, Subagents</a>
+<a href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener">Ruflo — Multi-agent AI orchestration platform</a>
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://news.ycombinator.com/item?id=48051562" target="_blank" rel="noopener noreferrer">https://news.ycombinator.com/item?id=48051562</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

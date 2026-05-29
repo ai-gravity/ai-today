@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM &amp; Models — AI Today Thailand</title>
+  <link rel="canonical" href="https://aitodaythailand.com/category/llm-models.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="LLM &amp; Models — AI Today Thailand">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aitodaythailand.com/category/llm-models.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/og-default.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="category-hero">
+    <a href="/" class="back-link">← กลับหน้าแรก</a>
+    <h1><span style="color:#d97757">●</span> LLM &amp; Models</h1>
+    <p>บทความทั้งหมดในหมวด LLM &amp; Models</p>
+  </div>
+
+  <section class="section">
+    <div class="article-grid">
+    <a href="/article/claude-dreaming-multiagent-deepseek-tui.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/claude-dreaming-multiagent-deepseek-tui.jpg" alt="เหตุใด HTML จึงทำงานได้ดีกว่า Markdown ในยุค AI" loading="lazy">
+        <span class="placeholder-icon" style="color:#d97757">AI</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#d97757">LLM &amp; Models</div>
+        <div class="card-title">เหตุใด HTML จึงทำงานได้ดีกว่า Markdown ในยุค AI</div>
+        <div class="card-meta">
+          <span>2026-05-13</span>
+          <span class="sep"></span>
+          <span>~1 นาที</span>
+        </div>
+      </div>
+    </a>
+    <a href="/article/anthropic-claude-2026-deepseek-tui.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/anthropic-claude-2026-deepseek-tui.jpg" alt="Anthropic ประกาศ &quot;หัวใจใหม่&quot; ของ AI Agent — Multi-Agent, Dreaming, Routines + เครื่องมือใหม่ที่ต้องจับตา" loading="lazy">
+        <span class="placeholder-icon" style="color:#d97757">AI</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#d97757">LLM &amp; Models</div>
+        <div class="card-title">Anthropic ประกาศ &quot;หัวใจใหม่&quot; ของ AI Agent — Multi-Agent, Dreaming, Routines + เครื่องมือใหม่ที่ต้องจับตา</div>
+        <div class="card-meta">
+          <span>2026-05-07</span>
+          <span class="sep"></span>
+          <span>~2 นาที</span>
+        </div>
+      </div>
+    </a>
+    <a href="/article/claude-agent-architecture.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/claude-agent-architecture.jpg" alt="AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า" loading="lazy">
+        <span class="placeholder-icon" style="color:#d97757">AI</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#d97757">LLM &amp; Models</div>
+        <div class="card-title">AI หาข้อมูลเก่งแค่ไหน? 5 เทคนิคค้นหาที่ทำให้ AI ฉลาดขึ้น 10 เท่า</div>
+        <div class="card-meta">
+          <span>2026-04-29</span>
+          <span class="sep"></span>
+          <span>~2 นาที</span>
+        </div>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.section');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(function(s) { observer.observe(s); });
+    } else {
+      sections.forEach(function(s) { s.classList.add('visible'); });
+    }
+  });
+  </script>
+
+</body>
+</html>

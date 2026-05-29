@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aitodaythailand.com/sitemap.xml
+
+# AI Today Thailand
+# https://aitodaythailand.com

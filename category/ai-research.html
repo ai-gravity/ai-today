@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Research — AI Today Thailand</title>
+  <link rel="canonical" href="https://aitodaythailand.com/category/ai-research.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="AI Research — AI Today Thailand">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aitodaythailand.com/category/ai-research.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/og-default.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="category-hero">
+    <a href="/" class="back-link">← กลับหน้าแรก</a>
+    <h1><span style="color:#10b981">●</span> AI Research</h1>
+    <p>บทความทั้งหมดในหมวด AI Research</p>
+  </div>
+
+  <section class="section">
+    <div class="article-grid">
+    <a href="/article/ai-smart-loading.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/ai-smart-loading.jpg" alt="AI ไม่ได้อ่านทุกอย่างพร้อมกัน! เปิดเทคนิค &quot;Progressive Disclosure&quot; ที่ทำให้ AI ฉลาดขึ้นโดยไม่เปลืองพลัง" loading="lazy">
+        <span class="placeholder-icon" style="color:#10b981">RX</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#10b981">AI Research</div>
+        <div class="card-title">AI ไม่ได้อ่านทุกอย่างพร้อมกัน! เปิดเทคนิค &quot;Progressive Disclosure&quot; ที่ทำให้ AI ฉลาดขึ้นโดยไม่เปลืองพลัง</div>
+        <div class="card-meta">
+          <span>2026-05-02</span>
+          <span class="sep"></span>
+          <span>~3 นาที</span>
+        </div>
+      </div>
+    </a>
+    <a href="/article/prompt-engineering-reality.html" class="card animate-in">
+      <div class="card-image">
+        <img src="/images/articles/prompt-engineering-reality.jpg" alt="Prompt Engineering ยังไม่ใช่ &quot;Engineering&quot; จริง? วิเคราะห์ข้อเท็จจริงที่หลายคนมองข้าม" loading="lazy">
+        <span class="placeholder-icon" style="color:#10b981">RX</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category" style="color:#10b981">AI Research</div>
+        <div class="card-title">Prompt Engineering ยังไม่ใช่ &quot;Engineering&quot; จริง? วิเคราะห์ข้อเท็จจริงที่หลายคนมองข้าม</div>
+        <div class="card-meta">
+          <span>2026-05-01</span>
+          <span class="sep"></span>
+          <span>~1 นาที</span>
+        </div>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.section');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(function(s) { observer.observe(s); });
+    } else {
+      sections.forEach(function(s) { s.classList.add('visible'); });
+    }
+  });
+  </script>
+
+</body>
+</html>

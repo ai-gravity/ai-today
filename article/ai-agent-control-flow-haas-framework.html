@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ทำไม AI Agent ถึงต้องมี &quot;ระบบควบคุม&quot; ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด — AI Today Thailand</title>
+  <meta name="description" content="ทุกวันนี้เราได้ยินคำว่า &quot;AI Agent&quot; กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตั">
+  <link rel="canonical" href="https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="ทำไม AI Agent ถึงต้องมี &quot;ระบบควบคุม&quot; ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด">
+  <meta property="og:description" content="ทุกวันนี้เราได้ยินคำว่า &quot;AI Agent&quot; กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตั">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html">
+  <meta property="og:image" content="https://aitodaythailand.com/images/articles/ai-agent-control-flow-haas-framework.jpg">
+  <meta property="og:site_name" content="AI Today Thailand">
+  <meta property="article:published_time" content="2026-05-08">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ทำไม AI Agent ถึงต้องมี &quot;ระบบควบคุม&quot; ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด">
+  <meta name="twitter:description" content="ทุกวันนี้เราได้ยินคำว่า &quot;AI Agent&quot; กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตั">
+  <meta name="twitter:image" content="https://aitodaythailand.com/images/articles/ai-agent-control-flow-haas-framework.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ทำไม AI Agent ถึงต้องมี \"ระบบควบคุม\" ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด", "description": "ทุกวันนี้เราได้ยินคำว่า &quot;AI Agent&quot; กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตั", "url": "https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html", "image": "https://aitodaythailand.com/images/articles/ai-agent-control-flow-haas-framework.jpg", "datePublished": "2026-05-08", "dateModified": "2026-05-08", "author": {"@type": "Organization", "name": "AI Today Thailand", "url": "https://aitodaythailand.com"}, "publisher": {"@type": "Organization", "name": "AI Today Thailand", "logo": {"@type": "ImageObject", "url": "https://aitodaythailand.com/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitodaythailand.com/article/ai-agent-control-flow-haas-framework.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Today
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#7c6ef0;border-color:#7c6ef040">AI Agents</span>
+    <h1>ทำไม AI Agent ถึงต้องมี &quot;ระบบควบคุม&quot; ไม่ใช่แค่ Prompt ที่ยาวขึ้นเรื่อยๆ — และวิธีแบ่งงานระหว่างคนกับ AI อย่างชาญฉลาด</h1>
+    <div class="article-meta">
+      <span>2026-05-08</span>
+      <span>·</span>
+      <span>~2 นาที</span>
+      <span>·</span>
+      <span>AI Agents</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/ai-agent-control-flow-haas-framework.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<h2>คำนำ</h2>
+<p>ทุกวันนี้เราได้ยินคำว่า "AI Agent" กันบ่อยขึ้นเรื่อยๆ — AI ที่ไม่ได้แค่ตอบคำถาม แต่สามารถทำงานหลายขั้นตอนได้เอง ตั้งแต่ค้นหาข้อมูล วิเคราะห์ ไปจนถึงตัดสินใจ แต่ปัญหาที่หลายคนมองข้ามคือ: <strong>จะควบคุม AI Agent ให้ทำงานถูกต้องได้อย่างไร?</strong> บทความนี้จะพาไปดู 2 แนวคิดใหม่ที่น่าสนใจมาก — แนวคิดแรกจากวงวิศวกรที่โต้แย้งว่า AI Agent ต้องการ "ระบบควบคุมแบบมีโครงสร้าง" ไม่ใช่แค่ prompt ที่ยาวขึ้นเรื่อยๆ และแนวคิดที่สองคือเฟรมเวิร์ก HAAS จากงานวิจัยล่าสุดที่บอกว่า "มนุษย์กับ AI ไม่ควรแข่งกัน แต่ควรแบ่งงานกันทำอย่างยืดหยุ่น"
+</p>
+<h2>ส่วนที่ 1: AI Agent ต้องการ Control Flow ไม่ใช่ Prompt ที่ซับซ้อนขึ้น</h2>
+<h3>ปัญหาของ Prompt Chains</h3>
+<p>ลองนึกภาพว่าคุณกำลังเขียนโปรแกรม แต่ทุกคำสั่งที่เขียนไม่ได้ทำงานแน่นอน — บางทีทำถูก บางทีทำผิด และทุก function ที่เรียกใช้จะ return "สำเร็จ" เสมอ แม้ว่าจริงๆ แล้วอาจล้มเหลวไปแล้ว
+นี่คือสิ่งที่เกิดขึ้นกับ Prompt Chains ที่หลายคนใช้สร้าง AI Agent ในปัจจุบัน
+<strong>Prompt Chains</strong> คือการเขียน prompt หลายๆ อันเรียงต่อกัน เช่น:
+</p>
+<ol>
+<li>Prompt แรก: "วิเคราะห์ข้อมูลนี้"</li>
+</ol>
+<ol>
+<li>Prompt สอง: "จากผลวิเคราะห์ สรุปประเด็นสำคัญ"</li>
+</ol>
+<ol>
+<li>Prompt สาม: "เขียนรายงานจากสรุป"</li>
+</ol>
+<p>ดูเหมือนดีใช่มั้ย? แต่ปัญหาคือ:
+<strong>ไม่แน่นอน (Non-deterministic):</strong> รัน 10 ครั้งอาจได้ผล 10 แบบ
+<strong>ตรวจสอบยาก:</strong> ไม่รู้ว่าผลลัพธ์ผิดเพราะ prompt ไหน
+<strong>ซับซ้อนเกินไป:</strong> ยิ่งเพิ่ม prompt ยิ่งยากที่จะควบคุม
+</p>
+<h3>ทางออก: ใช้ LLM เป็น "ชิ้นส่วน" ไม่ใช่ "ทั้งระบบ"</h3>
+<p>แนวคิดที่ผู้เชี่ยวชาญเสนอคือ — <strong>ให้ถือว่า LLM (เช่น ChatGPT, Claude) เป็นแค่ component หนึ่งในระบบ</strong> เหมือนเครื่องยนต์ในรถยนต์ รถไม่ได้มีแค่เครื่องยนต์ แต่มีพวงมาลัย เบรก ไฟเลี้ยว ฯลฯ
+สิ่งที่ AI Agent ต้องการจริงๆ คือ <strong>Deterministic Scaffolds</strong> หรือ "โครงสร้างควบคุมที่แน่นอน" ประกอบด้วย:
+</p>
+<ol>
+<li><strong>State Machine (เครื่องจักรสถานะ):</strong> กำหนดชัดเจนว่า AI อยู่ขั้นตอนไหน และจะไปขั้นตอนไหนต่อ</li>
+</ol>
+<ol>
+<li><strong>Validation Checkpoints (จุดตรวจสอบ):</strong> ทุกขั้นตอนต้องตรวจสอบก่อนไปขั้นต่อไป</li>
+</ol>
+<ol>
+<li><strong>Conditional Logic (เงื่อนไข):</strong> ถ้าผลลัพธ์ผิดพลาด ให้กลับไปแก้ ไม่ใช่ไปต่อ</li>
+</ol>
+<h3>ตัวอย่างในชีวิตจริง</h3>
+<p>ลองนึกถึงการสั่งอาหารออนไลน์:
+<strong>แบบ Prompt Chain:</strong> ส่ง prompt "สั่งอาหารให้ฉัน" → รอ AI ตัดสินใจทุกอย่างเอง → อาจสั่งผิด สั่งซ้ำ หรือลืมใส่ที่อยู่
+</p>
+<h4>แบบ Control Flow:</h4>
+<ol>
+<li>ขั้นที่ 1: แสดงเมนู → <strong>ตรวจสอบ</strong> ว่าผู้ใช้เลือกแล้ว</li>
+</ol>
+<ol>
+<li>ขั้นที่ 2: ยืนยันรายการ → <strong>ตรวจสอบ</strong> ว่าถูกต้อง</li>
+</ol>
+<ol>
+<li>ขั้นที่ 3: กรอกที่อยู่ → <strong>ตรวจสอบ</strong> ว่าครบถ้วน</li>
+</ol>
+<ol>
+<li>ขั้นที่ 4: ชำระเงิน → <strong>ตรวจสอบ</strong> ว่าสำเร็จ</li>
+</ol>
+<p>แบบที่สองน่าเชื่อถือกว่ามากใช่มั้ยล่ะ?
+</p>
+<h3>การจัดการข้อผิดพลาด</h3>
+<p>เมื่อ AI Agent ทำงานผิดพลาด มี 3 ทางเลือก:
+</p>
+<ol>
+<li><strong>มีคนตรวจ (Human-in-the-loop):</strong> ทุกผลลัพธ์ต้องผ่านการอนุมัติจากคนก่อน</li>
+</ol>
+<ol>
+<li><strong>ตรวจสอบแบบละเอียดหลังรัน (Exhaustive Verification):</strong> ให้ระบบตรวจสอบทุกอย่างหลัง AI ทำเสร็จ</li>
+</ol>
+<ol>
+<li><strong>ยอมรับตาม "สัญชาตญาณ" (Vibe-based):</strong> ดูคร่าวๆ ว่าน่าจะถูก (ไม่แนะนำสำหรับงานสำคัญ!)</li>
+</ol>
+<h2>ส่วนที่ 2: HAAS — เฟรมเวิร์กแบ่งงานระหว่างคนกับ AI อย่างยืดหยุ่น</h2>
+<p>งานวิจัยจาก arXiv (พฤษภาคม 2026) เสนอเฟรมเวิร์กชื่อ <strong>HAAS (Human-AI Adaptive Symbiosis)</strong> ที่ตอบคำถามสำคัญ: <strong>"งานแต่ละอย่าง ควรให้คนทำหรือ AI ทำ?"</strong>
+</p>
+<h3>5 ระดับการทำงานร่วมกัน</h3>
+<p>HAAS แบ่งระดับความอิสระของ AI ออกเป็น 5 ระดับ:
+</p>
+<table><thead><tr><th>ระดับ</th><th>ใครทำ</th><th>ตัวอย่าง</th></tr></thead><tbody>
+<tr><td>1</td><td>มนุษย์ทำเอง</td><td>ตัดสินใจกลยุทธ์บริษัท</td></tr>
+<tr><td>2</td><td>ทำร่วมกัน</td><td>ร่างเอกสารด้วยกัน</td></tr>
+<tr><td>3</td><td>AI ช่วย</td><td>AI เขียน draft แรก คนตรวจแก้</td></tr>
+<tr><td>4</td><td>AI ทำ + คนคุม</td><td>AI ตอบลูกค้า คนอนุมัติ</td></tr>
+<tr><td>5</td><td>AI ทำอิสระ</td><td>AI จัดเรียงข้อมูลอัตโนมัติ</td></tr>
+</tbody></table>
+<p>สิ่งที่น่าสนใจคือ <strong>ระดับนี้ไม่คงที่</strong> — HAAS ใช้ระบบเรียนรู้ (Contextual Bandit Learner) ที่ปรับระดับอิสระของ AI ตาม feedback จากผลลัพธ์จริง ถ้า AI ทำงานนั้นได้ดี ก็จะค่อยๆ ให้ AI ทำเองมากขึ้น
+</p>
+<h3>กฎเกณฑ์ (Governance) สำคัญมาก</h3>
+<p>HAAS มีระบบบังคับใช้กฎเกณฑ์ (Governance) ที่ทำงานคู่กับระบบเรียนรู้:
+<strong>กฎแน่น = AI ทำน้อยลง:</strong> เช่น งานที่เกี่ยวกับเงิน อาจกำหนดให้ต้องมีคนอนุมัติเสมอ
+<strong>กฎหลวม = AI ทำมากขึ้น:</strong> เช่น งานจัดรูปแบบข้อมูล อาจให้ AI ทำได้เลย
+</p>
+<h3>ผลการทดลองที่น่าประหลาดใจ</h3>
+<ol>
+<li><strong>กฎเกณฑ์ไม่ได้เป็นแค่ on/off</strong> — ยิ่งกำหนด constraint แน่น ระบบจะปรับจาก "AI ทำเอง" เป็น "AI ทำ + คนคุม" อัตโนมัติ</li>
+</ol>
+<ol>
+<li><strong>กฎเข้มข้นกลับทำให้ดีขึ้น!</strong> — ในงาน manufacturing การใส่ governance ที่เข้มขึ้นกลับช่วยลดความเหนื่อยล้าของพนักงานและเพิ่มประสิทธิภาพ</li>
+</ol>
+<ol>
+<li><strong>ไม่มีสูตรสำเร็จตายตัว</strong> — การปรับ governance ระดับกลางมักได้ผลดีที่สุดเมื่อระบบมีประสบการณ์มากขึ้น</li>
+</ol>
+<h2>สรุป</h2>
+<p>สิ่งที่เราเรียนรู้จากทั้งสองแนวคิดนี้สรุปได้ไม่กี่ประโยค:
+<strong>การสร้าง AI Agent ที่ทำงานได้จริงและเชื่อถือได้ ไม่ใช่แค่เรื่องของการเขียน prompt ให้ฉลาดขึ้น แต่เป็นเรื่องของการออกแบบ "ระบบควบคุม" ที่เหมาะสม</strong> — ทั้งในแง่ของการมีโครงสร้างการทำงานที่ชัดเจน (State Machine, Validation Checkpoints) และการแบ่งงานระหว่างคนกับ AI อย่างยืดหยุ่นด้วย governance ที่เหมาะกับบริบท
+สำหรับคนที่กำลังพัฒนาหรือใช้ AI Agent ในองค์กร ข้อคิดที่สำคัญคือ: <strong>อย่าพยายามให้ AI ทำทุกอย่างอัตโนมัติตั้งแต่แรก</strong> แต่เริ่มจากการออกแบบระบบที่มีจุดตรวจสอบ แบ่งงานอย่างชัดเจน แล้วค่อยๆ ปรับระดับอิสระของ AI ตามผลลัพธ์จริง — วิธีนี้จะปลอดภัยกว่า และได้ผลดีกว่าในระยะยาว
+</p>
+<h2>แหล่งอ้างอิง</h2>
+<p>Brian Suh, "Agents Need Control Flow, Not More Prompts" — <a href="https://bsuh.bearblog.dev/agents-need-control-flow/" target="_blank" rel="noopener">bsuh.bearblog.dev</a>
+HAAS: Policy-Aware Framework for Adaptive Task Allocation Between Humans and AI — <a href="https://arxiv.org/abs/2605.02832" target="_blank" rel="noopener">arXiv:2605.02832</a>
+</p>
+<div class="article-tags"><strong>แท็ก:</strong> #AIAgent #ControlFlow #HumanAICollaboration #HAAS #PromptEngineering #AI Governance #MultiAgent #เทคโนโลยีAI #AIประเทศไทย #อนาคตAI</div>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://bsuh.bearblog.dev/agents-need-control-flow/" target="_blank" rel="noopener noreferrer">https://bsuh.bearblog.dev/agents-need-control-flow/</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Today <span class="accent">Thailand</span></div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>
