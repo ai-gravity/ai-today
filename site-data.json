@@ -3,6 +3,22 @@
   "site_tagline": "AI Update — ข่าว AI สำคัญ สรุปเป็นภาษาคน",
   "articles": [
     {
+      "id": 48,
+      "title": "สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents",
+      "title_en": "The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents",
+      "slug": "multi-agent-orchestrator-2026",
+      "topic": "Multi-Agent Orchestration",
+      "status": "published",
+      "image_url": "/images/articles/multi-agent-orchestrator-2026-cover.jpg",
+      "source_url": "https://www.flowhunt.io/blog/multi-agent-ai-system/",
+      "created_at": "2026-05-30T15:00:00",
+      "published_at": "2026-05-30T15:00:00",
+      "content_file": "article-047-multi-agent-orchestrator-2026.md",
+      "content_file_en": "article-047-multi-agent-orchestrator-2026.md",
+      "excerpt": "ในปี 2026 อุตสาหกรรม AI ลงเอยที่สถาปัตยกรรม Orchestrator + Isolated Subagents — Anthropic, Cognition, OpenAI และ LangChain ต่างใช้รูปแบบนี้ มาตรฐานใหม่สำหรับ Multi-Agent Systems",
+      "excerpt_en": "In 2026, the AI industry converged on Orchestrator + Isolated Subagents architecture — adopted by Anthropic, Cognition, OpenAI, and LangChain as the new standard for multi-agent systems"
+    },
+    {
       "id": 47,
       "title": "Project Glasswing: Claude Mythos ค้นพบช่องโหว่ร้ายแรงกว่า 10,000 จุดในซอฟต์แวร์สำคัญระดับโลก",
       "title_en": "Project Glasswing: How Claude Mythos Found Over 10,000 Critical Vulnerabilities in the World's Most Important Software",
@@ -403,5 +419,5 @@
       "slug": "ai-news"
     }
   },
-  "total_articles": 35
+  "total_articles": 36
 }

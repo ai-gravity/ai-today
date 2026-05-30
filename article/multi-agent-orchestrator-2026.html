@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents — AI Update</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://ai-update.pages.dev/article/multi-agent-orchestrator-2026.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-update.pages.dev/article/multi-agent-orchestrator-2026.html">
+  <meta property="og:image" content="https://ai-update.pages.dev/images/articles/multi-agent-orchestrator-2026-cover.jpg">
+  <meta property="og:site_name" content="AI Update">
+  <meta property="article:published_time" content="2026-05-01">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://ai-update.pages.dev/images/articles/multi-agent-orchestrator-2026-cover.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents", "description": "", "url": "https://ai-update.pages.dev/article/multi-agent-orchestrator-2026.html", "image": "https://ai-update.pages.dev/images/articles/multi-agent-orchestrator-2026-cover.jpg", "datePublished": "2026-05-01", "dateModified": "2026-05-01", "author": {"@type": "Organization", "name": "AI Update", "url": "https://ai-update.pages.dev"}, "publisher": {"@type": "Organization", "name": "AI Update", "logo": {"@type": "ImageObject", "url": "https://ai-update.pages.dev/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ai-update.pages.dev/article/multi-agent-orchestrator-2026.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Update
+      </a>
+      <div class="navbar-right">
+        <a href="/" class="nav-link active">TH</a>
+        <a href="/en/" class="lang-switch" title="English">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>สถาปัตยกรรม Multi-Agent ที่ชนะในปี 2026: Orchestrator + Isolated Subagents</h1>
+    <div class="article-meta">
+      <span>2026-05-01</span>
+      <span>·</span>
+      <span>~2 นาที</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-hero-image">
+      <img src="/images/articles/multi-agent-orchestrator-2026-cover.jpg" alt="" loading="eager">
+    </div>
+
+    <div class="article-content">
+<p>ในปี 2026 อุตสาหกรรม AI ลงเอยที่สถาปัตยกรรมเดียวกันสำหรับ Multi-Agent Systems — <strong>"Orchestrator + Isolated Subagents"</strong> (ตัวคุมกลาง + Subagent แยกส่วน) ทั้ง Anthropic, Cognition (Devin), OpenAI, และ LangChain ต่างใช้รูปแบบนี้ ส่วนแบบ "Peer Collaboration" ที่ agent คุยกันเองนั้นค่อยๆ หายไป
+</p>
+<h2>มาตรฐานใหม่ของวงการ AI</h2>
+<p>ในช่วงปลายปี 2025 มีการถกเถียงกันมากว่าสถาปัตยกรรมไหนดีกว่า: Peer Collaboration (ทีม agent คุยกันเอง) หรือ Orchestrator + Subagents แต่ผลลัพธ์จากงานวิจัยและการใช้งานจริงในปี 2026 ทำให้คำตอบชัดเจนขึ้น
+</p>
+<figure class="article-inline-image"><img src="/images/articles/multi-agent-orchestrator-2026-inline-1.jpg" alt="Multi-Agent Architecture" loading="lazy"><figcaption>Multi-Agent Architecture</figcaption></figure>
+<p>จากการวิเคราะห์ของ Anthropic ในเดือนมิถุนายน 2025 พบว่า:
+</p>
+<h4>Agent ใช้ token ประมาณ 4× เท่า chat ปกติ</h4>
+<h4>Multi-Agent System ใช้ token ประมาณ 15× เท่า chat ปกติ</h4>
+<h4>การใช้ token อธิบายความแปรผันของ performance ได้ถึง 80%</h4>
+<p>นี่ไม่ใช่แปลว่า multi-agent ผิดเสมอไป แต่หมายความว่า <strong>"ภาระการพิสูจน์ตกอยู่ที่ multi-agent"</strong> ไม่ใช่รูปแบบง่ายๆ
+</p>
+<h2>Orchestrator + Isolated Subagents คืออะไร?</h2>
+<p>สถาปัตยกรรมนี้มีองค์ประกอบหลัก 2 ส่วน:
+</p>
+<ol>
+<li><strong>Orchestrator</strong>: Agent ตัวหลักที่เป็นเจ้าของบริบทการสนทนาทั้งหมด (full context owner)</li>
+</ol>
+<ol>
+<li><strong>Isolated Subagents</strong>: Agent ย่อยที่ถูกสร้างขึ้นชั่วคราวเพื่อทำงานย่อยแยกส่วน</li>
+</ol>
+<figure class="article-inline-image"><img src="/images/articles/multi-agent-orchestrator-2026-inline-2.jpg" alt="Orchestrator Pattern" loading="lazy"><figcaption>Orchestrator Pattern</figcaption></figure>
+<p>แต่ละ subagent ทำงานใน context window ใหม่ที่แยกส่วน (sandbox) มี system prompt เฉพาะตัว ทำงานให้เสร็จ แล้วส่งคืนผลลัพธ์เป็น string สรุปเดียว
+</p>
+<h4>จุดสำคัญ:</h4>
+<p>ไม่มีช่องทาง communication ระหว่าง peer agent
+ไม่มี shared mutable state
+ค่าใช้จ่ายการ coordinate มีขอบเขต (bounded)
+</p>
+<h2>เมื่อไหร่ควรใช้ Multi-Agent?</h2>
+<p>จากงานวิจัย 2026 พบว่ามีเพียง 2–3 เคสที่ multi-agent คุ้ม:
+</p>
+<h3>1. งานที่ Parallelizable ได้</h3>
+<p>งานที่แยกย่อยเป็นส่วนๆ แล้วทำพร้อมกันได้ เช่น:
+วิเคราะห์หลายแหล่งข้อมูลพร้อมกัน
+ประเมินหลายโครงการควบคู่กัน
+Test หลายส่วนของระบบพร้อมกัน
+</p>
+<h3>2. งาน Read-Heavy ที่ต้องการ Domain Isolation</h3>
+<p>งานที่ต้องการความปลอดภัยหรือความแยกส่วนของเครื่องมือ เช่น:
+Billing agent ที่ไม่ควรเห็น tools ของทีม engineering
+HR agent ที่ต้อง isolation จาก finance
+Compliance agent ที่ต้องจำกัดการเข้าถึง
+</p>
+<h3>3. งานที่ต้องการความน่าเชื่อถือใน Domain แคบ</h3>
+<p>งานที่ต้องการความเชี่ยวชาญใน domain จำเพาะ เช่น:
+Medical diagnosis subagent
+Legal compliance subagent
+Financial analysis subagent
+</p>
+<h2>ปัญหาหลักของ Peer Collaboration</h2>
+<p>แบบ Peer Collaboration ที่ agent คุยกันเองตรงๆ มีปัญหา 3 อย่าง:
+</p>
+<h3>1. ค่าใช้จ่ายการสื่อสาร O(n²)</h3>
+<p>ทุกครั้งที่ agent ปลุก agent อื่น ต้องอ่าน transcript เต็มๆ ใหม่ และยิ่ง agent เยอะ ยิ่งมี relationship การคุยยิ่งเยอะ
+</p>
+<h3>2. Error Cascade</h3>
+<p>หาก agent หนึ่งทำผิด ผลลัพธ์จะแพร่ไปยัง agent อื่นๆ แบบไม่สามารถแก้ไขได้ง่าย
+</p>
+<h3>3. System Prompt Bloat</h3>
+<p>ทุกการเรียกใช้ agent ต้องพก protocol การ coordinate ทั้งหมดติดไปด้วย
+</p>
+<h2>ตัวอย่างการใช้งานจริง</h2>
+<h3>Anthropic's Research Multi-Agent System</h3>
+<p>Orchestrator เป็น "brain" เดียว
+ส่งงานย่อยให้ subagent เฉพาะทาง
+แต่ละ subagent อยู่ใน sandbox แยก
+</p>
+<h3>Claude Code's Task Tool</h3>
+<p>Orchestrator จัดการ context ทั้งหมด
+Spawn subagents สำหรับงานย่อย
+Subagent ส่งคืน summary เดียวเท่านั้น
+</p>
+<h3>OpenAI's Agents-as-Tools</h3>
+<p>Agent เป็น tool ของ orchestrator
+ทำงานใน context แยก
+ส่งคืนผลลัพธ์ที่บีบอัด
+</p>
+<h2>บทเรียนจาก Production 2026</h2>
+<p>จากประสบการณ์การใช้งานจริงในปี 2026:
+</p>
+<ol>
+<li><strong>อย่าใช้ multi-agent ทุกกรณี</strong> — ใช้เฉพาะเมื่อจำเป็นจริงๆ</li>
+</ol>
+<ol>
+<li><strong>พิจารณา token budget อย่างรอบคอบ</strong> — multi-agent ใช้ token สูงกว่า 15×</li>
+</ol>
+<ol>
+<li><strong>ใช้ sandbox แยกส่วน</strong> — ลดความเสี่ยงและป้องกัน failure cascade</li>
+</ol>
+<ol>
+<li><strong>ออกแบบ subagents ให้เฉพาะทาง</strong> — หลีกเลี่ยง subagents ที่ทำงานซ้ำซ้อน</li>
+</ol>
+<ol>
+<li><strong>วัดผลลัพธ์จริง</strong> — อย่าตัดสินจาก benchmark หรือ marketing เท่านั้น</li>
+</ol>
+<h2>แนวโน้มในปลาย 2026</h2>
+<p>จากการวิเคราะห์ของ FlowHunt:
+<strong>Peer GroupChat</strong> กำลังลดลง
+<strong>Orchestrator + Subagents</strong> กลายเป็นมาตรฐาน
+<strong>Single-agent + RAG</strong> ยังเป็นตัวเลือกที่ดีสำหรับงานส่วนใหญ่
+<strong>Domain-specific subagents</strong> คืออนาคตของ multi-agent
+</p>
+<h2>สรุป</h2>
+<p>สถาปัตยกรรม <strong>Orchestrator + Isolated Subagents</strong> คือจุดลงเอยที่ทุกคนมาตรงกันในปี 2026 ไม่ใช่เพราะมันสวยหรู แต่เพราะ:
+ค่าใช้จ่ายจัดการได้ (cost manageable)
+ความซับซ้อนจัดการได้ (complexity bounded)
+ความปลอดภัยจัดการได้ (security enforceable)
+คำถามที่ควรถามตัวเองไม่ใช่ "จะใช้ multi-agent ไหม?" แต่เป็น "งานนี้จำเป็นต้องใช้ multi-agent จริงๆ ไหม?"
+<strong>อ้างอิง:</strong> FlowHunt - Multi-Agent AI Systems in 2026
+</p>
+    </div>
+
+    <div class="article-source">
+      <span>📌 Source: </span><a href="https://www.flowhunt.io/blog/multi-agent-ai-system/" target="_blank" rel="noopener noreferrer">https://www.flowhunt.io/blog/multi-agent-ai-system/</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Update</div>
+      <div class="footer-text">สรุปข่าว AI ภาษาไทย อัปเดตทุกวัน</div>
+    </div>
+  </footer>
+
+</body>
+</html>

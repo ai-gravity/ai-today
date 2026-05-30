@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents — AI Update</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://ai-update.pages.dev/en/article/multi-agent-orchestrator-2026.html">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-update.pages.dev/en/article/multi-agent-orchestrator-2026.html">
+  <meta property="og:image" content="https://ai-update.pages.dev/images/og-default.png">
+  <meta property="og:site_name" content="AI Update">
+  <meta property="article:published_time" content="2026-05-01">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://ai-update.pages.dev/images/og-default.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents", "description": "", "url": "https://ai-update.pages.dev/en/article/multi-agent-orchestrator-2026.html", "image": "https://ai-update.pages.dev/images/og-default.png", "datePublished": "2026-05-01", "dateModified": "2026-05-01", "author": {"@type": "Organization", "name": "AI Update", "url": "https://ai-update.pages.dev"}, "publisher": {"@type": "Organization", "name": "AI Update", "logo": {"@type": "ImageObject", "url": "https://ai-update.pages.dev/images/favicon.svg"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ai-update.pages.dev/en/article/multi-agent-orchestrator-2026.html"}}</script>
+  <meta name="theme-color" content="#d97757">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/en/" class="navbar-brand">
+        <span class="logo-mark">AI</span>
+        AI Update
+      </a>
+      <div class="navbar-right">
+        <a href="/en/" class="nav-link active">EN</a>
+        <a href="/" class="lang-switch" title="ภาษาไทย">TH</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="article-page">
+    <span class="article-category-badge" style="color:#f59e0b;border-color:#f59e0b40">Industry</span>
+    <h1>The Multi-Agent Architecture That Won in 2026: Orchestrator + Isolated Subagents</h1>
+    <div class="article-meta">
+      <span>2026-05-01</span>
+      <span>·</span>
+      <span>~2 min</span>
+      <span>·</span>
+      <span>Industry</span>
+    </div>
+    <div class="article-content">
+<p>In 2026, the AI industry converged on a single architecture for multi-agent systems — <strong>"Orchestrator + Isolated Subagents"</strong>. Anthropic, Cognition (Devin), OpenAI, and LangChain all adopted this pattern, while "Peer Collaboration" designs where agents talk directly to each other quietly faded away.
+</p>
+<h2>The New Industry Standard</h2>
+<p>In late 2025, there was intense debate: Peer Collaboration (agents chatting with each other) vs. Orchestrator + Subagents. But by 2026, real-world research and production usage made the answer clear.
+</p>
+<figure class="article-inline-image"><img src="/images/articles/multi-agent-orchestrator-2026-inline-1.jpg" alt="Multi-Agent Architecture" loading="lazy"><figcaption>Multi-Agent Architecture</figcaption></figure>
+<p>Anthropic's June 2025 engineering analysis revealed:
+</p>
+<h4>Agents use ~4× more tokens than standard chat</h4>
+<h4>Multi-agent systems use ~15× more tokens than chat</h4>
+<h4>Token usage alone explains 80% of performance variance</h4>
+<p>This doesn't mean multi-agent is always wrong. It means the <strong>burden of proof is on multi-agent</strong>, not the simpler design.
+</p>
+<h2>What is Orchestrator + Isolated Subagents?</h2>
+<p>This architecture has two main components:
+</p>
+<ol>
+<li><strong>Orchestrator</strong>: The main agent that owns the full conversation context</li>
+</ol>
+<ol>
+<li><strong>Isolated Subagents</strong>: Ephemeral agents created for isolated subtasks</li>
+</ol>
+<figure class="article-inline-image"><img src="/images/articles/multi-agent-orchestrator-2026-inline-2.jpg" alt="Orchestrator Pattern" loading="lazy"><figcaption>Orchestrator Pattern</figcaption></figure>
+<p>Each subagent works in a fresh, isolated context window with its own system prompt, completes its task, and returns a single summary string.
+</p>
+<h4>Key points:</h4>
+<p>No peer-to-peer communication channels
+No shared mutable state
+Bounded coordination costs
+</p>
+<h2>When Should You Use Multi-Agent?</h2>
+<p>2026 research shows multi-agent is only worth it in 2-3 cases:
+</p>
+<h3>1. Parallelizable Work</h3>
+<p>Tasks that can be split into independent parts, like:
+Analyzing multiple data sources simultaneously
+Evaluating multiple projects at once
+Testing different system parts concurrently
+</p>
+<h3>2. Read-Heavy Domain Isolation</h3>
+<p>Tasks requiring security or tool isolation, like:
+Billing agents that shouldn't see engineering tools
+HR agents isolated from finance
+Compliance agents with limited access
+</p>
+<h3>3. Narrow Domain Reliability</h3>
+<p>Tasks requiring specialized expertise, like:
+Medical diagnosis subagents
+Legal compliance subagents
+Financial analysis subagents
+</p>
+<h2>Main Problems with Peer Collaboration</h2>
+<p>The Peer Collaboration pattern where agents talk directly has three major issues:
+</p>
+<h3>1. O(n²) Communication Costs</h3>
+<p>Every time an agent wakes another agent, it must re-read the full transcript. More agents = exponentially more relationships.
+</p>
+<h3>2. Error Cascade</h3>
+<p>If one agent makes a mistake, it propagates to other agents and becomes hard to fix.
+</p>
+<h3>3. System Prompt Bloat</h3>
+<p>Every agent call carries the entire coordination protocol, wasting tokens.
+</p>
+<h2>Real-World Examples</h2>
+<h3>Anthropic's Research Multi-Agent System</h3>
+<p>Single orchestrator as the "brain"
+Dispatches subtasks to specialized subagents
+Each subagent in its own sandbox
+</p>
+<h3>Claude Code's Task Tool</h3>
+<p>Orchestrator manages full context
+Spawns subagents for subtasks
+Subagents return compressed summaries only
+</p>
+<h3>OpenAI's Agents-as-Tools</h3>
+<p>Agents are tools for the orchestrator
+Work in isolated contexts
+Return compressed results
+</p>
+<h2>Lessons from 2026 Production</h2>
+<p>From real-world experience in 2026:
+</p>
+<ol>
+<li><strong>Don't use multi-agent for everything</strong> — only when necessary</li>
+</ol>
+<ol>
+<li><strong>Watch token budgets carefully</strong> — multi-agent costs 15× more</li>
+</ol>
+<ol>
+<li><strong>Use isolated sandboxes</strong> — reduce risk and prevent cascade failures</li>
+</ol>
+<ol>
+<li><strong>Design specialized subagents</strong> — avoid redundant subtasks</li>
+</ol>
+<ol>
+<li><strong>Measure real results</strong> — don't judge by benchmarks or marketing alone</li>
+</ol>
+<h2>Late 2026 Trends</h2>
+<p>FlowHunt's analysis shows:
+<strong>Peer GroupChat</strong> is declining
+<strong>Orchestrator + Subagents</strong> became the standard
+<strong>Single-agent + RAG</strong> remains viable for most tasks
+<strong>Domain-specific subagents</strong> are the future of multi-agent
+</p>
+<h2>Summary</h2>
+<p>The <strong>Orchestrator + Isolated Subagents</strong> architecture is where everyone converged in 2026. Not because it's fancy, but because:
+Costs are manageable
+Complexity is bounded
+Security is enforceable
+The right question isn't "Should I use multi-agent?" but <strong>"Does this task actually need multi-agent?"</strong>
+<strong>Reference:</strong> FlowHunt - Multi-Agent AI Systems in 2026
+</p>
+    </div>
+
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">AI Update</div>
+      <div class="footer-text">AI news, summarized daily</div>
+    </div>
+  </footer>
+
+</body>
+</html>
